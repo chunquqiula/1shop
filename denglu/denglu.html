@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录</title>
+	<script src="../jquery/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" href="denglu.css">
+	<link rel="stylesheet" href="../iconfont/iconfont.css">
+</head>
+<body>
+	<!-- 头部 -->
+	<div id="header">
+		<div class="wrap">
+			<a href="#" class="logo">
+				<img src="imgs/logo.jpg">
+			</a>
+			<ul>
+				<li>
+					您好，欢迎光临1号店！ 
+				</li>
+				<li>
+					<a href="">请登录</a>
+				</li>
+				<li class="help">
+					<a href="">
+						<i></i>
+						帮助中心
+						<em></em>
+					</a>
+					<ol>
+						<li>
+							<a href="">包裹跟踪</a>
+						</li>
+						<li>
+							<a href="">常见问题</a>
+						</li>
+						<li>
+							<a href="">在线退换货</a>
+						</li>
+						<li>
+							<a href="">在线投诉</a>
+						</li>
+					</ol>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 主体部分 -->
+	<div id="content">
+		<div class="login-wrap">
+			<form action="">
+				<div class="top">
+					<h3>1号店用户登录</h3>
+					<a href="">注册新账号</a>
+				</div>
+				<div class="login-form">
+					<div class="form-top">
+						<div class="form-item">
+							<i></i>
+							<input type="text" value="邮箱/手机/用户名">
+						</div>
+						<div class="form-item1">
+							<i></i>
+							<input type="password" value="asdf">
+						</div>
+						<a href="">忘记密码？</a>
+						<p>
+							<a class="auto">
+								自动登录
+								<i></i>
+								<span>请勿在公用电脑上启用</span>
+							</a>
+						</p>
+						<button>登录</button>
+					</div>
+					<div class="form-cent">
+						<p>更多合作网站账号登录</p>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<a class="mores">
+							更多合作网站
+							<i></i>
+						</a>
+					</div>
+					<ul class="none">
+						<li>
+							<a href="">支付宝</a>
+						</li>
+						<li>
+							<a href="">网易</a>
+						</li>
+						<li>
+							<a href="">百度</a>
+						</li>
+						<li>
+							<a href="">中国移动</a>
+						</li>
+						<li>
+							<a href="">开心网</a>
+						</li>
+						<li>
+							<a href="">人人网</a>
+						</li>
+						<li>
+							<a href="">平安万里通</a>
+						</li>
+						<li>
+							<a href="">蘑菇街</a>
+						</li>
+					</ul>
+				</div>
+			</form>
+			<img src="imgs/1-1.png" alt="">
+		</div>
+	</div>
+	<!-- 底部 -->
+	<div id="footer">
+		<a href="">沪ICP备16050468号</a>
+		|
+		<a href="">沪B2-20170039</a>
+		|
+		<a href="">营业执照</a>
+		<p>Copyright © 1号店网上超市 2007-2017，All Rights Reserved</p>
+	</div>
+</body>
+<script>
+	// 定义显示的标记
+	var sd = true;
+	// 单击事件
+	$('.auto i').click(function () {
+		// 判断是否显示
+		if (sd) {
+			// 不显示
+			$(this).css({background:"url('imgs/login_new.png') no-repeat -347px -325px"});
+			$('.auto span').css({display:'block'});
+			sd = false;
+		// 显示
+		} else {
+			$(this).css({background:"url('imgs/login_new.png') no-repeat -347px -265px"});
+			$('.auto span').css({display:'none'});
+			sd = true;
+		}
+			
+	});
+
+	// 折叠框
+	$('.mores').click(function () {
+		$('.none').slideToggle();
+	})
+		
+</script>
+</html>

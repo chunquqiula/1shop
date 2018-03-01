@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>购物车</title>
+	<script src="../jquery/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" href="gouwuche.css">
+	<link rel="stylesheet" href="../iconfont/iconfont.css">
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_504870_epo4b6kcxw5t57b9.css">
+</head>
+<body>
+	<!-- 顶部 -->
+	<div class="header-top">
+		<div class="wrap">
+			<a href="../index/index.html" target="_black"><i class="iconfont icon-shouye"></i>1号店首页</a>
+			<ul>
+				<li><a href="../denglu/denglu.html" target="_black">Hi,请 登录</a></li>
+				<li><a href="../zhuce/zhuce.html" target="_black">注册</a></li>
+				<li><a href="#"><i class="iconfont icon-zhangdan"></i>我的订单</a></li>
+				<li class="kf">
+					<a href="#">
+						客户服务
+						<i class="xiajiao"></i>
+					</a>
+					<div class="line2"></div>
+					<ol>
+						<li>
+							<a href="#">包裹跟踪</a>
+						</li>
+						<li>
+							<a href="#">在线退换货</a>
+						</li>
+					</ol>
+				</li>
+				<li><a href="#">企业服务</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- 主体部分 -->
+	<div id="content">
+		<div class="content-top">
+			<a href="" class="logo"></a>
+			<a href="" class="logo-txt"></a>
+			<span>配送至：</span>
+			<p>
+				<span>北京</span>
+				|
+				<span>昌平区</span>
+				|
+				<span>六环以内</span>
+				<i class="iconfont icon-moreunfold"></i>
+			</p>
+			<div class="search">
+				<input type="text" value="请输入关键词">
+				<i class="iconfont icon-sousuo"></i>
+			</div>
+		</div>
+		<!-- 信息 -->
+		<div class="xinxi">
+			<div class="xinxi-top">
+				<i class="icon"></i>
+				<a href="" id="every">全选</a>
+				<span class="tit">商品信息</span>
+				<span class="price">单价（元）</span>
+				<span class="num">数量</span>
+				<span class="total">小计（元）</span>
+				<span class="act">操作</span>
+			</div>
+			<!-- 列表 -->
+			<div class="cart-list">
+				<div class="cart-start">
+					<i class="icon"></i>
+					<a href="">自营</a>
+					<span>
+						<i class="iconfont icon-duihao"></i>
+						已免邮
+						<u class="iconfont icon-wenti "></u>
+					</span>
+				</div>
+				<div class="shop">
+					<div class="shop-top">
+						<i class="icon"></i>
+						<p>换购</p>
+						<span>指定商品购买1件可优惠换购热销商品</span>
+						|
+						<span>
+							<i class="iconfont icon-duihao"></i>
+							已购满 1 件，可优惠换购      
+						</span>
+						<a href="">
+							换购商品
+							<i class="iconfont icon-moreunfold"></i>
+						</a>
+					</div>
+					<div class="shop-nei">
+						<i class="icon"></i>
+						<img src="imgs/c1.jpg" alt="">
+						<a href="" class="tit">    雷柏（Rapoo） 9300P 无线鼠标键盘套装 无线键盘鼠标套装 无线键鼠套装 电脑键盘 笔记本键盘 纤薄键盘 白色 </a>
+						<span class="price">169.00</span>
+						<div class="num">
+							<div class="suan">
+								<button id="sum">-</button>|
+								<input type="text" value="1" id="num">|
+								<button id="add">+</button>
+							</div>
+						</div>
+						<div class="total">
+							<p class="money">169.00</p>
+							<p class="kg"><span>0.54</span>kg</p>
+						</div>
+						<div class="act">
+							<i class="iconfont icon-shanchu"></i>
+						</div>
+						<div class="dz">
+							<div class="day7">7</div>
+							<span>白色</span>
+							<span>9300P【高端无线】</span>
+						</div>
+					</div>
+					<div class="shop-zongji">
+						商品总价：
+						<span>￥<span class="z-money">169.00</span></span>
+					</div>
+					<div class="line"></div>
+				</div>
+				
+			</div>
+		</div>
+		<!-- 合计 -->
+		<div class="heji">
+			<div class="wrap">
+				<i class="icon"></i>
+				<a href="">
+					全选（共
+					<b>1</b>
+					件）
+				</a>
+				|
+				<a class="del">批量删除</a>
+				<div class="jiesuan">去结算</div>
+				<p>
+					合计：
+					<span>
+						￥
+						<span class="z-money">169.00</span>
+					</span>
+				</p>
+				<span>
+					已选商品
+					<b id="z-num">1</b>
+					件 <i>|</i>
+				</span>
+			</div>
+		</div>
+
+		<!-- 猜你喜欢 -->
+		<div class="live">
+			<h4>
+				<i class="iconfont icon-xihuan"></i>
+				猜你喜欢
+			</h4>
+			<p>实时推荐最适合您的商品</p>
+			<div class="like">
+				<div id="showes">
+					<ul>
+						<li>
+							<a href="">
+								<img src="imgs/d1.jpg" alt="">
+								<span>￥29.9</span>
+								<p>德芙Dove巧克力分享碗装 什锦牛奶榛仁葡萄干巧克力糖果巧克力休闲零食249g</p>
+								<div class="gwcs">
+									<i class="iconfont icon-cart"></i>
+									<span>加入购物车</span>
+								</div>
+							</a>
+							<a href="">
+								<img src="imgs/d2.jpg" alt="">
+								<span>￥1999.0</span>
+								<p>奥克斯（AUX）正1.5匹 冷暖 定速 空调挂机(KFR-35GW/HFJ+3)</p>
+								<div class="gwcs">
+									<i class="iconfont icon-cart"></i>
+									<span>加入购物车</span>
+								</div>
+							</a>
+							<a href="">
+								<img src="imgs/d3.jpg" alt="">
+								<span>￥399.9</span>
+								<p>斐讯K2 1200M智能双频无线路由器 WIFI穿墙 PSG1218</p>
+								<div class="gwcs">
+									<i class="iconfont icon-cart"></i>
+									<span>加入购物车</span>
+								</div>
+							</a>
+							<a href="">
+								<img src="imgs/d4.jpg" alt="">
+								<span>￥104.0</span>
+								<p>德国 进口牛奶 欧德堡（Oldenburger）超高温处理全脂纯牛奶1L*12</p>
+								<div class="gwcs">
+									<i class="iconfont icon-cart"></i>
+									<span>加入购物车</span>
+								</div>
+							</a>
+							<a href="">
+								<img src="imgs/d5.jpg" alt="">
+								<span>￥9.9</span>
+								<p>丽家家居 礼品门垫浴室垫子进门脚垫防滑地垫 花色随机 尺寸随机 礼品门垫 花色随机发 花色和尺寸都随机</p>
+								<div class="gwcs">
+									<i class="iconfont icon-cart"></i>
+									<span>加入购物车</span>
+								</div>
+							</a>
+							<a href="">
+								<img src="imgs/d6.jpg" alt="">
+								<span>￥119.9</span>
+								<p>网易云音乐车载蓝牙播放器 点烟器式双USB车充 车载充电器 蓝牙FM发射器 智能车充 炫酷黑</p>
+								<div class="gwcs">
+									<i class="iconfont icon-cart"></i>
+									<span>加入购物车</span>
+								</div>
+							</a>
+							<a href="">
+								<img src="imgs/d7.jpg" alt="">
+								<span>￥47.9</span>
+								<p>三只松鼠_夏威夷果265gx2袋零食坚果炒货干果奶油味送开口器</p>
+								<div class="gwcs">
+									<i class="iconfont icon-cart"></i>
+									<span>加入购物车</span>
+								</div>
+							</a>
+							<a href="">
+								<img src="imgs/d8.jpg" alt="">
+								<span>￥219.9</span>
+								<p> 帮宝适（Pampers）超薄干爽 婴儿纸尿裤 大号L164片【9-14kg】尿不湿</p>
+								<div class="gwcs">
+									<i class="iconfont icon-cart"></i>
+									<span>加入购物车</span>
+								</div>
+							</a>
+							<a href="">
+								<img src="imgs/d9.jpg" alt="">
+								<span>￥279.0</span>
+								<p>西部数据(WD)蓝盘 1TB SATA6Gb/s 7200转64M 台式机硬盘(WD10EZEX)</p>
+								<div class="gwcs">
+									<i class="iconfont icon-cart"></i>
+									<span>加入购物车</span>
+								</div>
+							</a>
+							<a href="">
+								<img src="imgs/d10.jpg" alt="">
+								<span>￥35.1</span>
+								<p>蒙牛 纯牛奶 PURE MILK 250ml*16盒 礼盒装</p>
+								<div class="gwcs">
+									<i class="iconfont icon-cart"></i>
+									<span>加入购物车</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="imgs/d1.jpg" alt="">
+								<span>￥29.9</span>
+								<p>德芙Dove巧克力分享碗装 什锦牛奶榛仁葡萄干巧克力糖果巧克力休闲零食249g</p>
+								<div class="gwcs">
+									<i class="iconfont icon-cart"></i>
+									<span>加入购物车</span>
+								</div>
+							</a>
+							<a href="">
+								<img src="imgs/d2.jpg" alt="">
+								<span>￥1999.0</span>
+								<p>奥克斯（AUX）正1.5匹 冷暖 定速 空调挂机(KFR-35GW/HFJ+3)</p>
+								<div class="gwcs">
+									<i class="iconfont icon-cart"></i>
+									<span>加入购物车</span>
+								</div>
+							</a>
+							<a href="">
+								<img src="imgs/d3.jpg" alt="">
+								<span>￥399.9</span>
+								<p>斐讯K2 1200M智能双频无线路由器 WIFI穿墙 PSG1218</p>
+								<div class="gwcs">
+									<i class="iconfont icon-cart"></i>
+									<span>加入购物车</span>
+								</div>
+							</a>
+							<a href="">
+								<img src="imgs/d4.jpg" alt="">
+								<span>￥104.0</span>
+								<p>德国 进口牛奶 欧德堡（Oldenburger）超高温处理全脂纯牛奶1L*12</p>
+								<div class="gwcs">
+									<i class="iconfont icon-cart"></i>
+									<span>加入购物车</span>
+								</div>
+							</a>
+							<a href="">
+								<img src="imgs/d5.jpg" alt="">
+								<span>￥9.9</span>
+								<p>丽家家居 礼品门垫浴室垫子进门脚垫防滑地垫 花色随机 尺寸随机 礼品门垫 花色随机发 花色和尺寸都随机</p>
+								<div class="gwcs">
+									<i class="iconfont icon-cart"></i>
+									<span>加入购物车</span>
+								</div>
+							</a>
+							<a href="">
+								<img src="imgs/d7.jpg" alt="">
+								<span>￥47.9</span>
+								<p>三只松鼠_夏威夷果265gx2袋零食坚果炒货干果奶油味送开口器</p>
+								<div class="gwcs">
+									<i class="iconfont icon-cart"></i>
+									<span>加入购物车</span>
+								</div>
+							</a>
+							<a href="">
+								<img src="imgs/d6.jpg" alt="">
+								<span>￥119.9</span>
+								<p>网易云音乐车载蓝牙播放器 点烟器式双USB车充 车载充电器 蓝牙FM发射器 智能车充 炫酷黑</p>
+								<div class="gwcs">
+									<i class="iconfont icon-cart"></i>
+									<span>加入购物车</span>
+								</div>
+							</a>
+							
+							
+							<a href="">
+								<img src="imgs/d9.jpg" alt="">
+								<span>￥279.0</span>
+								<p>西部数据(WD)蓝盘 1TB SATA6Gb/s 7200转64M 台式机硬盘(WD10EZEX)</p>
+								<div class="gwcs">
+									<i class="iconfont icon-cart"></i>
+									<span>加入购物车</span>
+								</div>
+							</a>
+							<a href="">
+								<img src="imgs/d10.jpg" alt="">
+								<span>￥35.1</span>
+								<p>蒙牛 纯牛奶 PURE MILK 250ml*16盒 礼盒装</p>
+								<div class="gwcs">
+									<i class="iconfont icon-cart"></i>
+									<span>加入购物车</span>
+								</div>
+							</a>
+							<a href="">
+								<img src="imgs/d8.jpg" alt="">
+								<span>￥219.9</span>
+								<p> 帮宝适（Pampers）超薄干爽 婴儿纸尿裤 大号L164片【9-14kg】尿不湿</p>
+								<div class="gwcs">
+									<i class="iconfont icon-cart"></i>
+									<span>加入购物车</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="imgs/d1.jpg" alt="">
+								<span>￥29.9</span>
+								<p>德芙Dove巧克力分享碗装 什锦牛奶榛仁葡萄干巧克力糖果巧克力休闲零食249g</p>
+								<div class="gwcs">
+									<i class="iconfont icon-cart"></i>
+									<span>加入购物车</span>
+								</div>
+							</a>
+							<a href="">
+								<img src="imgs/d2.jpg" alt="">
+								<span>￥1999.0</span>
+								<p>奥克斯（AUX）正1.5匹 冷暖 定速 空调挂机(KFR-35GW/HFJ+3)</p>
+								<div class="gwcs">
+									<i class="iconfont icon-cart"></i>
+									<span>加入购物车</span>
+								</div>
+							</a>
+							<a href="">
+								<img src="imgs/d5.jpg" alt="">
+								<span>￥9.9</span>
+								<p>丽家家居 礼品门垫浴室垫子进门脚垫防滑地垫 花色随机 尺寸随机 礼品门垫 花色随机发 花色和尺寸都随机</p>
+								<div class="gwcs">
+									<i class="iconfont icon-cart"></i>
+									<span>加入购物车</span>
+								</div>
+							</a>
+							<a href="">
+								<img src="imgs/d3.jpg" alt="">
+								<span>￥399.9</span>
+								<p>斐讯K2 1200M智能双频无线路由器 WIFI穿墙 PSG1218</p>
+								<div class="gwcs">
+									<i class="iconfont icon-cart"></i>
+									<span>加入购物车</span>
+								</div>
+							</a>
+							<a href="">
+								<img src="imgs/d4.jpg" alt="">
+								<span>￥104.0</span>
+								<p>德国 进口牛奶 欧德堡（Oldenburger）超高温处理全脂纯牛奶1L*12</p>
+								<div class="gwcs">
+									<i class="iconfont icon-cart"></i>
+									<span>加入购物车</span>
+								</div>
+							</a>
+							
+							<a href="">
+								<img src="imgs/d6.jpg" alt="">
+								<span>￥119.9</span>
+								<p>网易云音乐车载蓝牙播放器 点烟器式双USB车充 车载充电器 蓝牙FM发射器 智能车充 炫酷黑</p>
+								<div class="gwcs">
+									<i class="iconfont icon-cart"></i>
+									<span>加入购物车</span>
+								</div>
+							</a>
+							<a href="">
+								<img src="imgs/d9.jpg" alt="">
+								<span>￥279.0</span>
+								<p>西部数据(WD)蓝盘 1TB SATA6Gb/s 7200转64M 台式机硬盘(WD10EZEX)</p>
+								<div class="gwcs">
+									<i class="iconfont icon-cart"></i>
+									<span>加入购物车</span>
+								</div>
+							</a>
+							<a href="">
+								<img src="imgs/d7.jpg" alt="">
+								<span>￥47.9</span>
+								<p>三只松鼠_夏威夷果265gx2袋零食坚果炒货干果奶油味送开口器</p>
+								<div class="gwcs">
+									<i class="iconfont icon-cart"></i>
+									<span>加入购物车</span>
+								</div>
+							</a>
+							<a href="">
+								<img src="imgs/d8.jpg" alt="">
+								<span>￥219.9</span>
+								<p> 帮宝适（Pampers）超薄干爽 婴儿纸尿裤 大号L164片【9-14kg】尿不湿</p>
+								<div class="gwcs">
+									<i class="iconfont icon-cart"></i>
+									<span>加入购物车</span>
+								</div>
+							</a>
+							
+							<a href="">
+								<img src="imgs/d10.jpg" alt="">
+								<span>￥35.1</span>
+								<p>蒙牛 纯牛奶 PURE MILK 250ml*16盒 礼盒装</p>
+								<div class="gwcs">
+									<i class="iconfont icon-cart"></i>
+									<span>加入购物车</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="imgs/d1.jpg" alt="">
+								<span>￥29.9</span>
+								<p>德芙Dove巧克力分享碗装 什锦牛奶榛仁葡萄干巧克力糖果巧克力休闲零食249g</p>
+								<div class="gwcs">
+									<i class="iconfont icon-cart"></i>
+									<span>加入购物车</span>
+								</div>
+							</a>
+							<a href="">
+								<img src="imgs/d2.jpg" alt="">
+								<span>￥1999.0</span>
+								<p>奥克斯（AUX）正1.5匹 冷暖 定速 空调挂机(KFR-35GW/HFJ+3)</p>
+								<div class="gwcs">
+									<i class="iconfont icon-cart"></i>
+									<span>加入购物车</span>
+								</div>
+							</a>
+							<a href="">
+								<img src="imgs/d3.jpg" alt="">
+								<span>￥399.9</span>
+								<p>斐讯K2 1200M智能双频无线路由器 WIFI穿墙 PSG1218</p>
+								<div class="gwcs">
+									<i class="iconfont icon-cart"></i>
+									<span>加入购物车</span>
+								</div>
+							</a>
+							<a href="">
+								<img src="imgs/d6.jpg" alt="">
+								<span>￥119.9</span>
+								<p>网易云音乐车载蓝牙播放器 点烟器式双USB车充 车载充电器 蓝牙FM发射器 智能车充 炫酷黑</p>
+								<div class="gwcs">
+									<i class="iconfont icon-cart"></i>
+									<span>加入购物车</span>
+								</div>
+							</a>
+							<a href="">
+								<img src="imgs/d4.jpg" alt="">
+								<span>￥104.0</span>
+								<p>德国 进口牛奶 欧德堡（Oldenburger）超高温处理全脂纯牛奶1L*12</p>
+								<div class="gwcs">
+									<i class="iconfont icon-cart"></i>
+									<span>加入购物车</span>
+								</div>
+							</a>
+							<a href="">
+								<img src="imgs/d5.jpg" alt="">
+								<span>￥9.9</span>
+								<p>丽家家居 礼品门垫浴室垫子进门脚垫防滑地垫 花色随机 尺寸随机 礼品门垫 花色随机发 花色和尺寸都随机</p>
+								<div class="gwcs">
+									<i class="iconfont icon-cart"></i>
+									<span>加入购物车</span>
+								</div>
+							</a>
+							
+							<a href="">
+								<img src="imgs/d7.jpg" alt="">
+								<span>￥47.9</span>
+								<p>三只松鼠_夏威夷果265gx2袋零食坚果炒货干果奶油味送开口器</p>
+								<div class="gwcs">
+									<i class="iconfont icon-cart"></i>
+									<span>加入购物车</span>
+								</div>
+							</a>
+							<a href="">
+								<img src="imgs/d10.jpg" alt="">
+								<span>￥35.1</span>
+								<p>蒙牛 纯牛奶 PURE MILK 250ml*16盒 礼盒装</p>
+								<div class="gwcs">
+									<i class="iconfont icon-cart"></i>
+									<span>加入购物车</span>
+								</div>
+							</a>
+							<a href="">
+								<img src="imgs/d8.jpg" alt="">
+								<span>￥219.9</span>
+								<p> 帮宝适（Pampers）超薄干爽 婴儿纸尿裤 大号L164片【9-14kg】尿不湿</p>
+								<div class="gwcs">
+									<i class="iconfont icon-cart"></i>
+									<span>加入购物车</span>
+								</div>
+							</a>
+							<a href="">
+								<img src="imgs/d9.jpg" alt="">
+								<span>￥279.0</span>
+								<p>西部数据(WD)蓝盘 1TB SATA6Gb/s 7200转64M 台式机硬盘(WD10EZEX)</p>
+								<div class="gwcs">
+									<i class="iconfont icon-cart"></i>
+									<span>加入购物车</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>	
+				<ol>
+					<li class="bg"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ol>
+				<div id="left" class="btn"> &lt; </div>
+				<div id="right" class="btn"> &gt; </div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 底部 -->
+	<div id="footer">
+		<div class="wrap">
+			<ul class="foot-service">
+				<li>
+					<a href="#">
+						<img src="imgs/ft1.jpg" alt="">
+						<div>
+							<b>正品保障</b>
+							<br>
+							<span>正品保障</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="imgs/ft2.jpg" alt="">
+						<div>
+							<b>满86包邮</b>
+							<br>
+							<span>满86元 免运费</span>
+						</div>
+							
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="imgs/ft3.jpg" alt="">
+						<div>
+							<b>售后无忧</b>
+							<br>
+							<span>7天无理由退货</span>
+						</div>
+							
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="imgs/ft4.jpg" alt="">
+						<div>
+							<b>准时送达</b>
+							<br>
+							<span>收货时间由你做主</span>
+						</div>
+					</a>
+				</li>
+			</ul>
+			<div class="foot-service-link">
+				<ul>
+					<li>
+						<p>新手入门</p>
+						<ol>
+							<li><a href="#">购物流程</a></li>
+							<li><a href="#">会员制度</a></li>
+							<li><a href="#">订单查询</a></li>
+							<li><a href="#">发票制度</a></li>
+						</ol>
+					</li>
+					<li>
+						<p>支付方式</p>
+						<ol>
+							<li><a href="#">货到付款</a></li>
+							<li><a href="#">网上支付</a></li>
+							<li><a href="#">银行转账</a></li>
+							<li><a href="#">礼品卡支付</a></li>
+							<li><a href="#">其它支付</a></li>
+						</ol>
+					</li>
+					<li>
+						<p>配送服务</p>
+						<ol>
+							<li><a href="#">配送进度查询</a></li>
+							<li><a href="#">商品验货与签收</a></li>
+						</ol>
+					</li>
+					<li>
+						<p>售后保障</p>
+						<ol>
+							<li><a href="#">退换货政策</a></li>
+							<li><a href="#">联系客服</a></li>
+						</ol>
+					</li>
+				</ul>
+				<div class="foot-code">
+					<div>
+						<p>APP更优惠</p>
+						<img src="imgs/ewm1.png" alt="">
+					</div>
+					<div>
+						<p>加微信查订单</p>
+						<img src="imgs/ewm2.jpg" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="ft-conter">
+				<p>
+					<a href="#">沪ICP备16050468号</a>
+					|
+					<a href="#">经营证照</a>
+					|
+					<a href="#">互联网药品信息服务资格证</a>
+					|
+					<a href="#">违法和不良信息举报电话：0527-88100253</a>
+					|
+					<a href="#">沪B2-20170039</a>
+				</p>
+				<p>Copyright© 1号店网上超市 2007-2017，All Rights Reserved</p>
+				<ul>
+					<li><a href="#"><img src="imgs/ssd1.jpg" alt=""></a></li>
+					<li><a href="#"><img src="imgs/ssd2.jpg" alt=""></a></li>
+					<li><a href="#"><img src="imgs/ssd3.jpg" alt=""></a></li>
+					<li><a href="#"><img src="imgs/ssd4.jpg" alt=""></a></li>
+					<li><a href="#"><img src="imgs/ssd5.jpg" alt=""></a></li>
+					<li><a href="#"><img src="imgs/ssd6.jpg" alt=""></a></li>
+					<li><a href="#"><img src="imgs/ssd7.jpg" alt=""></a></li>
+					<li><a href="#"><img src="imgs/ssd8.png" alt=""></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	// 幻灯片
+	// 定义批次
+	var des = 0;
+	
+	// 左按钮点击事件
+	$('#left').click(function () {
+		// 批次-1
+		des--;
+		moveAuto();
+	});
+	// 右按钮单击事件
+	$('#right').click(function () {
+		// 批次+1
+		des++;
+		// 执行切换
+		moveAuto();
+	});
+
+	// ol的li的单击事件
+	$('.like>ol>li').click(function () {
+		// 批次等于当前点击的li的索引值
+		des = $(this).index();
+		// 执行切换
+		moveAuto();
+	})
+
+	// 切换函数
+	function moveAuto () {
+		// 判断
+		if (des > 3) {
+			des = 3;
+		} else if (des < 0) {
+			des = 0;
+		}
+		// 定义ul的left值
+		$('#showes>ul').stop().animate({left:(-des * $('#showes').width())},500);
+		// 取消class
+		$('.like>ol>li').removeClass();
+		// 给当前对应的li添加bg
+		$('.like>ol>li').eq(des).addClass('bg');
+	}
+
+
+	// 加减算法
+	// 定义单独的钱和重量
+	var money;
+	var zhong;
+	// 定义是否加入购买的标志
+	var buy = true;
+
+	// 定义购买的件数
+	var num = 1;
+
+	// 单机加号键
+	$('#add').click(function () {
+		// 数值+1
+		num++;
+		// 调用传值
+		changeNum();
+	});
+	// 单机减号键
+	$('#sum').click(function () {
+		// 数值-1
+		num--;
+		// 调用传值
+		changeNum();
+	});
+	// 传值函数
+	function changeNum () {
+		// 判断数字大小
+		if (num <= 1) {
+			num = 1;
+		} else if (num >= 199) {
+			num = 199;
+		} 
+		//将num值传给num
+		$('#num').val(num);
+		// 算出money 重量
+		money = num*169.00;
+		zhong = num* 0.54;
+		// 将money 输出到money
+		$('.money').html(money.toFixed(2));
+		// 将zhong输出到 kg下的span
+		$('.kg>span').html(zhong.toFixed(2));
+
+		// 判断是否购买
+		if (buy) {
+			// 购买则改变总计金额
+			$('.z-money').html(money.toFixed(2));
+		} 
+	}
+
+	// 单机选则按钮
+	$('.icon').click(function () {
+		// 判断是否加入
+		if (buy) {
+			// 加入则移除
+			$('.icon').css({backgroundPosition:'-110px 0px'});
+			// 金额清零
+			$('.z-money').html('0.00');
+			// 改变标志
+			buy = false;
+		} else {
+			// 未加入则加入
+			$('.icon').css({backgroundPosition:'-98px 0px'});
+			// 金额增加
+			$('.z-money').html(money.toFixed(2));
+			// 改变标志
+			buy = true;
+		}
+	});
+	// 单机批量删除
+	$('.del').click(function () {
+		// 全部移除
+		$('.icon').css({backgroundPosition:'-110px 0px'});
+		// 金额清零
+		$('.z-money').html('0.00');
+		// 改变标志
+			buy = false;
+	});
+
+	// 单机全选按钮
+	$('.every').click(function () {
+		// 加入
+			$('.icon').css({backgroundPosition:'-98px 0px'});
+			// 金额增加
+			$('.z-money').html(money.toFixed(2));
+			// 改变标志
+			buy = true;
+	});
+
+
+
+
+	// 合计条定位
+	// 定义合计条的初始位置的top值
+	var tops = $('.heji').offset().top;
+
+	// 判断scroll值
+	$(document).scroll(function () {
+		// 如果滚动条的值 大于 tops
+		if ($(this).scrollTop() >= tops) {
+			// 合计条固定在屏幕上方
+			$('.heji').css({position:'fixed',top:0});
+		// 如果滚动条的值 小于 tops+ 合计条的高度 -屏幕高度值
+		} else if ($(this).scrollTop()  <= tops + $('.heji').height() -  window.innerHeight) {
+			// 先清除style样式
+			$('.heji').attr('style','');
+			// 合计条固定在屏幕下方
+			$('.heji').css({position:'fixed',bottom:0});
+		} else {
+			// 以上条件都不满足 还在原位
+			$('.heji').css({position:'relative'});
+		}
+	})
+
+</script>
+</html>

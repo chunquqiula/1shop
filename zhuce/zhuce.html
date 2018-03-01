@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册</title>
+	<script src="../jquery/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" href="zhuce.css">
+	<link rel="stylesheet" href="../iconfont/iconfont.css">
+</head>
+<body>
+	<!-- 头部 -->
+	<div id="header">
+		<div class="wrap">
+			<a href="#" class="logo">
+				<img src="imgs/logo.jpg">
+			</a>
+			<ul>
+				<li>
+					您好，欢迎光临1号店！ 
+				</li>
+				<li>
+					<a href="../denglu/denglu.html" target="_black">请登录</a>
+				</li>
+				<li class="help">
+					<a href="">
+						<i></i>
+						帮助中心
+						<em></em>
+					</a>
+					<ol>
+						<li>
+							<a href="">包裹跟踪</a>
+						</li>
+						<li>
+							<a href="">常见问题</a>
+						</li>
+						<li>
+							<a href="">在线退换货</a>
+						</li>
+						<li>
+							<a href="">在线投诉</a>
+						</li>
+					</ol>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 主体部分 -->
+	<div id="content">
+		<div class="content-wrap">
+			<div class="icon">
+				<div class="icon1"></div>
+				<div class="icon2"></div>
+				<div class="icon3"></div>
+				<div class="icon4"></div>
+				<div class="icon5"></div>
+			</div>
+			<form class="model" method="post" action="01.php">
+				<h4>1号店注册</h4>
+				<ul>
+					<li>
+						<input type="text" id="names">
+						<span></span>
+						<div>用户名</div>
+					</li>
+					<li>
+						<input type="text" id="fore">
+						<span></span>
+						<div>手机号</div>
+					</li>
+					<li class="duan">
+						<input type="text" id="dxyz">
+						<span></span>
+						<div>短信验证码</div>
+						<p>获取验证码</p>
+					</li>
+					<li>
+						<input type="password" id="pas">
+						<span>密码不能为空</span>
+						<div>设置密码</div>
+					</li>
+					<li>
+						<input type="password" id="pas2">
+						<span>再次确认密码</span>
+						<div>确认密码</div>
+					</li>
+					<li class="trues">
+						<p>
+							点击注册，表示您同意1号店  
+							<a href="">《服务协议及隐私声明》</a>
+						</p>
+						<input type="submit" value="同意协议并注册" id="submit">
+					</li>
+				</ul>
+			</form>
+		</div>
+	</div>
+	<!-- 底部 -->
+	<div id="footer">
+		<a href="">沪ICP备16050468号</a>
+		|
+		<a href="">沪B2-20170039</a>
+		|
+		<a href="">营业执照</a>
+		<p>Copyright © 1号店网上超市 2007-2017，All Rights Reserved</p>
+	</div>
+</body>
+<script>
+	// 定义透明度变量
+	var op1 = 0;
+	// 创建定时器
+	setInterval(function () {
+		// 创建动画改变透明度
+		$('.icon1').animate({opacity:op1},1000,function auto () {
+			$(this).next().animate({opacity:op1},1000,auto);
+		});
+		// 改变透明度的值
+		op1 += 0.1;
+		// 判断
+		if (op1 > 0.5) {
+			op1 = 0;
+		}
+	},1000);
+
+
+
+
+
+
+	// 表单验证
+
+	// 定义是否成功的标志
+	var isNames = false;
+	var isFore = false;
+	var isDxyz = false;
+	var isPas = false;
+	var isPas2 = false;
+
+	// 每个input的获取焦点事件
+	$('.model ul li input').focus(function () {
+		// 当前元素的下一个元素显示(span)
+		$(this).next().show();
+		// 当前元素的下下一个元素向左移动(div)
+		$(this).next().next().animate({left:-100},500);
+	});
+	
+
+
+	// 用户名验证
+	// 聚焦事件
+	$('#names').focus(function () {
+		// 设置提示内容 移除所有class
+		$(this).next().html('首字符必须是字母或者下划线，由数字、字母、下划线组成，长度为6-18位').removeClass();
+	// 失去焦点
+	}).blur(function () {
+		// 判断是否为空
+		if ($(this).val().trim() == '') {
+			// 设置提示内容 添加类error
+			$(this).next().html('用户名不能为空').removeClass().addClass('error');
+			// 边框颜色改变
+			$(this).css({borderColor:'red'});
+			// 设置isName标志
+			isNames = false;
+			// 终止事件
+			return;
+		}
+
+
+
+		// 定义正则表达式
+		var reg = /^[a-z_]\w{5,17}$/i;
+
+		// 定义用户输入的值
+		var userName =  $(this).val().trim();
+
+		// 对用户输入的值进行匹配
+		var res = reg.test(userName);
+
+
+		// 判断是否匹配到
+		if (!res) {
+			// 设置提示内容 添加类error 
+			$(this).next().html('用户名不合法').removeClass().addClass('error');
+			// 边框颜色改变
+			$(this).css({borderColor:'red'}); 
+			// 设置isName标志
+			isNames = false;
+			// 终止事件
+			return;
+		// 匹配到
+		} else {
+			// 设置提示内容 添加类success
+			$(this).next().html('用户名可用！').removeClass().addClass('success');
+			// 边框颜色改变
+			$(this).css({borderColor:'green'}); 
+			// 设置isName标志
+			isNames = true;
+		}
+	});
+
+
+	// 手机号验证
+	// 聚焦事件
+	$('#fore').focus(function () {
+		// 设置提示内容 移除所有class
+		$(this).next().html('请输入11位数手机号').removeClass();
+	// 失去焦点
+	}).blur(function () {
+		// 判断是否为空
+		if ($(this).val().trim() == '') {
+			// 设置提示内容 添加类error
+			$(this).next().html('手机号不能为空').removeClass().addClass('error');
+			// 边框颜色改变
+			$(this).css({borderColor:'red'});
+			// 设置标志
+			isFore = false;
+			// 终止事件
+			return;
+		}
+
+
+		// 定义正则表达式
+		var reg = /^1\d{10}$/;
+
+		// 定义用户输入的值
+		var userFore =  $(this).val().trim();
+
+		// 对用户输入的值进行匹配
+		var res = reg.test(userFore);
+
+		// 判断是否匹配到
+		if (!res) {
+			// 设置提示内容 添加类error 
+			$(this).next().html('格式错误，请输入正确的手机号码').removeClass().addClass('error');
+			// 边框颜色改变
+			$(this).css({borderColor:'red'}); 
+			// 设置标志
+			isFore = false;
+			// 终止事件
+			return;
+		// 匹配到
+		} else {
+			// 设置提示内容 添加类success
+			$(this).next().html('手机号可用！').removeClass().addClass('success');
+			// 边框颜色改变
+			$(this).css({borderColor:'green'}); 
+			// 设置标志
+			isFore = true;
+		}
+	});
+	
+
+
+	// 验证码验证
+	// 聚焦事件
+	$('#dxyz').focus(function () {
+		// 设置提示内容 移除所有class
+		$(this).next().html('请输入6位数验证码！').removeClass();
+	// 失去焦点
+	}).blur(function () {
+
+		// 定义正则表达式
+		var reg = /^\d{6}$/;
+
+		// 定义用户输入的值
+		var userDxyz =  $(this).val().trim();
+
+		// 对用户输入的值进行匹配
+		var res = reg.test(userDxyz);
+
+		// 判断是否匹配到
+		if (!res) {
+			// 设置提示内容 添加类error 
+			$(this).next().html('验证码错误，请重新输入！').removeClass().addClass('error');
+			// 边框颜色改变
+			$(this).css({borderColor:'red'}); 
+			// 设置标志
+			isDxyz = false;
+			// 终止事件
+			return;
+		// 匹配到
+		} else {
+			// 设置提示内容 添加类success
+			$(this).next().html('验证码正确').removeClass().addClass('success');
+			// 边框颜色改变
+			$(this).css({borderColor:'green'}); 
+			// 设置标志
+			isDxyz = true;
+		}
+	});
+
+
+
+	// 密码验证
+	// 聚焦事件
+	$('#pas').focus(function () {
+		// 设置提示内容 移除所有class
+		$(this).next().html('请输入密码').removeClass();
+	// 失去焦点
+	}).blur(function () {
+
+		// 定义用户输入的值
+		var userPas =  $(this).val().trim();
+
+
+		// 判断是否为空
+		if (userPas == '') {
+			// 设置提示内容 添加类error
+			$(this).next().html('密码不能为空').removeClass().addClass('error');
+			// 边框颜色改变
+			$(this).css({borderColor:'red'});
+			// 设置isPas标志
+			isPas = false;
+			// 终止事件
+			return;
+		}
+
+
+		
+		// 1. 密码中不允许有空白符
+		// 对用户输入的值进行匹配
+		var res = /\s/.test(userPas);
+
+		// 判断是否匹配到
+		if (res) {
+			// 设置提示内容 添加类error 
+			$(this).next().html('密码中不允许包含空白符').removeClass().addClass('error');
+			// 边框颜色改变
+			$(this).css({borderColor:'red'}); 
+			// 设置isPas标志
+			isPas = false;
+			// 终止事件
+			return;
+		} 
+
+		// 2. 验证密码的长度 6-14位
+		// 对用户输入的值进行匹配
+		var res = /^\S{6,14}$/.test(userPas);
+
+		if (!res) {
+			// 设置提示内容 添加类success
+			$(this).next().html('密码长度必须是6-14位!').removeClass().addClass('error');
+			// 边框颜色改变
+			$(this).css({borderColor:'red'}); 
+			// 设置isPas标志
+			isPas = false;
+			// 终止事件
+			return;
+		}
+
+		// 3.判断强度
+		// 判断当前密码是否是纯数字?
+		var res = /\D/.test(userPas);
+		if (!res) {
+			// 说明是纯数字
+
+			// 设置提示内容 添加类success
+			$(this).next().html('弱...').removeClass().addClass('error');
+			// 边框颜色改变
+			$(this).css({borderColor:'green'}); 
+			// 设置isPas标志
+			isPas = true;
+			// 终止事件
+			return;
+		}
+
+		// 判断是否只有数字和大小写字母 
+		var res = /[^a-z0-9]/i.test(userPas);
+		if (!res) {
+			// 设置提示内容 添加类success
+			$(this).next().html('中等...').removeClass().addClass('success');
+			// 边框颜色改变
+			$(this).css({borderColor:'green'}); 
+			// 设置isPas标志
+			isPas = true;
+		} else {
+			// 设置提示内容 添加类success
+			$(this).next().html('强...').removeClass().addClass('success');
+			// 边框颜色改变
+			$(this).css({borderColor:'green'}); 
+			// 设置isPas标志
+			isPas = true;
+		}
+	});
+
+
+	// 确认密码验证
+	$('#pas2').focus(function () {
+		// 设置提示内容 移除所有class
+		$(this).next().html('再次确认密码').removeClass();
+	}).blur(function () {
+		// 定义用户输入的值
+		var userPas2 =  $(this).val().trim();
+
+		// 判断是否为空
+		if (userPas2 == '') {
+			// 设置提示内容 添加类error
+			$(this).next().html('确认密码不能为空').removeClass().addClass('error');
+			// 边框颜色改变
+			$(this).css({borderColor:'red'});
+			// 设置isPas标志
+			isPas2 = false;
+			// 终止事件
+			return;
+		}
+
+
+		
+
+		// 判断两次密码是否一致
+		if (userPas2 === $('#pas').val().trim()) {
+			// 设置提示内容 添加类error
+			$(this).next().html('两次密码一致!').removeClass().addClass('success');
+			// 边框颜色改变
+			$(this).css({borderColor:'green'});
+			// 设置isPas标志
+			isPas2 = true;
+		} else {
+			// 设置提示内容 添加类error
+			$(this).next().html('两次密码不一致!').removeClass().addClass('error');
+			// 边框颜色改变
+			$(this).css({borderColor:'red'});
+			// 设置isPas标志
+			isPas2 = false;
+		}
+	});
+
+	
+
+	// 表单提交事件
+	$('form').submit(function (e) {
+		// 判断所有数据是否已经全部输入并正确
+		if (!(isNames && isFore && isDxyz && isPas && isPas2)) {
+			e.preventDefault();
+		}
+	})
+</script>
+</html>

@@ -1,0 +1,2072 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="renderer" content="webkit">
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+	<title>我的购物车-1号店,只为更好的生活</title>
+
+
+
+<!--css start-->
+<link href="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/global_site_simple.css" rel="stylesheet" type="text/css">
+ <link href="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/cart_main.css" rel="stylesheet" type="text/css">
+<!--css end-->
+
+<!--js start-->
+<script type="text/javascript" async="" src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/joya.js"></script><script type="text/javascript">
+var URLPrefix = {"shop":"//shop.yhd.com","busystock":"//gps.yhd.com","cms":"//cms.yhd.com","img":"//image.yihaodian.com","pms":"//pms.yhd.com","my_statics":"//static.yihaodian.com/member","passportmall":"https://passport.1mall.com","shoping_pms":"//pms.yihaodian.com","shoping_shop":"//shop.yhd.com","search":"//search.yhd.com","sitedomain":".yhd.com","tryUrl":"//try.yhd.com","shoping_self":"//www.yhd.com","tracker":"tracker.yhd.com","commentZoneMall":"//e.1mall.com/front-pe","productDetailHost":"//www.yhd.com","central":"//www.yhd.com","search_list":"//search.yhd.com","cartDomain":"//cart.yhd.com","footFriendLink":"//www.yhd.com/friendlink/index.do","centralShop":"//shop.yhd.com","shoping_passport":"https://passport.yhd.com","shoping_my_statics":"//static.yihaodian.com/statics","uploadPostUrl":"//upload.yihaodian.com/upload/UploadAction","shoping_my":"//my.yhd.com","shoping_search":"//search.yhd.com:80","shoping_opposite":"//www.1mall.com","shoping_central":"//www.yhd.com","my":"//my.yhd.com","search_keyword":"//search.yhd.com","mymall":"//my.1mall.com","selfroot":"//www.yhd.com","products_stock":"//gps.yhd.com/busystock","sitedomainmall":".1mall.com","item":"//item.yhd.com/","tuangou":"//www.yhd.com/tuangou/index.do","commentZoneYhd":"//e.yhd.com/front-pe","centralImgDomain":".yihaodianimg.com","productDetailUrl":"//www.yhd.com","passport":"https://passport.yhd.com","statics":"//img.yihaodianimg.com/cart","mobile":"http://m.yhd.com","mall":"//www.1mall.com"};
+var headerType="base";
+var imagePath="//img.yihaodianimg.com/cart/global/images";
+var currSiteId=1;
+var currSiteType=1;
+var globalEnv="PRODUCTION";
+var siteStyle=1;
+var siteFlag=0;
+var isIndex = 0;
+var indexFlag= 0;
+var currProvinceId=0;
+var currVersionNum= "c1236a0";
+var lazyLoadImageObjArry = lazyLoadImageObjArry || [];
+var isFixTopNav = false;
+
+
+(function(flag) {
+  if (flag) {
+    window.globalPrismFlag = '1';
+    window.globalPrismFeedbackURL = '//cms.yhd.com/cms/view.do?topicId=43';
+    window.globalPrismQRName = '';
+    window.globalPrismQRTitle = '手机购物更优惠';
+    window.globalPrismQRPng = '//img.yihaodianimg.com/front-homepage/index/images/qryhd.png';
+    window.globalPrismMemberLink = '//home.yhd.com/myyhdindex/index.do';
+    window.globalPrismCartLink = '//cart.yhd.com/cart/cart.do';
+    window.globalPrismCouponLink = '//coupon.yhd.com/myCoupon';
+    window.globalPrismTopAdvFlag = '1';
+  }
+})(false);
+<!--增加一个开关来控制是否显示搜索框下拉,为时才不调用-->
+<!--搜索热词开关-->
+
+<!--用于控制宽窄屏属性-->
+var isWidescreen=(screen.width>=1280);
+
+<!--过滤-->
+    var SensitiveWords = "【京东配送】=,【京东超市】=,京东海外直采=海外直采,京东配送=,京东自营=自营,京东超市=,JD超市=";
+
+</script>
+<!--js end-->
+
+<script type="text/javascript" charset="UTF-8" src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/login_frame_client.js"></script></head>
+
+<body id="comParamId" data-param="{&quot;globalPageCode&quot;:&quot;-1&quot;,&quot;currPageId&quot;:&quot;-1&quot;}" class="">
+
+<div class="hd_header_wrap">
+<div class="hd_top_bar">
+  <div class="wrap clearfix">
+      <a href="https://www.yhd.com/" class="hd_topbar_home">
+      <i class="hd_iconfont"></i>
+      <span>1号店首页</span>
+    </a>
+
+<div class="" id="headerSelectProvince" clstag="pageclick|keycount|global_201709226|1"></div>
+    <div class="hd_topbar_right">
+      <ul>
+        <li id="global_unlogin">
+          <div class="hd_unlogin">
+            <span class="hd_hi">Hi,请</span>
+            <a href="https://passport.yhd.com/passport/login_input.do" class="hd_login_link" clstag="pageclick|keycount|global_201709226|2">登录&nbsp;</a>
+            <a href="https://passport.yhd.com/passport/register_input.do" class="hd_regist_link" clstag="pageclick|keycount|global_201709226|3">&nbsp;注册</a>
+          </div>
+        </li>
+        <li id="global_login" class="hd_has_child" style="display:none" data-type="2017" clstag="pageclick|keycount|global_201709226|4">
+          <div class="hd_login">
+            <span class="hd_hi">Hi,</span>
+            <a href="https://home.yhd.com/myyhdindex/index.do" target="_blank" class="hd_login_name">__nickName__</a>
+            <a href="https://vip.yhd.com/" target="_blank" class="hd_vip hd_vip__gradeStyle__">__gradeDesc__</a>
+            <i class="hd_iconfont"></i>
+          </div>
+          <div class="hd_user_privilege">
+            <a href="javascript:;" class="hd_login_out">退出</a>
+            <div class="clearfix">
+
+            </div>
+            <div class="hd_privilege_tit"><span>我可尊享<em>5</em>项特权</span></div>
+            <div class="hd_privilege_wrap hd_privilege_slide">
+              <a href="javascript:;" class="prev_btn hd_iconfont"></a>
+              <div class="hd_privilege clearfix">
+                <div class="hd_privilege_list" style="left: -60px; margin-left: 0px;">
+
+                </div>
+              </div>
+              <a href="javascript:;" class="next_btn hd_iconfont"></a>
+            </div>
+          </div>
+        </li>
+        <li clstag="pageclick|keycount|global_201709226|5">
+          <div class="hd_menu hd_notice" id="hdUserMsg" style="display: none" data-cfg="1">
+            <a href="https://edm.yhd.com/pcMsg/myMessage.action;" rel="nofollow" target="_blank">我的消息&nbsp;(<em class="hd_has_num">0</em>)</a>
+          </div>
+        </li>
+        <li clstag="pageclick|keycount|global_201709226|6">
+          <div class="hd_menu">
+            <a href="https://home.yhd.com/order/toOrderList.do" target="_blank" rel="nofollow"><i class="hd_iconfont"></i>我的订单</a>
+          </div>
+        </li>
+        <li class="hd_has_child" clstag="pageclick|keycount|global_201709226|7">
+          <div class="hd_menu">
+            <a href="https://cms.yhd.com/cms/view.do?topicId=43" target="_blank">客户服务</a>
+            <i class="hd_iconfont"></i>
+          </div>
+            <div class="hd_menu_list">
+        <a href="https://home.yhd.com/order/toOrderList.do" target="_blank" title="包裹跟踪">包裹跟踪</a>
+        <a href="https://rma.yhd.com/return/returnApplyList.do" target="_blank" title="在线退换货">在线退换货</a>
+            </div>
+        </li>
+          <li class="hd_has_child">
+              <div class="hd_menu">
+                  <a href="https://b2b.yhd.com/index.do" target="_blank">企业服务</a>
+              </div>
+                  <div class="hd_menu_list">
+                  </div>
+          </li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+</div><!--content start-->
+<script type="text/javascript">
+console || function(){var console={};console.log=function(){};};
+        function ready(fn){
+            if(document.addEventListener) {
+                document.addEventListener('DOMContentLoaded', function() {
+                    //注销事件, 避免反复触发
+                    document.removeEventListener('DOMContentLoaded',arguments.callee, false);
+                    fn();            //执行函数
+                }, false);
+            }else if(document.attachEvent) {        //IE
+                document.attachEvent('onreadystatechange', function() {
+                    if(document.readyState == 'complete') {
+                        document.detachEvent('onreadystatechange', arguments.callee);
+                        fn();        //函数执行
+                    }
+                });
+            }
+        };
+
+        ready(function() {
+            document.getElementById('headerSelectProvince').innerHTML='';
+            document.getElementById('headerSelectProvince').setAttribute('class','');
+            
+            //网盟
+			window.synccookie.dosync('unpl');
+            var isSmallscreen=screen.width <= 1280;
+   			if(isSmallscreen){
+   				document.getElementsByTagName("body")[0].className="w980";
+   			}
+        });
+</script>	<div class="yhd_cart_content">
+
+<div class="cart_header  wrap clearfix">
+    <h1>        
+        <a href="https://www.yhd.com/" class="logo"></a>
+        <a href="javascript:;" class="logo_txt"></a>
+    </h1>
+    <!-- 三级地址选择 strat-->
+    <div class="area_wrapper">
+        <span class="area_txt">配送至：</span>
+        <div class="mod_area_select" style="position: relative; top: 0px;">
+            <div class="address" id="completed_address" data-tpa="CART_ADDRESS_AREA">
+                <span class="val_text" id="detail_area_name">北京<i>|</i>昌平区<i>|</i>六环以内</span>
+                <i class="btn_arrow"></i>
+            </div>
+            <div class="tab_box none" style="display: none;">
+                <a href="javascript:;" class="close"></a>
+                <div class="tabs clearfix">
+                    <span class="on"><em>北京</em></span>
+                    <span value=""><em>昌平区</em></span>
+                    <span value=""><em>六环以内</em></span>
+                </div>
+                <div class="area_box">
+                    <div class="item first_area" style="display: block;">
+                        <dl class="clearfix">
+                            <dt>华北：</dt>
+                            <dd value="1" name="cart_province" data-val="北京" class="on">北京</dd>
+                            <dd value="3" name="cart_province" data-val="天津">天津</dd>
+                            <dd value="5" name="cart_province" data-val="河北">河北</dd>
+                            <dd value="6" name="cart_province" data-val="山西">山西</dd>
+                            <dd value="11" name="cart_province" data-val="内蒙古">内蒙古</dd>
+                        </dl>
+                        <dl class="clearfix">
+                            <dt>华东：</dt>
+                            <dd value="2" name="cart_province" data-val="上海">上海</dd>
+                            <dd value="12" name="cart_province" data-val="江苏">江苏</dd>
+                            <dd value="15" name="cart_province" data-val="浙江">浙江</dd>
+                            <dd value="14" name="cart_province" data-val="安徽">安徽</dd>
+                            <dd value="16" name="cart_province" data-val="福建">福建</dd>
+                            <dd value="13" name="cart_province" data-val="山东">山东</dd>
+                        </dl>
+                        <dl class="clearfix">
+                            <dt>华南：</dt>
+                            <dd value="19" name="cart_province" data-val="广东">广东</dd>
+                            <dd value="20" name="cart_province" data-val="广西">广西</dd>
+                            <dd value="23" name="cart_province" data-val="海南">海南</dd>
+                        </dl>
+                        <dl class="clearfix">
+                            <dt>华中：</dt>
+                            <dd value="21" name="cart_province" data-val="江西">江西</dd>
+                            <dd value="7" name="cart_province" data-val="河南">河南</dd>
+                            <dd value="17" name="cart_province" data-val="湖北">湖北</dd>
+                            <dd value="18" name="cart_province" data-val="湖南">湖南</dd>
+                        </dl>
+                        <dl class="clearfix">
+                            <dt>西南：</dt>
+                            <dd value="4" name="cart_province" data-val="重庆">重庆</dd>
+                            <dd value="22" name="cart_province" data-val="四川">四川</dd>
+                            <dd value="24" name="cart_province" data-val="贵州">贵州</dd>
+                            <dd value="25" name="cart_province" data-val="云南">云南</dd>
+                            <dd value="26" name="cart_province" data-val="西藏">西藏</dd>
+                        </dl>
+                        <dl class="clearfix">
+                            <dt>西北：</dt>
+                            <dd value="27" name="cart_province" data-val="陕西">陕西</dd>
+                            <dd value="28" name="cart_province" data-val="甘肃">甘肃</dd>
+                            <dd value="29" name="cart_province" data-val="青海">青海</dd>
+                            <dd value="30" name="cart_province" data-val="宁夏">宁夏</dd>
+                            <dd value="31" name="cart_province" data-val="新疆">新疆</dd>
+                        </dl>
+                        <dl class="clearfix">
+                            <dt>东北：</dt>
+                            <dd value="8" name="cart_province" data-val="辽宁">辽宁</dd>
+                            <dd value="9" name="cart_province" data-val="吉林">吉林</dd>
+                            <dd value="10" name="cart_province" data-val="黑龙江">黑龙江</dd>
+                        </dl>
+                    </div>
+                    <div class="item second_area hide">
+                        <dl class="clearfix" id="cart_city_area">
+                        </dl>
+                    </div>
+                    <div class="item third_area hide" id="cart_county_area">
+                        <dl class="clearfix" id="county_city_area">
+                        </dl>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 三级地址选择 end-->
+    <!-- 搜索框 start -->
+    <div class="search">
+        <input id="keyword" placeholder="请输入关键词" type="text"><a id="search" href="javascript:void(0);" class="search_btn iconfont"></a>
+    </div>
+    <!-- 搜索框 end -->
+</div><script id="dot-messageWrap" type="text/x-dot-template">
+	<!-- 活动消息, 新版购物车里只放入通知类的提示-->
+	{{? it != null }}
+		{{= it}}
+	{{?}}
+</script>
+    <div class="top_tip wrap none" clstag="pageclick|keycount|cart_201709267|5" style="display: none;">
+        <p></p>
+    </div>
+	    <!--商品展示 start-->
+<div id="cart_main_body" data-tpa="CART_BODY"><input name="cart_province_id" id="cart_province_id" value="1" type="hidden"><input name="cart_province_name" id="cart_province_name" value="北京" type="hidden"><input name="cart_city_id" id="cart_city_id" value="2901" type="hidden"><input name="cart_city_name" id="cart_city_name" value="昌平区" type="hidden"><input name="cart_county_id" id="cart_county_id" value="4135" type="hidden"><input name="cart_county_name" id="cart_county_name" value="六环以内" type="hidden"><input name="cart_county_id" id="cart_town_id" type="hidden"><input name="cart_county_name" id="cart_town_name" type="hidden"><!-- 空购物车--><div class="pop_serial_gift"></div>     <div class="wrap" data-tpa="CART_ITEM_LIST"> <div class="cart_list_header cart_wrap cart_tit"> <span class="checkbox"><a href="javascript:;" class="check check_all checked" data-check-type="1" clstag="pageclick|keycount|cart_201709267|2"><i class="iconfont"></i></a>全选</span> <span class="tit">商品信息</span> <span class="price">单价（元）</span> <span class="num">数量</span> <span class="total">小计（元）</span> <span class="act">操作</span> </div> <div class="cart_list">  <!-- 楼层头 start --> <div class="cart_tit clearfix" data-merchant-id="8888"> <span class="checkbox" clstag="pageclick|keycount|cart_201709267|8"><a href="javascript:;" class="check check_list checked" data-check-type="1"><i class="iconfont"></i></a></span>  <a target="_blank" href="https://www.yhd.com/" class="label">自营</a>     <!-- 已免邮 --> <div class="free_pos"> <i class="iconfont"></i>已免邮 <a href="javascript:;" class="help"> <i class="iconfont"></i> <div class="help_dialog"> <div class="t_arrow t_arrow_top"> <span></span> <i></i> </div> <p>受具体配送地址影响，精确结算运费以结算页为准</p> </div> </a> </div>  </div> <div id="merchant_8888_makeup" class="sale_prod_cont similar_prod makeup_prod dialog pop_zIndexMore"></div> <div class="cart_list_wrap zy">                <ul class="cart_item activity"> <li class="cart_activity"> <div class="cart_prod "> <a href="javascript:;" class="check check_activity checked" data-check-type="1"><i class="iconfont"></i></a> <div id="activity205194993" class="activity_wrap  satisfy"> <em class="line_ver"></em> <span class="tag">换购</span> <span class="tit">指定商品购买1件可优惠换购热销商品</span>  <em class="cut"></em>  <span class="state">   <i class="iconfont"></i> 已购满<em class="has">1</em>件      ，可优惠换购      </span>  <a href="javascript:;" class="quick_makeup change_free" data-promotionid="205194993">换购商品<i></i></a>     </div> </div></li>      <li data-identifier="eb2a79f3-69ea-44d4-a33e-75c4b9096f16" class="item item_line main_item clearfix"> <div class="cart_prod clearfix">   <em class="line_ver"></em>     <a href="javascript:;" class="check check_item checked nofresh normal_item" data-check-type="1" data-checkout-type="0" data-sku-id="1454460" data-pkg-skus-id="" data-sku-weight="0.54" data-sku-category="670;686;689" clstag="pageclick|keycount|cart_201709267|12"> <i class="iconfont"></i> </a>  <a href="https://item.yhd.com/1454460.html" target="_blank" class="item_pic"> <img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/5a1d4ba9N832d9e0e.jpg" max-width="75" max-height="75" clstag="pageclick|keycount|cart_201709267|11"> </a> <a href="https://item.yhd.com/1454460.html" target="_blank" class="item_tit" clstag="pageclick|keycount|cart_201709267|11">    雷柏（Rapoo） 9300P 无线鼠标键盘套装 无线键盘鼠标套装 无线键鼠套装 电脑键盘 笔记本键盘 纤薄键盘 白色 </a>       <!-- 单价及价格标签 --> <div class="item_price"> <p>169.00</p> </div> <!-- 数量 -->  <div class="item_num" data-sku-id="1454460"> <div class="num_act clearfix"> <a href="javascript:;" class="minus unable" data-min="1" clstag="pageclick|keycount|cart_201709267|13">−</a> <input class="input" value="1" clstag="pageclick|keycount|cart_201709267|15" type="text"> <a href="javascript:;" class="add" data-num="1" clstag="pageclick|keycount|cart_201709267|14">+</a> </div>  <span class="stock partial limit"></span> </div> <div class="item_amount">  <div class="item_a_money">169.00</div>  <div class="item_a_weight">0.54kg</div> </div> <div class="item_act"> <!--单品-->  <!-- 套装-->  <!-- 满减 -->  <!-- 满赠 -->  <a href="javascript:;" class="del_btn" data-delete-id="promotion_1454460_13_205194993" clstag="pageclick|keycount|cart_201709267|16"><i class="iconfont"></i></a>  </div> <div class="prop_edit">   <div class="prop_server prop_server_orange">  <i class="seven_icon"></i> <div class="server_tips"> <div class="t_arrow t_arrow_top"><span></span><i></i></div> <span class="t_txt">支持7天无理由退货</span> </div> </div>   <div class="prop_txt tip_trigger serial_product" data-sku-id="1454460"> <i class="iconfont"></i>  <div class="t_arrow t_arrow_top"><span></span><i></i></div> <span class="attributeName">白色</span> <span class="attributeName">9300P【高端无线】</span> </div> <div class="prop_dialog tip_dialog dialog pop_zIndexMore"></div> </div> </div> <!-- 组合子品 start-->  <!-- 组合子品 end--> <!-- 单品赠品 start-->      <!-- 单品赠品 end-->   </li>  </ul>   </div> <div class="cart_amount"> <div class="amount">商品总价：<span><em>¥</em>169</span></div> </div> </div> </div> </div>
+<script id="cart_main_body_dot" type="text/x-dot-template">
+<div id="cart_main_body" data-tpa="CART_BODY">
+<input type="hidden" name='cart_province_id' id='cart_province_id'/>
+<input type="hidden" name='cart_province_name' id='cart_province_name'/>
+<input type="hidden" name='cart_city_id' id='cart_city_id'/>
+<input type="hidden" name='cart_city_name' id='cart_city_name'/>
+<input type="hidden" name='cart_county_id' id='cart_county_id'/>
+<input type="hidden" name='cart_county_name' id='cart_county_name'/>
+<input type="hidden" name='cart_county_id' id='cart_town_id'/>
+<input type="hidden" name='cart_county_name' id='cart_town_name'/>
+<!-- 空购物车-->
+{{##def.emptyCart:
+    <!-- 空态 start -->
+	<div class="empty">
+        {{? cartVO.login}}
+        <div class="no_prod clearfix">
+            <div class="img_wrap">
+                <img src="/statics/shopping/pc/images/no_goods.gif" width="300" height="300">
+            </div>
+            <div class="info">
+                <p>{{? cartVO.isMedicineCart}}需求清单还是空的呢，快去装满吧~{{??}}购物车还是空的呢，快去采购吧~{{?}}</p>
+                <div class="btn_box">
+                    <a href="//www.yhd.com" class="confirm">去逛逛</a>
+                </div>
+            </div>
+        </div>
+        {{??}}
+        <div class="no_prod offline clearfix">
+            <div class="img_wrap">
+                <img src="/statics/shopping/pc/images/offline.gif" width="300" height="300">
+            </div>
+            <div class="info">
+                <p>{{? cartVO.isMedicineCart}}需求清单还是空的呢，快去装满吧~<br>或者登录查看之前加入的药品。{{??}}购物车还是空的呢，快去采购吧~<br>或者登录查看之前加入的商品。{{?}}</p>
+                <div class="btn_box">
+                    <a href="javascript:yhdPublicLogin.showLoginDiv('', false, '1');" class="confirm" clstag="pageclick|keycount|cart_201709267|6">登录</a>
+                    <a href="//www.yhd.com" class="cancel" clstag="pageclick|keycount|cart_201709267|7">去逛逛</a>
+                </div>
+            </div>
+        </div>
+        {{?}}
+    </div>
+    <!-- 空态 end -->
+#}}<div class="pop_serial_gift"></div>
+{{##def.cartTit:
+    <!-- 楼层头 start -->
+    <div class="cart_tit clearfix" data-merchant-id="{{=venderCart.popInfo.venderId}}">
+        <span class="checkbox" clstag="pageclick|keycount|cart_201709267|8"><a href="javascript:;" class="check check_list {{?venderCart.checkType==1}}checked{{??venderCart.checkType==2}}filter_box{{?}}" data-check-type="{{=venderCart.checkType}}"><i class="iconfont">&#xe623;</i></a></span>
+        {{? venderCart.popInfo.venderId == 8888}}
+          <a target="_blank" href="//www.yhd.com" class="label">自营</a>
+        {{?? venderCart.popInfo.venderType==2}}
+          <a target="_blank" href="javascript:;" class="label">{{=venderCart.popInfo.venderName}}</a>
+         {{?? venderCart.popInfo.venderId == 8899}}
+          <a target="_blank" href="javascript:;" class="label">{{=venderCart.popInfo.venderName}}</a>
+        {{??}}
+         <a target="_blank" href="javascript:;" class="label vender">{{=venderCart.popInfo.venderName}}</a>
+         <a id="{{=venderCart.popInfo.venderId}}" target="_blank" href="//chat.jd.com/chat/index.action?venderId={{=venderCart.popInfo.venderId}}&pid=&customerAppId=yhd.customer&entry=jd_web_yhd_item&loginToken={{=cartVO.loginToken}}&fp={{=cartVO.fp}}&aspid=110.102.0000001.01" class="service btn-im"></a>
+         </span>
+        {{?}}
+
+        {{? venderCart.popInfo.venderId != 8888}}
+            <span class=" show1mallIM" onclick="gotracker('2','1mallcartim',null)"></span>
+        {{?}}
+        {{? venderCart.popInfo.venderId != 8888}}
+        		<div id="coupon" class="coupon quickly_coupon none" data-merchant-id="" >
+                    <a href="javascript:;" class="tip_trigger tag">优惠券<em></em>                        
+                        <div class="t_arrow t_arrow_top"><span></span><i></i></div>
+                    </a>
+                    <div class="tip_dialog coupon_dialog">
+                    	
+                    </div>
+                </div>
+        {{?}}
+        {{? !venderCart.freight}}
+        {{?? venderCart.freight != "0"}}
+            <div class="order_makeup">
+                <!-- 隐藏变量，用来保存凑单按钮点击前的包邮提示 -->
+                <input type="hidden" id="hidden_delivery_fee_desc_{{=venderCart.popInfo.venderId}}" value="满86元包邮（重量不超过20公斤）"/>
+                <div class="makeup_tip" data-merchant-id={{=venderCart.popInfo.venderId}}>
+                    {{? venderCart.popInfo.venderId == 8888}}
+                        满86元包邮（重量不超过20公斤）
+                    {{??}}
+                        运费{{=venderCart.freight}}元
+                    {{?}}
+                        <a href="javascript:;" class="help">
+                            <i class="iconfont">&#xe620;</i>
+                            <div class="help_dialog">
+                                <div class="t_arrow t_arrow_top">
+                                    <span></span>
+                                    <i></i>
+                                </div>
+                                <p>受具体配送地址影响，精确结算运费以结算页为准</p>
+                            </div>
+                        </a>
+
+                </div>
+                {{? venderCart.popInfo.venderId == 8888}}
+                    <a href="javascript:;" id="merchant_{{=venderCart.popInfo.venderId}}" data-merchant-id="{{=venderCart.popInfo.venderId}}" class="order_makeup_btn tip_trigger" clstag="pageclick|keycount|cart_201709267|9">立即凑单<i class="iconfont"></i></a>
+                {{?}}
+            </div>
+        {{??}}
+            <!-- 已免邮 -->
+            <div class="free_pos">
+                <i class="iconfont">&#xe614;</i>已免邮
+                <a href="javascript:;" class="help">
+                    <i class="iconfont">&#xe620;</i>
+                    <div class="help_dialog">
+                        <div class="t_arrow t_arrow_top">
+                            <span></span>
+                            <i></i>
+                        </div>
+                        <p>受具体配送地址影响，精确结算运费以结算页为准</p>
+                    </div>
+                </a>
+            </div>
+        {{?}}
+    </div>
+    <div id="merchant_{{=venderCart.popInfo.venderId}}_makeup" class="sale_prod_cont similar_prod makeup_prod dialog "></div>
+#}}{{##def.outputItemGroup:itemGroup:
+    {{? itemGroup.type==1}}
+        <ul class="cart_item">
+            {{#def.outputCartItems:itemGroup.cartItems}}
+        </ul>
+    {{?? itemGroup.type==2}}
+        <div class="goods_package">
+            {{#def.outputSuitPromo:itemGroup.suit}}
+
+             <ul class="cart_item unable">
+            {{#def.outputCartItems:itemGroup.cartItems}}
+             </ul>
+        </div>
+    {{?? itemGroup.type==3}}
+        <ul class="cart_item activity">
+            {{#def.outputManSuitPromo:itemGroup.promotion}}
+            {{#def.outputCartItems:itemGroup.cartItems}}
+        </ul>
+    {{?}}
+#}}
+
+{{##def.outputSuitPromo:suit:
+<div class="goods_pkg_tit">
+    <ul class="cart_item">
+        <li class="item main_item" data-identifier="{{=suit.id}}" data-item-type="{{=suit.itemType}}">
+            <div class="cart_prod clearfix">
+                {{ var pkgskus = "";}}
+                {{~ suit.products:product:index}}
+                    {{pkgskus = pkgskus + product.sku.id;}}
+                    {{? index < suit.products.length - 1}}
+                        {{pkgskus = pkgskus + ",";}}
+                    {{?}}
+                {{~}}
+                <a href="javascript:;" class="check check_item {{? suit.checkType == 1}}checked{{??suit.checkType==2}}filter_box{{?}}{{? suit.sku.fresh}} fresh{{??}} nofresh{{?}}"
+                   data-check-type="{{=suit.checkType}}"
+                   data-sku-id="{{=pkgskus}}"
+                   data-sku-category="{{=item.sku.category}}"
+                   clstag="pageclick|keycount|cart_201709267|12"
+                >
+                    <i class="iconfont"></i>
+                </a>
+                <a href="{{?suit.sku.prdUrl==''}}javascript:void(0);{{??}}{{=suit.sku.prdUrl}}{{?}}" target="_blank" class="item_tit" clstag="pageclick|keycount|cart_201709267|11"><span class="pkg_tag">套装</span>{{=suit.sku.name}}</a>
+
+                {{#def.activityDropList:suit}}
+
+                <div class="item_price"><p>{{=suit.sku.price}}</p></div>
+
+                <!-- 数量 -->
+                {{
+                var readOnly="";
+                var minusUnable="";
+                var addUnable="";
+                if (suit.num == 1 || suit.sku.shoppingCount >= suit.num) {
+                minusUnable=" unable";
+                }
+                if (suit.num>=200) {
+                addUnable=" unable";
+                }
+                }}
+                <div class="item_num" data-sku-id="{{=item.sku.id}}">
+                    <div class="num_act clearfix"">
+                        <a class="minus{{=minusUnable}}"  href="javascript:;" clstag="pageclick|keycount|cart_201709267|13">−</a>
+                        <input type="text" class="input" value="{{=suit.num}}" clstag="pageclick|keycount|cart_201709267|15">
+                        <a class="add{{=addUnable}}"  href="javascript:;" data-actmax="1" clstag="pageclick|keycount|cart_201709267|14">+</a>
+                    </div>
+                    {{? item.sku.shoppingCount > 1}}
+                        <span class="stock">{{=item.sku.shoppingCount}}件起购</span>
+                    {{?}}
+                    <span class="stock partial limit"></span>
+                </div>
+                <div class="item_amount">
+                    <div class="item_a_money">{{=suit.sumPrice}}</div>
+                </div>
+                <div class="item_act">
+                    <a href="javascript:;" class="del_btn" data-delete-id="normal_{{=suit.promotionId}}_{{=suit.itemType}}" clstag="pageclick|keycount|cart_201709267|16"><i class="iconfont">&#xe619;</i></a>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+#}}
+
+{{##def.outputManSuitPromo:promotion:
+<li class="cart_activity">
+    <div class="cart_prod ">
+        <a href="javascript:;" class="check check_activity {{?itemGroup.checkType==1}}checked{{??itemGroup.checkType==2}}filter_box{{?}}" data-check-type="{{=itemGroup.checkType}}"><i class="iconfont">&#xe623;</i></a>
+        <div id="activity{{=promotion.id}}" class="activity_wrap {{? promotion.hasGift}}has_free{{?}} {{? promotion.isSatisfy }}satisfy{{?}}"  >
+            <em class="line_ver"></em>
+            <span class="tag">{{?promotion.multiPromotion}}跨店铺{{?}}{{=promotion.typeName}}</span>
+            <span class="tit">{{=promotion.description}}</span>
+            {{? promotion.type == 5 && promotion.fullRefundType == 24 && !itemGroup.hasCheckedItem}}
+            {{??}}
+                <em class="cut"></em>
+            {{?}}
+            <span class="state">
+                {{? itemGroup.hasCheckedItem}}
+                    {{?promotion.needMore.amount>0}}
+                        已购<em class="has">{{=promotion.curProgress.amount}}</em>{{=promotion.curProgress.cnUnit}}，还差<em>{{=promotion.needMore.amount}}</em>{{=promotion.needMore.cnUnit}}
+                    {{??}}
+                        <i class="iconfont">&#xe614;</i>
+                        已购满<em class="has">{{=promotion.curProgress.amount}}</em>{{=promotion.curProgress.cnUnit}}
+                    {{?}}
+
+                    {{?promotion.isSatisfy}}
+                        {{? promotion.type==1}}
+                        ，已减<em>{{=promotion.savedAmount}}</em>元
+                        {{?? promotion.type==2}}
+                        ，活动商品已享{{=promotion.rebate.toFixed(1)}}折
+                        {{?? promotion.type==3}}
+                        ，已享优惠
+                        {{?? promotion.type==4}}
+                            {{? promotion.hasGiftToClaim}}
+                                {{?promotion.selectedGifts.length==0}}
+                                ，可领取赠品
+                                {{??}}
+                                ，已领取{{=promotion.selectedGifts.length}}件赠品，还可领取{{=promotion.giftToClaimNum}}件赠品
+                                {{?}}
+                            {{??}}
+                                ，已领取赠品
+                            {{?}}
+                        {{?? promotion.type==5}}
+                            {{? promotion.hasGiftToClaim}}
+                                {{?promotion.selectedGifts.length==0||promotion.giftNotLimited}}
+                                ，可优惠换购
+                                {{??}}
+                                ，已换购{{=promotion.selectedGifts.length}}件商品，还可换购{{=promotion.giftToClaimNum}}件商品
+                                {{?}}
+                            {{??}}
+                                ，已优惠换购
+                            {{?}}
+                        {{?}}
+                    {{?}}
+                {{?}}
+            </span>
+
+            {{?promotion.hasGiftToClaim&&itemGroup.hasCheckedItem}}
+            <a href="javascript:;" class="quick_makeup change_free" data-promotionid="{{=promotion.id}}">{{?promotion.type==5}}换购商品{{??}}领取赠品{{?}}<i></i></a>
+            {{?}}
+
+            {{? promotion.totalAmountAfterPromote && itemGroup.hasCheckedItem}}
+            <span class="price"><em>优惠价：</em>{{=promotion.totalAmountAfterPromote}}</span>
+            {{?}}
+            {{? (promotion.type ==5 && promotion.fullRefundType == 24) || promotion.fullRefundType == 20 || promotion.fullRefundType == 23}}
+            {{??}}
+                <a class="go_activ" href="{{=promotion.promoUrl}}" target="_blank" clstag="pageclick|keycount|cart_201709267|20" >查看活动&nbsp;&gt;</a>
+            {{?}}
+        </div>
+    </div>
+</li>
+#}}
+
+{{##def.outputCartItems:items:
+    {{~ items:item:itemIndex}}
+        {{
+            var hasNext=itemIndex < items.length-1;
+            var hasPromotion=!!itemGroup.promotion;
+            var hasGroupGift=itemGroup.gifts&&itemGroup.gifts.length>0;
+        }}
+        {{#def.outputCartItem:item}}
+    {{~}}
+#}}
+
+{{##def.outputCartItem:item:
+    {{var showNoStock=!item.sku.hasStock&&!(item.presellVO&&(item.presellVO.status==2||item.presellVO.status==3));}}
+   <li data-identifier="{{=item.id}}" class="item item_line main_item {{? hasNext || hasGroupGift}}hasNext{{??}}clearfix{{?}} {{? item.unable || !item.sku.hasStock}}unable_item{{?}}">
+       <div class="cart_prod{{? item.unable || showNoStock}} unable{{?}} clearfix">
+           {{? itemGroup.type!=2}}
+               {{? hasPromotion && itemIndex >= 0}}
+                 <em class="line_ver"></em>
+               {{?}}
+               {{? hasNext || hasGroupGift}}
+                 <em class="line_ver l2"></em>
+               {{?}}
+               {{ var pkgskus = "";}}
+               {{? item.itemType == 24 || item.itemType == 29}}
+                 {{~ item.products:product:index}}
+                   {{pkgskus = pkgskus + product.sku.id;}}
+                   {{? index < item.products.length - 1}}
+                     {{pkgskus = pkgskus + ",";}}
+                   {{?}}
+                 {{~}}
+               {{?}}
+               <a href="javascript:;" class="check check_item {{? item.checkType == 1}}checked{{??item.checkType==2}}filter_box{{?}}{{? item.sku.fresh}} fresh{{??}} nofresh{{?}}{{? item.sku.oversea}} oversea{{?}} normal_item"
+                  data-check-type="{{=item.checkType}}"
+                  data-checkout-type="{{? item.sku.oversea}}1{{??}}0{{?}}"
+                  data-sku-id="{{=item.sku.id}}"
+                  data-pkg-skus-id="{{=pkgskus}}"
+                  data-sku-weight="{{=item.sku.weight}}"
+                  data-sku-category="{{=item.sku.category}}"
+                  clstag="pageclick|keycount|cart_201709267|12"
+               >
+                 <i class="iconfont">&#xe623;</i>
+               </a>
+           {{?}}
+           <a href="//item.yhd.com/{{=item.sku.id}}.html" target="_blank" class="item_pic">
+               <img src="{{=item.sku.imgUrl}}" max-width="75" max-height="75" clstag="pageclick|keycount|cart_201709267|11">{{? showNoStock}}<em>无效</em>{{?}}
+           </a>
+
+           <a href="//item.yhd.com/{{=item.sku.id}}.html" target="_blank" class="item_tit" clstag="pageclick|keycount|cart_201709267|11">
+               {{?item.products}}
+               <span class="pkg_tag">套装</span>
+               {{?}}
+               {{? item.sku.fresh}}
+               <span class="fresh_tag">生鲜</span>
+               {{?}}
+               {{? item.sku.oversea}}
+               <span class="hg_tag">海购</span>
+               {{?}}
+               {{=item.sku.name}}
+           </a>
+
+           {{#def.activityDropList:item}}
+
+           <!-- 单价及价格标签 -->
+           <div class="item_price">
+               <p>{{? itemGroup.type!=2}}{{=item.sku.price}}{{?}}</p>
+           </div>
+
+           <!-- 数量 -->
+           {{
+               var readOnly="";
+               var minusUnable="";
+               var addUnable="";
+               if (item.num == 1 || item.sku.shoppingCount >= item.num||item.itemType==5) {
+                 minusUnable=" unable";
+               }
+               if (item.num>=200||item.itemType==5) {
+                 addUnable=" unable";
+               }
+           }}
+           <div class="item_num" data-sku-id="{{=item.sku.id}}">
+               <div class="num_act clearfix">
+                   <a href="javascript:;" class="minus{{=minusUnable}}" data-min="{{=item.sku.shoppingCount}}" clstag="pageclick|keycount|cart_201709267|13">−</a>
+                   <input type="text" class="input" value="{{=item.num}}" clstag="pageclick|keycount|cart_201709267|15"/>
+                   <a href="javascript:;" class="add{{=addUnable}}" data-num="1" clstag="pageclick|keycount|cart_201709267|14">+</a>
+               </div>
+               {{? item.sku.shoppingCount > 1}}
+               <span class="stock">{{=item.sku.shoppingCount}}件起购</span>
+               {{?}}
+               <span class="stock partial limit"></span>
+           </div>
+
+           <div class="item_amount">
+               {{? itemGroup.type!=2}}
+               <div class="item_a_money">{{=(item.sku.price * item.num).toFixed(2)}}</div>
+               {{?}}
+               <div class="item_a_weight">{{=(item.sku.weight * item.num).toFixed(2)}}kg</div>
+           </div>
+
+           <div class="item_act">
+               <!--单品-->
+               {{? item.itemType == 1}}
+               <a href="javascript:;" class="del_btn" data-delete-id="normal_{{=item.sku.id}}_{{=item.itemType}}" clstag="pageclick|keycount|cart_201709267|16"><i class="iconfont">&#xe619;</i></a>
+               {{?}}
+               <!-- 套装-->
+               {{? item.itemType == 24||item.itemType==29}}
+               <a href="javascript:;" class="del_btn" data-delete-id="promotion_{{=item.sku.id}}_{{=item.itemType}}_{{=itemGroup.promotion.id}}" clstag="pageclick|keycount|cart_201709267|16"><i class="iconfont">&#xe619;</i></a>
+               {{?}}
+               <!-- 满减 -->
+               {{? item.itemType == 11}}
+               <a href="javascript:;" class="del_btn" data-delete-id="promotion_{{=item.sku.id}}_{{=item.itemType}}_{{=itemGroup.promotion.id}}" clstag="pageclick|keycount|cart_201709267|16"><i class="iconfont">&#xe619;</i></a>
+               {{?}}
+               <!-- 满赠 -->
+               {{? item.itemType == 13}}
+               <a href="javascript:;" class="del_btn" data-delete-id="promotion_{{=item.sku.id}}_{{=item.itemType}}_{{=itemGroup.promotion.id}}" clstag="pageclick|keycount|cart_201709267|16"><i class="iconfont">&#xe619;</i></a>
+               {{?}}
+           </div>
+
+           <div class="prop_edit">
+               {{? item.itemType!=5}}
+               {{? item.sku.notSupportReturn}}
+                 <div class="prop_server prop_server_gray">
+               {{??}}
+                 <div class="prop_server prop_server_orange">
+               {{?}}
+                   <i class="seven_icon"></i>
+                   <div class="server_tips">
+                       <div class="t_arrow t_arrow_top"><span></span><i></i></div>
+                       <span class="t_txt">{{? item.sku.notSupportReturn}}不{{?}}支持7天无理由退货</span>
+                   </div>
+               </div>
+                {{?}}
+             {{? item.presellVO}}
+                 {{ var status=item.presellVO.status;}}
+                <div class="canperview2">
+                    {{?status==2}}
+                    <span>预约抢购</span>
+                    {{??status==3}}
+                    <span>即将抢购</span>
+                    {{??status==4}}
+                    <span>正在抢购</span>
+                    {{?}}
+                    {{?status==1}}
+                        {{?item.presellVO.startTime}}
+                            {{? item.presellVO.time&&item.presellVO.time<86400}}
+                            距预约开始还剩
+                            {{#def.countdown:item.presellVO.time}}
+                            {{??}}
+                            预约开始时间{{= new Date(item.presellVO.startTime).format("M月d日 hh:mm")}}
+                            {{?}}
+                        {{??}}
+                        预约开始时间待定，敬请关注
+                        {{?}}
+                    {{??status==2||status==3}}
+                        {{?item.presellVO.panicbuyingStartTime}}
+                            {{? item.presellVO.time&&item.presellVO.time<86400}}
+                            距抢购开始还剩
+                            {{#def.countdown:item.presellVO.time}}
+                            {{??}}
+                            抢购开始时间{{= new Date(item.presellVO.panicbuyingStartTime).format("M月d日 hh:mm")}}
+                            {{?}}
+                        {{??}}
+                            抢购开始时间待定，敬请关注
+                        {{?}}
+                    {{??status==4}}
+                        {{?item.presellVO.panicbuyingEndTime}}
+                            {{? item.presellVO.time&&item.presellVO.time<86400}}
+                            距抢购结束还剩
+                            {{#def.countdown:item.presellVO.time}}
+                            {{??}}
+                            抢购结束时间{{= new Date(item.presellVO.panicbuyingEndTime).format("M月d日 hh:mm")}}
+                            {{?}}
+                        {{??}}
+                            抢购结束时间待定，敬请关注
+                        {{?}}
+                    {{?}}
+                </div>
+             {{?}}
+
+               <div class="prop_txt tip_trigger serial_product {{? item.sku.color == '' && item.sku.size == ''}} none{{?}}" {{? item.itemType == 5}}style="pointer-events: none;"{{?}} data-sku-id="{{=item.sku.id}}">
+                 <i class="iconfont"></i>
+               	 <div class="t_arrow t_arrow_top"><span></span><i></i></div>
+                 <span class="attributeName">{{=item.sku.color}}</span>
+                 <span class="attributeName">{{=item.sku.size}}</span>
+               </div>
+               <div class="prop_dialog tip_dialog dialog"></div>
+           </div>
+       </div>
+
+       <!-- 组合子品 start-->
+       {{? item.products}}
+       <div class="group_detail free clearfix">
+           <label>套装明细：</label>
+           <div class="group_detail_box">
+               {{~ item.products:product}}
+               <div class="free_item">
+                   <div class="group_item">
+                       <a href="{{=product.sku.prdUrl}}" class="group_item_link" clstag="pageclick|keycount|cart_201709267|11">
+                           <img src="{{=product.sku.imgUrl}}" alt="{{=product.sku.name}}" width="50" height="50">
+                       </a>
+                       <div class="free_info">
+                           <a href="{{=product.sku.prdUrl}}" clstag="pageclick|keycount|cart_201709267|11">{{=product.sku.name}}</a>
+                           <div class="free_num clearfix">
+                               <div class="num_box">&times;️{{=product.num}}</div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               {{~}}
+           </div>
+       </div>
+       {{?}}
+       <!-- 组合子品 end-->
+
+       <!-- 单品赠品 start-->
+       {{? item.gifts}}
+         {{#def.mustGift}}
+       {{?}}
+       <!-- 单品赠品 end-->
+
+       {{? !item.sku.hasStock}}
+       <div class="similar_wrap">
+           <a class="similar_btn tip_trigger" href="javascript:;" data-merchant-id="1" data-sku-id="{{=item.sku.id}}" clstag="pageclick|keycount|cart_201709267|17"> 相似商品<i></i></a>
+           <div class="sale_prod_cont similar_prod dialog" data-tpa="PRODUCT_RECOMMEND"></div>
+       </div>
+       {{?}}
+       {{? !hasNext&&hasGroupGift}}
+       {{#def.outputGroupGifts:itemGroup.gifts}}
+       {{?}}
+   </li>
+#}}
+
+{{##def.outputGroupGifts:gifts:
+<!-- 赠品 start  -->
+<div class="group_detail free clearfix">
+    <em class="line_ver"></em>
+    <em class="line_ver l2"></em>
+    <em class="line_hori"></em>
+    <div class="free_tag">
+        <div class="arrow"><span></span><i></i></div>
+        <div class="free_txt">{{? itemGroup.promotion.type==4}}赠品{{??}}换购{{?}}</div>
+    </div>
+    {{~ gifts:gift:index}}
+    <div class="free_item" data-activity="activity{{=itemGroup.promotion.id}}">
+        <div class="group_item">
+            <a class="group_gift_self_use group_item_link" href="//item.yhd.com/{{=gift.id}}.html" target="_blank" data-delete-id="">
+                <img src="{{=gift.imgUrl}}" alt="{{=gift.name}}" width="50" height="50">
+                <strong class="gift_price">¥<b>{{=gift.price}}</b></strong>
+            </a>
+            {{? !gift.hasStock}}
+            <div class="out_stock">无货</div>
+            {{?}}
+            <div class="free_info">
+                <a href="//item.yhd.com/{{=gift.id}}.html">{{=gift.name}}</a>
+                <div class="free_num clearfix">
+                    {{? gift.notSupportReturn}}
+                     <div class="prop_server prop_server_gray">
+                        {{??}}
+                        <div class="prop_server prop_server_orange">
+                            {{?}}
+                            <i class="seven_icon"></i>
+                            <div class="server_tips">
+                                 <div class="t_arrow t_arrow_top"><span></span><i></i></div>
+                                 <span class="t_txt">{{? gift.notSupportReturn}}不{{?}}支持7天无理由退货</span>
+                            </div>
+                        </div>
+                        <div class="num_box">×️{{=gift.num}}</div>
+                    </div>
+                </div>
+                <em class="del_btn delete_gift delete delete_free" title="删除"
+                    data-promoid="{{=gift.promotionId}}"
+                    data-pid="{{=gift.id}}"
+                    {{? itemGroup.promotion.type==4}}
+                    clstag="pageclick|keycount|cart_201709267|21"
+                    {{??}}
+                    clstag="pageclick|keycount|cart_201709267|22"
+                    {{?}}
+                >
+                </em>
+            </div>
+        </div>
+        {{~}}
+    </div>
+    <!-- 赠品end -->
+#}}
+{{##def.mustGift:
+    {{
+        var collection=item.gifts;
+        var size = 4;
+
+        var chunkedGifts = [];
+
+        for (var x = 0; x < Math.ceil(collection.length / size); x++) {
+            var start = x * size;
+            var end = start + size;
+
+            chunkedGifts.push(collection.slice(start, end));
+        }
+    }}
+    {{~ chunkedGifts:gifts}}
+        <div class="group_detail free prod_zp_item clearfix">
+            {{? item.itemType!=5&&hasNext}}
+            <em class="line_ver line_ver_mores"></em>
+            {{?}}
+            <em class="line_ver line_ver_rel"></em>
+            <em class="line_hori"></em>
+            <div class="free_tag">
+                <div class="arrow"><span></span><i></i></div>
+                <div class="free_txt">赠品</div>
+            </div>
+            <div class="group_detail_box">
+                {{~ gifts:gift}}
+                <div class="free_item" >
+                    <div class="group_item" >
+                        <a class="group_gift_self_use group_item_link" href="//item.yhd.com/{{=gift.id}}.html" target="_blank" data-delete-id="">
+                            <img src="{{=gift.imgUrl}}" alt="{{=gift.name}}" width="50" height="50">
+                            <strong class="gift_price">¥<b>{{=gift.price}}</b></strong>
+                        </a>
+                        <div class="free_info">
+                            <a href="//item.yhd.com/{{=gift.id}}.html">{{=gift.name}}</a>
+                            <div class="free_num clearfix">
+                                {{? gift.notSupportReturn }}
+                                <div class="prop_server prop_server_gray">
+                                    {{??}}
+                                    <div class="prop_server prop_server_orange">
+                                        {{?}}
+                                        <i class="seven_icon"></i>
+                                        <div class="server_tips">
+                                            <div class="t_arrow t_arrow_top"><span></span><i></i></div>
+                                            <span class="t_txt">{{? gift.notSupportReturn}}不{{?}}支持7天无理由退货</span>
+                                        </div>
+                                    </div>
+                                    {{ var giftBaseNum=1;}}
+                                    {{? item.mgiftFlag==2}}
+                                    {{ giftBaseNum=1;}}
+                                    {{??}}
+                                    {{ giftBaseNum=item.num;}}
+                                    {{?}}
+                                    {{var giftNum=gift.num*giftBaseNum;}}
+                                    <div class="num_box">×️{{=giftNum}}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{~}}
+                </div>
+            </div>
+        {{~}}
+#}}
+
+{{##def.activityDropList:item:
+{{? item.selectPromotioVos}}
+    {{hasUnSelectPromotion=false;}}
+    {{~ item.selectPromotioVos:promotion}}
+        {{?promotion.promotionSelectState=='0'}}
+            {{hasUnSelectPromotion=true;}}
+        {{?}}
+    {{~}}
+    {{?hasUnSelectPromotion}}
+    <!--活动 下拉 begin-->
+    <div class="actvi_droplist" clstag="pageclick|keycount|cart_201709267|18">
+    <div class="act_btn">活动<i></i></div>
+    <div class="actvi_dlist_cont">
+        <p class="adc_title">选择促销活动</p>
+        <ul>
+            {{~ item.selectPromotioVos:promotion:index}}
+            {{? promotion.promotionType == '10'}}
+            <li {{? promotion.promotionSelectState == '1'}}class="v_choose"{{?}}
+            data-promotion-id={{=promotion.promotionId}}
+            data-original-promotion-id={{=item.promotionId}}
+            clstag="pageclick|keycount|cart_201709267|19"
+            >
+            <i></i>
+            <span>{{=promotion.promotionShortInfo}}</span>
+            </li>
+            {{?}}
+            {{~}}
+        </ul>
+    </div>
+    </div>
+    <!--活动 下拉 end-->
+    {{?}}
+{{?}}
+#}}
+
+{{##def.countdown:distanceTime:
+<em class="countdown" data-time="{{= distanceTime}}" data-ellapsed="{{= distanceTime==0}}">
+    {{
+    var h = Math.floor(distanceTime/60/60%24);
+    var m = Math.floor(distanceTime/60%60);
+    var s = Math.floor(distanceTime%60);
+    }}
+    {{=h>9?h:"0"+h}}:{{=m>9?m:"0"+m}}:{{=s>9?s:"0"+s}}
+</em>
+#}}
+    {{
+        var cartVO = it;
+    }}
+    {{? !cartVO || cartVO.empty}}
+    	{{#def.emptyCart}}
+    {{??}}
+    {{#def.storeMainItemStockData}}
+    <div class="wrap" data-tpa="CART_ITEM_LIST">
+        <div class="cart_list_header cart_wrap cart_tit">
+            <span class="checkbox"><a href="javascript:;" class="check check_all {{?cartVO.checkType==1}}checked{{??cartVO.checkType==2}}filter_box{{?}}" data-check-type="{{=cartVO.checkType}}" clstag="pageclick|keycount|cart_201709267|2" ><i class="iconfont">&#xe623;</i></a>全选</span>
+            <span class="tit">商品信息</span>
+            <span class="price">单价（元）</span>
+            <span class="num">数量</span>
+            <span class="total">小计（元）</span>
+            <span class="act">操作</span>
+        </div>
+		{{~ cartVO.venderCartList:venderCart}}
+        <div class="cart_list">
+            {{#def.cartTit}}
+            <div class="cart_list_wrap {{? venderCart.popInfo.venderId == 8888}}zy{{?}}">
+                {{~ venderCart.sortedList:itemGroup}}
+                    {{#def.storeItemGroupData:itemGroup}}
+                    {{#def.outputItemGroup:itemGroup}}
+                {{~}}
+            </div>
+            <div class="cart_amount">
+                <div class="amount">商品总价：<span><em>&yen;</em>{{=venderCart.totalPrice}}</span></div>
+            </div>
+        </div>
+		{{~}}
+    </div>
+    {{?}}
+</div>
+{{##def.storeMainItemStockData:
+    {{? cartVO.itemsStock}}
+        {{ window.skuStock = cartVO.itemsStock; }}
+    {{?}}
+#}}
+
+{{##def.storeItemGroupData:itemGroup:
+    {{
+        window.skuStock = cartVO.itemStock;
+        window.freight = cartVO.freight;
+    }}
+    {{~ itemGroup.cartItems:item}}
+        {{
+            window.itemData = window.itemData||{};
+            if (item.itemType != 5) {
+                window.itemData[item.id]=item;
+            }
+            if(window.skuStock != null && window.skuStock[item.sku.id] != null){
+                item.sku.hasStock = (window.skuStock[item.sku.id] != '34');
+            }else{
+                item.sku.hasStock = true;
+            }
+        }}
+    {{~}}
+    {{?itemGroup.type==2}}
+        {{
+            window.itemData = window.itemData||{};
+            window.itemData[itemGroup.suit.id]=itemGroup.suit;
+        }}
+    {{?}}
+    {{? itemGroup.promotion}}
+        {{
+            window.promotionData = window.promotionData||{};
+            window.promotionData[itemGroup.promotion.id]=itemGroup.promotion;
+        }}
+    {{?}}
+    {{? itemGroup.gifts}}
+        {{~ itemGroup.gifts:gift}}
+            {{
+                if(window.skuStock != null && window.skuStock[gift.id] != null){
+                    gift.hasStock = (window.skuStock[gift.id] != '34');
+                }else{
+                    gift.hasStock = true;
+                }
+            }}
+        {{~}}
+    {{?}}
+#}}
+</script>
+	    <!--商品展示 end-->
+<script id="makeUpItems" type="text/x-dot-template">
+	{{##def.item:
+		{{? item}}
+			<div class="sale_item">
+				<div class="prod_item" data-recordTracker="1">
+					<a href="//item.yhd.com/{{=item.sku || ''}}.html" target="_blank" class="prod_pic" onclick="addTrackPositionToCookie('1','{{=item.sku}}');" target="_blank" clstag="pageclick|keycount|coudan_201709268|3">
+                        <img src="//img11.360buyimg.com/n1/s75x75_{{=item.img }}" width="75" height="75">
+                    </a>
+					<div class="prod_info">
+						<a href="//item.yhd.com/{{=item.sku || ''}}.html" target="_blank" class="tit" onclick="addTrackPositionToCookie('1','');" clstag="pageclick|keycount|coudan_201709268|3">{{= item.t }} </a>
+						<span class="price"><em>&yen;</em>{{= item.jp }}</span>
+					</div>
+					<a href="javascript:;" class="add_btn" data-pm-id="{{=item.sku || ''}}" clstag="pageclick|keycount|coudan_201709268|4">
+                       <i class="iconfont">&#xe61c;</i>
+                    </a>
+				</div>
+			</div>
+		{{?}}
+	#}}
+
+    <div class="similar_con_wrap" data-tpa="PMS_YHD_COUDAN" >
+        {{? it.hasFresh == 3}}
+        <div class="is_fresh_slide" clstag="pageclick|keycount|coudan_201709268|1">
+          <a class="cur notfresh_btn coudan_type" data-merchant-id="8888" href="javascript:;">非生鲜商品</a>
+          <a class="isfresh_btn coudan_type" data-merchant-id="8888" href="javascript:;">生鲜商品</a>
+        </div>
+        {{?}}
+        <div class="tab">
+            <ul class="clearfix">
+                {{? it.data != null && it.data.length > 0 }}
+		                <li id="table_1" merchantid="" clstag="pageclick|keycount|coudan_201709268|2">
+		                    <a href="javascript:;" class="switchTab" data-merchant-id="8888" data-difference="1">
+		                        ¥<b>15</b>元以下
+		                        <i></i>
+		                    </a>
+		                </li>
+		                <em class="line"></em>
+		                <li id="table_2" merchantid=""  clstag="pageclick|keycount|coudan_201709268|2">
+                            <a href="javascript:;" class="switchTab" data-merchant-id="8888" data-difference="2">
+                        	    <b>¥15</b><em>-</em>¥<b>30</b>
+                        	    <i></i>
+                            </a>
+                        </li>
+                        <em class="line"></em>
+                        <li id="table_3" merchantid=""  clstag="pageclick|keycount|coudan_201709268|2">
+                            <a href="javascript:;" class="switchTab" data-merchant-id="8888" data-difference="3">
+                                <b>¥30</b><em>-</em>¥<b>45</b>
+                                <i></i>
+                            </a>
+                        </li>
+                        <em class="line"></em>
+                        <li id="table_4" merchantid="" clstag="pageclick|keycount|coudan_201709268|2">
+                            <a href="javascript:;" class="switchTab" data-merchant-id="8888" data-difference="4">
+                                <b>¥45</b><em>-</em>¥<b>60</b>
+                                <i></i>
+                            </a>
+                        </li>
+                        <em class="line"></em>
+                        <li id="table_5" merchantid="" clstag="pageclick|keycount|coudan_201709268|2">
+                            <a href="javascript:;" class="switchTab" data-merchant-id="8888" data-difference="5">
+                                <b>¥60以上</b>
+                                <i></i>
+                            </a>
+                        </li>
+                {{??}}
+                	十分抱歉，当前无凑单商品，去<a class="blue" href="//www.yhd.com" target="_blank">首页</a>看看吧。
+                {{?}}
+            </ul>
+        </div>
+        <a class="control_btn left_arrow" href="javascript:;"><i class="iconfont">&#xe621;</i></a>
+        <a class="control_btn right_arrow" href="javascript:;"><i class="iconfont">&#xe622;</i></a>
+        {{? it.data != null && it.data.length > 0 }}
+	        <div class="sale_scroll_box">
+	            <ul class="sale_scroll_ul clearfix">
+	                {{##def.items:it.data#}}
+	                {{ for (var i = 0, l = {{#def.items}}.length / 2; i < l; i++) { }}
+						{{ var idx = 0;}}
+		                <li>
+							{{var item = {{#def.items}}[i * 2];}}
+							{{ idx = i * 2;}}
+							{{#def.item}}
+
+		                    {{? i * 2 + 1 <= {{#def.items}}.length - 1 }}
+								{{ idx = i * 2 + 1;}}
+								{{var item = {{#def.items}}[(i * 2) + 1];}}
+								{{#def.item}}
+		                    {{?}}
+		                </li>
+	                {{ } }}
+	            </ul>
+	        </div>
+        {{?}}
+    </div>
+</script><script id="merchantMakeUpItems" type="text/x-dot-template">
+    {{##def.item:
+    {{? item}}
+        <div class="prod_item">
+            <a href="/item/{{= item.defaultMerchant.id || ''}}" target="_blank" class="prod_pic"><img src="{{= item.defaultListPictureURL }}" width="75" height="75"></a>
+            <div class="prod_info">
+                <a href="/item/{{= item.defaultMerchant.id || ''}}" target="_blank" class="tit">{{= item.cnName }} </a>
+                <span class="price"><em>&yen;</em>{{= item.currentPrice }}</span>
+            </div>
+            <a href="javascript:;" data-pm-id="{{=item.defaultMerchant.id }}" data-shopping-count="{{= item.shoppingcount || 1 }}" class="add_btn"><i class="iconfont">&#xe61c;</i></a>
+        </div>
+    {{?}}
+    #}}
+    <div class="similar_con_wrap" data-tpa="PMS_YHD_COUDAN" >
+        <div class="tab">
+            <ul class="clearfix">
+                {{? it.merchantCoudanList == null}}
+                    十分抱歉，当前无凑单商品，去<a class="blue" href="//www.yhd.com" target="_blank">首页</a>看看吧。
+                {{?}}
+            </ul>
+        </div>
+        <a class="control_btn left_arrow" href="javascript:;"><i class="iconfont">&#xe621;</i></a>
+        <a class="control_btn right_arrow" href="javascript:;"><i class="iconfont">&#xe622;</i></a>
+        <div class="sale_scroll_box">
+            <ul class="sale_scroll_ul clearfix">
+                {{? it.merchantCoudanList != null}}
+                {{##def.items:it.merchantCoudanList#}}
+                {{ for (var i = 0, l = {{#def.items}}.length / 2; i < l; i++) { }}
+                    {{ var idx = 0;}}
+                    <li>
+                        {{var item = {{#def.items}}[i * 2];}}
+                        {{ idx = i * 2;}}
+                        {{#def.item}}
+
+                        {{? i * 2 + 1 <= {{#def.items}}.length - 1 }}
+                            {{ idx = i * 2 + 1;}}
+                            {{var item = {{#def.items}}[(i * 2) + 1];}}
+                            {{#def.item}}
+                        {{?}}
+                    </li>
+                {{ } }}
+                {{?}}
+            </ul>
+        </div>
+    </div>
+</script><script id="sub_product_serial_dot" type="text/x-dot-template">
+{{? it.serialGift}}
+ <div class="pop_dialog free_proedit_pop">
+     <p class="pop_tit">选择赠品属性</p>
+     <a href="javascript:;" class="close_btn pop_close"></a>
+{{??}}
+ <div class="prop_dialog_wrap">
+{{?}}
+    <div class="prop_dialog_inner">
+        {{~ it.allSerialAttributes:attr:allIndex}}
+        <div class="prop_item prop_color_list clearfix" data-attribute-id="{{=attr.attributeId}}">
+            <label>{{=attr.attributeName}}</label>
+            <ul class="prop_list">
+                {{~ attr.attributeValueList:value:index}}
+                <li class="seri_attr_value{{? it.curAttr.indexOf(value.attributeValueAlias)>=0 }} cur{{?}}{{? it.unavailableCoordinate.indexOf(allIndex + '-' + index) >= 0}} unable{{?}}" data-attribute-id="{{=attr.attributeId}}" data-attribute-value-id="{{=value.attributeValueId}}">
+                    <a href="javascript:;">
+                        <span>{{=value.attributeValueAlias}}</span>
+                        <em><i class="iconfont">&#xe623;</i></em>
+                    </a>
+                </li>
+                {{~}}
+            </ul>
+        </div>
+        {{~}}
+        {{? it.serialGift}}
+        <p class="error_tip" style='display:none'><i class="iconfont">&#xe648;</i><span></span></p>
+        {{?}}
+        <div class="btn_box">
+            <a href="javascript:;" class="confirm unable" data-tpa="CHOOSE_ANOTHER_SUBPRODUCT">确定</a><a class="cancel {{? it.serialGift}}pop_close{{??}}close{{?}}" href="javascript:;">取消</a>
+        </div>
+    </div>
+</div>
+</script><script id="similar_product_dot" type="text/x-dot-template">
+    {{##def.item:
+        {{? item}}
+            <div class="prod_item" data-tpc="{{=index}}" data-tc="" data-tce="" data-recordTracker="1">
+                <a href="//item.yhd.com/{{=item.sku}}.html" target="_blank" class="prod_pic" onclick="addTrackPositionToCookie('1','');">
+                    <img src="//img13.360buyimg.com/n2/{{=item.img}}" width="75" height="75">
+                </a>
+                <div class="prod_info">
+                    <a href="//item.yhd.com/{{=item.sku}}.html" target="_blank" class="tit" onclick="addTrackPositionToCookie('1','');">
+                        {{= item.t }}
+                    </a>
+                    <span class="price"><em>&yen;</em>{{=item.jp}}</span>
+                </div>
+                <a href="javascript:;" class="add_btn"
+                   data-pm-id="{{=item.sku}}"
+                   data-shopping-count="0"
+                   data-tracker-code=""
+                   data-product-id="{{=item.sku}}"
+                   data-merchant-id=""
+                   data-tpa="PRODUCT_RECOMMEND">
+                   <i class="iconfont">&#xe61c;</i>
+                </a>
+            </div>
+        {{?}}
+    #}}
+
+    <div class="similar_con_wrap" clstag="pageclick|keycount|cart_201709267|17">
+        <a class="control_btn left_arrow" href="javascript:;"><i class="iconfont">&#xe621;</i></a>
+        <a class="control_btn right_arrow"  href="javascript:;"><i class="iconfont">&#xe622;</i></a>
+        <div class="sale_scroll_box">
+            <ul class="sale_scroll_ul clearfix" style="width: 1350px; margin-left: 0px;">
+            {{? it.data && it.data.length}}
+                {{##def.items:it.data#}}
+                {{ for (var i = 0, l = {{#def.items}}.length / 2; i < l; i++) { }}
+                    {{ var index = 0;}}
+                    <li>
+                        {{var item = {{#def.items}}[i * 2];}}
+                        {{ idx = i * 2;}}
+                        {{#def.item}}
+
+                        {{? i * 2 + 1 <= {{#def.items}}.length - 1 }}
+                            {{ idx = i * 2 + 1;}}
+                            {{var item = {{#def.items}}[(i * 2) + 1];}}
+                            {{#def.item}}
+                        {{?}}
+                    </li>
+                {{ } }}
+            {{?}}
+            </ul>
+        </div>
+    </div>
+ </script>	    <!-- 结算工具栏  start -->
+<script id="dot-checkOutBar" type="text/x-dot-template">
+    {{ var cartVO=it;}}
+    {{? cartVO && !cartVO.empty}}
+    <div class="pay_tools_bar" data-tpa="SETTLEMENT_INFO_BAR">
+        <div class="pay_tips pay_free_tips">
+    <div class="t_arrow t_arrow_top"><span></span><i></i></div>
+    <a href="jaavscript:;" class="close"></a>
+    <div class="free_title">领取赠品（{{= it.totalGiftNum }}）</div>
+    <div class="free_list_wrap">
+        {{~it.selectGiftVoList:selectGiftVo}}
+        <div class="free_list">
+            <p class="free_list_tit">
+            {{? selectGiftVo.giftType == 1}}
+            以下赠品可全部领取
+            {{??}}
+            以下赠品可领取1件
+            {{?}}
+            </p>
+            {{~selectGiftVo.promotionGiftList:promotionGift}}
+            <div class="free_list_item">
+                <a href="javascript:;" name="giftRadios_{{=selectGiftVo.promotionId}}_{{=selectGiftVo.promotionLevelId}}" class="free_check choose_gift"
+                    data-is-series="{{? promotionGift.product.mainSeries}}1{{??}}0{{?}}" data-select-type={{=selectGiftVo.giftType}} data-promotion-id={{=promotionGift.promotionId}} data-promotion-level-id={{=promotionGift.promotionLevelId}}
+                    data-product-id={{=promotionGift.productId}} data-main-product-id={{=promotionGift.productId}} data-merchant-id={{=promotionGift.merchantId}} data-num={{=promotionGift.quantity}} data-pmInfo-id={{=promotionGift.pmInfoId}}><i class="iconfont">&#xe623;</i></a>
+                <a href="/item/{{=promotionGift.pmInfoId}}" target="_blank" class="free_item_info clearfix">
+                    <img src="{{=promotionGift.product['4040PictureURL']}}" alt="{{=promotionGift.productName}}">
+                    <p class="tit">{{=promotionGift.productName}}</p>
+                    <span class="price">&yen;{{=promotionGift.product.currentPrice}}</span>
+                </a>
+            </div>
+            {{~}}
+        </div>
+        {{~}}
+    </div>
+        <div class="btn_box"><a id="batchChooseGift" href="javascript:;" class="unable" data-tpa="CONFIRM_ADD_GIFT">确定领取</a></div>
+</div>
+        <div class="pay_tools_inner clearfix">
+            <div class="pay_tools_l clearfix">
+                <span class="select_all checkbox clearfix" clstag="pageclick|keycount|cart_201709267|2"><a class="pay_checkbox check check_all {{?cartVO.checkType==1}}checked{{??cartVO.checkType==2}}filter_box{{?}}" href="javascript:;" data-check-type="{{=cartVO.checkType}}"><i class="iconfont">&#xe623;</i></a><label class="all_checked_label">全选（共<b>{{=cartVO.allItemNum}}</b>件）</label></span>|
+                <span id="batchDelete" >
+                    <a class="l_a_tool lt_disable" href="javascript:;" clstag="pageclick|keycount|cart_201709267|1">清除无效商品</a>|
+                </span>
+                <span><a class="l_a_tool lt_delete" href="javascript:;"  clstag="pageclick|keycount|cart_201709267|3">批量删除</a><span>
+                {{? cartVO.totalGiftNum > 0}}
+                |<a class="l_a_tool lt_free" href="javascript:;" >领取赠品</a>
+                {{?}}
+            </div>
+            <div class="pay_tools_r clearfix">
+                <a class="checkout_btn" href="javascript:void(0);" clstag="pageclick|keycount|cart_201709267|4">去结算</a>
+                <div class="r_price_total r_control_tip">
+                    合计：<span class="rpt_count">&yen;<b>{{=cartVO.totalPrice}}</b></span>
+                    {{? cartVO.totalNeedPoint > 0}}
+                    <i class="iconfont rpt_detail"></i><em>+</em>积分：<span class="rpt_count score"><b>{{= cartVO.totalNeedPoint }}</b></span>
+                    {{?}}
+                    
+                    {{? cartVO.totalNeedGold > 0}}
+                    <i class="iconfont rpt_detail"></i><em>+</em>金币：<span class="rpt_count score"><b>{{= cartVO.totalNeedGold }}</b></span>
+                    {{?}}
+                    
+                </div>
+                <div class="r_prod_view r_control_tip">
+                    <span class="rpv_count">已选商品<b>{{=cartVO.checkedItemNum}}</b>件</span>
+                        {{? cartVO.checkedItemNum > 0 }}
+                            <a href="javascript:;" class="pvw">预览</a>
+                        {{?}}
+                    |
+                    <div class="add_tip">商品已加入购物车<span></span></div>
+                </div>
+            </div>
+        </div>
+        <!-- 结算栏 总价 Tips弹框 Start  -->
+        <div class="pay_tips pay_total_tips">
+            <div class="t_arrow t_arrow_top"><span></span><i></i></div>
+            <p>原价：<span>&yen;<b>{{=cartVO.totalPromotionPrice}}</b></span></p>
+            <p>优惠：<span>&yen;<b>{{=cartVO.totalRePrice}}</b></span></p>
+            <p>运费：不含，以结算页为准</p>
+        </div>
+        <!-- 结算栏 总价 Tips弹框 End -->
+
+        <!-- 结算栏 商品预览 Tips弹框 Start  -->
+        <div class="pay_tips pay_allprod_tips"><div>
+        <!-- 结算栏 商品预览 Tips弹框 End  -->
+    </div>
+    {{?}}
+</script>
+<script id="cartPreview" type="text/x-dot-template">
+    <div class="t_arrow t_arrow_top"><span></span><i></i></div>
+        {{##def.itemSnippet:
+                        {{? item.vskuId}}
+                <li class="sale_item">
+                    <div class="prod_img">
+                        <a href="//item.yhd.com/{{=item.vskuId}}.html" target="_blank">
+                            <img width="75" height="75" src="{{?item.vproductSetVO.mainSku.imgUrl}}{{=item.vproductSetVO.mainSku.imgUrl}}{{??}}http://image.yihaodianimg.com/front-homepage/global/images/defaultproduct.jpg{{?}}"/>
+                        </a>
+                    </div>
+                    <div class="prod_info">
+                        <div class="opa_bg"></div>
+                        <div class="prod_txt">
+                            <a href="//item.yhd.com/{{=item.vskuId}}.html" target="_blank">
+                                {{=item.name}}
+                            </a>
+                        </div>
+                        <p class="prod_num">x{{=item.num}}</p>
+                    </div>
+                </li>
+            {{?? item.itemType == 4}}
+                <li class="sale_item">
+                                    <div class="prod_img">
+                                        <a href="//item.yhd.com/{{=item.productSets[0].mainSku.id}}.html" target="_blank">
+                                            <img width="75" height="75" src="{{?item.productSets[0].mainSku.imgUrl}}{{=item.productSets[0].mainSku.imgUrl}}{{??}}//image.yihaodianimg.com/front-homepage/global/images/defaultproduct.jpg{{?}}"/>
+                                        </a>
+                                    </div>
+                                    <div class="prod_info">
+                                        <div class="opa_bg"></div>
+                                        <div class="prod_txt">
+                                            <a href="//item.yhd.com/{{=item.productSets[0].mainSku.id}}.html" target="_blank">
+                                                {{=item.name}}
+                                            </a>
+                                        </div>
+                                        <p class="prod_num">x{{=item.num}}</p>
+                                    </div>
+                                </li>
+            {{??}}
+                <li class="sale_item">
+                    <div class="prod_img">
+                        <a href="//item.yhd.com/{{=item.mainSku.id}}.html" target="_blank">
+                            <img width="75" height="75" src="{{?item.mainSku.imgUrl}}{{=item.mainSku.imgUrl}}{{??}}http://image.yihaodianimg.com/front-homepage/global/images/defaultproduct.jpg{{?}}"/>
+                        </a>
+                    </div>
+                    <div class="prod_info">
+                        <div class="opa_bg"></div>
+                        <div class="prod_txt">
+                            <a href="//item.yhd.com/{{=item.mainSku.id}}.html" target="_blank">
+                                {{=item.name}}
+                            </a>
+                        </div>
+                        <p class="prod_num">x{{=item.num}}</p>
+                    </div>
+                </li>
+            {{?}}
+        #}}
+        {{? it != null && it.groupCheckOutPreviews != null }}
+            <input id="checkoutGroups" type="hidden" value="{{= it.groupCheckOutPreviews.length }}" />
+        {{?}}
+        {{? it != null && it.groupCheckOutPreviews != null && it.groupCheckOutPreviews.length == 1 }}
+            <!--  单类型商品结算 -->
+            <div class="pay_allprod_single">
+                <div class="pvw_type_cont clearfix">
+                    <div class="sale_prod_cont pvw_sale_list single_sale_list">
+                        <a class="control_btn left_arrow" href="javascript:;"><i class="iconfont">&#xe621;</i></a>
+                        <a class="control_btn right_arrow"  href="javascript:;"><i class="iconfont">&#xe622;</i></a>
+                        <div class="sale_scroll_box">
+                            <ul class="sale_scroll_ul clearfix">
+                                {{~ it.groupCheckOutPreviews : group : index }}
+                                    {{~ group.cartItemList : item }}
+                                        {{#def.itemSnippet}}
+                                    {{~}}
+                                {{~}}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {{?? it != null && it.groupCheckOutPreviews != null && it.groupCheckOutPreviews.length > 1 }}
+            <!--  多类型商品结算 -->
+            <div class="pay_allprod_multi">
+                <div class="pvw_sale_title">限于法律规定，请分开结算以下商品，给您带来的不便敬请谅解～<a href="javascript:;" class="close"></a></div>
+                <div class="pvw_type_main">
+                    {{~ it.groupCheckOutPreviews : group : index }}
+                        <div class="pvw_type_title">
+                            {{? group.summary.checkOutType === 0 }}普通商品{{??}}海购商品{{?}}（{{= group.summary.itemNum }}件）
+                        </div>
+                        <!--商品展示-->
+                        <div class="pvw_type_cont clearfix">
+                            <div class="sale_prod_cont pvw_sale_list {{? group.summary.checkOutType === 0 }}general_sale_list{{??}}seal_sale_list{{?}}">
+                                <a class="control_btn left_arrow" href="javascript:;"><i class="iconfont">&#xe621;</i></a>
+                                <a class="control_btn right_arrow" href="javascript:;"><i class="iconfont">&#xe622;</i></a>
+                                <div class="sale_scroll_box">
+                                    <ul class="sale_scroll_ul clearfix">
+                                        {{~ group.cartItemList : item }}
+                                            {{#def.itemSnippet}}
+                                        {{~}}
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--结算栏-->
+                            <div class="prod_settle_accounts">
+                                <ul class="settle_accounts_info clearfix">
+                                    <li class="original_price">
+                                        <label>原价：</label>
+                                        <span>￥{{= group.summary.originalPrice.toFixed(2) }}</span>
+                                    </li>
+                                    <li class="favorable">
+                                        <label>优惠：</label>
+                                        <span>￥{{= group.summary.savingAmount.toFixed(2) }}</span>
+                                    </li>
+                                    <li class="total_prices">
+                                        <label>总价：（不含运费{{? group.summary.checkOutType != 0 }}/进口税{{?}}）</label>
+                                        <span>￥{{= group.summary.totalPrice.toFixed(2) }}</span>
+                                    </li>
+                                </ul>
+                                <a href="javascript:;" class="settle_accounts_btn" data-checkout-type="{{= group.summary.checkOutType }}">结算</a>
+                            </div>
+                        </div>
+                    {{~}}
+                </div>
+            </div>
+        {{?}}
+    </div>
+</script>
+<div id="checkOutBar" class="settling_column_bar none" style="display: block;">   <div class="pay_tools_bar" data-tpa="SETTLEMENT_INFO_BAR"> <div class="pay_tips pay_free_tips" style="display: none;"> <div class="t_arrow t_arrow_top"><span></span><i></i></div> <a href="jaavscript:;" class="close"></a> <div class="free_title">领取赠品（undefined）</div> <div class="free_list_wrap">  </div> <div class="btn_box"><a id="batchChooseGift" href="javascript:;" class="unable" data-tpa="CONFIRM_ADD_GIFT">确定领取</a></div></div> <div class="pay_tools_inner clearfix"> <div class="pay_tools_l clearfix"> <span class="select_all checkbox clearfix" clstag="pageclick|keycount|cart_201709267|2"><a class="pay_checkbox check check_all checked" href="javascript:;" data-check-type="1"><i class="iconfont"></i></a><label class="all_checked_label">全选（共<b>1</b>件）</label></span>| <span id="batchDelete" style="display: none;"> <a class="l_a_tool lt_disable" href="javascript:;" clstag="pageclick|keycount|cart_201709267|1">清除无效商品</a>| </span> <span><a class="l_a_tool lt_delete" href="javascript:;" clstag="pageclick|keycount|cart_201709267|3">批量删除</a><span>  </span></span></div> <div class="pay_tools_r clearfix"> <a class="checkout_btn" href="javascript:void(0);" clstag="pageclick|keycount|cart_201709267|4">去结算</a> <div class="r_price_total r_control_tip"> 合计：<span class="rpt_count">¥<b>169.00</b></span>     </div> <div class="r_prod_view r_control_tip"> <span class="rpv_count">已选商品<b>1</b>件</span>  <a href="javascript:;" class="pvw">预览</a>  | <div class="add_tip">商品已加入购物车<span></span></div> </div> </div> </div> <!-- 结算栏 总价 Tips弹框 Start  --> <div class="pay_tips pay_total_tips" style="display: none; top: 50px;"> <div class="t_arrow t_arrow_top" style="top: -8px;"><span></span><i></i></div> <p>原价：<span>¥<b>169.00</b></span></p> <p>优惠：<span>¥<b>0.00</b></span></p> <p>运费：不含，以结算页为准</p> </div> <!-- 结算栏 总价 Tips弹框 End --> <!-- 结算栏 商品预览 Tips弹框 Start  --> <div class="pay_tips pay_allprod_tips" style="display: none;"> <div class="t_arrow t_arrow_top" style="margin-left: 256.433px;"><span></span><i></i></div>   <input id="checkoutGroups" value="1" type="hidden">   <!--  单类型商品结算 --> <div class="pay_allprod_single"> <div class="pvw_type_cont clearfix"> <div class="sale_prod_cont pvw_sale_list single_sale_list"> <a class="control_btn left_arrow" href="javascript:;"><i class="iconfont"></i></a> <a class="control_btn right_arrow" href="javascript:;"><i class="iconfont"></i></a> <div class="sale_scroll_box"> <ul class="sale_scroll_ul clearfix">     <li class="sale_item"> <div class="prod_img"> <a href="https://item.yhd.com/1454460.html" target="_blank"> <img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/5a1d4ba9N832d9e0e.jpg" width="75" height="75"> </a> </div> <div class="prod_info"> <div class="opa_bg"></div> <div class="prod_txt"> <a href="https://item.yhd.com/1454460.html" target="_blank"> 雷柏（Rapoo） 9300P 无线鼠标键盘套装 无线键盘鼠标套装 无线键鼠套装 电脑键盘 笔记本键盘 纤薄键盘 白色 </a> </div> <p class="prod_num">x1</p> </div> </li>     </ul> </div> </div> </div> </div>  </div></div></div>	    <!-- 结算工具栏  end -->
+	    <div class="bottom_wrap">
+	        <!-- 特惠换购 商品列表 Start -->
+<script id="dot-redemptions" type="text/x-dot-template">
+    {{if (it.length == 0) return; }}
+    <div class="sale_prod_tit">
+        <h4 class="cheap_sale_tit"><i class="iconfont">&#xe61a;</i>特惠换购</h4>
+        <p>价格对比依据为商品详情页首部图片右侧售价</p>
+    </div>
+    <div class="sale_prod_cont cheap_prod cheap_sale_list" data-tpa="SPEC_PRICE_REDEBUY">
+        <a class="control_btn left_arrow" href="javascript:;"><i class="iconfont">&#xe621;</i></a>
+        <a class="control_btn right_arrow"  href="javascript:;"><i class="iconfont">&#xe622;</i></a>
+        <div class="sale_scroll_box">
+            <ul class="sale_scroll_ul clearfix">
+                {{~ it : value : index }}
+                   <li class="sale_item" data-tpc="{{=index}}" data-tc="{{=value.tcCode}}" data-tce="{{=value.tceCode}}" data-recordTracker="1">
+                       <div class="prod_img">
+                           <a href="/item/{{= value.pmInfoId || 0 }}" onclick="addTrackPositionToCookie('1','{{=value.trackerPrefix || ''}}_{{=value.pmInfoId}}_{{=index}}');" target="_blank">
+                               <img src="{{= value.picture180180URL}}" width="150" height="150"/>
+                           </a>
+                           <div class="redem add_shopcart"
+                                data-product-id="{{=value.productId}}"
+                                data-promotion-id="{{=value.promotionId}}"
+                                data-promotion-level-id="{{=value.promotionLevelId}}"
+                                data-pm-info-id="{{=value.pmInfoId}}"
+                                data-merchant-id="{{=value.merchantId}}"
+                                data-num="{{=value.num || 1 }}"
+                                data-tpa="SPEC_PRICE_REDEBUY">
+                               <p class="a_cart_inner"><i class="scart_icon iconfont">&#xe61c;</i><span class="scart_txt">{{?value.num > 1}}{{=value.num}}件起购{{??}}加入购物车{{?}}</span></p>
+                               <p class="opa_bg"></p>
+                           </div>
+                       </div>
+                       <div class="prod_info">
+                           <div class="prod_txt">
+                               <a href="/item/{{= value.pmInfoId || 0 }}" onclick="addTrackPositionToCookie('1','{{=value.trackerPrefix || ''}}_{{=value.pmInfoId}}_{{=index}}');" target="_blank">
+                                   {{= value.productName}}
+                               </a>
+                           </div>
+                           <div class="prod_price">
+                               <p class="pri_now">换购价：&yen;<b>{{= value.promotionPrice.toFixed(2) }}</b></p>
+                               <p class="pri_normal">原价：&yen;<b>{{= value.deletePrice.toFixed(2) }}</b></p>
+                               <span class="pri_tag"><i></i>省{{= (value.deletePrice - value.promotionPrice).toFixed(2) }}</span>
+                           </div>
+                       </div>
+                   </li>
+                {{~}}
+            </ul>
+        </div>
+    </div>
+</script>
+<div id="redemptions" class="sale_prod_list"></div>	        <!-- 特惠换购 商品列表 End -->
+	        <!-- 为您推荐 商品列表 Start -->
+<script id="recommendation_dot" type="text/x-dot-template">
+	{{##def.item:
+		{{? item}}
+			<div class="sale_item">
+				<div class="prod_img">
+					<a href="//item.yhd.com/{{=item.sku}}.html" onclick="addTrackPositionToCookie('1','');" target="_blank" clstag="pageclick|keycount|coudan_201709268|5">
+						<img src="//img13.360buyimg.com/n4/s150x150_{{=item.img}}" width="150" height="150"/>
+					</a>
+					<div class="add_shopcart recom_add"
+						 data-pid="{{=item.sku}}"
+						 data-shopping-count="1"
+						 clstag="pageclick|keycount|coudan_201709268|6"
+						 onclick="log('AddToCartYhd','Recom_CartYhd',{{=item.sku}},{{=idx}},'{{=/\$expid=([^$]+)/.exec(item.clk)[1]}}','{{=/\$reqsig=([^$]+)/.exec(item.clk)[1]}}');"
+					>
+						<p class="a_cart_inner">
+							<i class="scart_icon iconfont">&#xe61c;</i>
+							<span class="scart_txt">加入购物车</span>
+						</p>
+						<p class="opa_bg"></p>
+					</div>
+				</div>
+				<div class="prod_info">
+					<p class="p_pri">&yen;<b>{{=item.jp}}</b></p>
+					<p class="p_tit">
+						<a href="//item.yhd.com/{{=item.sku}}.html" onclick=addTrackPositionToCookie('1',""); target="_blank">
+							{{=item.t}}
+						</a>
+					</p>
+				</div>
+			</div>
+		{{?}}
+	#}}
+
+	<div class="sale_prod_tit">
+		<h4 class="hot_sale_tit"><i class="iconfont">&#xe61e;</i>猜您喜欢</h4>
+		<p>实时推荐最适合您的商品</p>
+	</div>
+	<div class="sale_prod_cont cheap_prod hot_sale_list" data-tpa="GUESS_YOU_LIKE">
+		<a class="control_btn left_arrow" href="javascript:;"><i class="iconfont">&#xe621;</i></a>
+		<a class="control_btn right_arrow"  href="javascript:;"><i class="iconfont">&#xe622;</i></a>
+		<div class="sale_scroll_box">
+			<ul class="sale_scroll_ul clearfix">
+				{{ for (var i = 0, l = it.length / 2; i < l; i++) { }}
+                    {{ var idx = 0;}}
+                    <li>
+                        {{var item = it[i * 2];}}
+                        {{ idx = i * 2;}}
+                        {{#def.item}}
+
+                        {{? i * 2 + 1 <= it.length - 1 }}
+                            {{ idx = i * 2 + 1;}}
+                            {{var item = it[(i * 2) + 1];}}
+                            {{#def.item}}
+                        {{?}}
+                    </li>
+				{{ } }}
+			</ul>
+		</div>
+	</div>
+</script>
+<div id="recommendation" class="sale_prod_list"><div class="sale_prod_tit"><h4 class="hot_sale_tit"><i class="iconfont"></i>猜您喜欢</h4><p>实时推荐最适合您的商品</p></div><div class="sale_prod_cont cheap_prod hot_sale_list" data-tpa="GUESS_YOU_LIKE"><a class="control_btn left_arrow unable" href="javascript:;"><i class="iconfont"></i></a><a class="control_btn right_arrow" href="javascript:;"><i class="iconfont"></i></a><div class="sale_scroll_box"><ul class="sale_scroll_ul clearfix" style="width: 4440px;">  <li>   <div class="sale_item"><div class="prod_img"><a href="https://item.yhd.com/2157070.html" onclick="addTrackPositionToCookie('1','');" target="_blank" clstag="pageclick|keycount|coudan_201709268|5"><img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/58f5dd7cNf941603c.jpg" width="150" height="150"></a><div class="add_shopcart recom_add" data-pid="2157070" data-shopping-count="1" clstag="pageclick|keycount|coudan_201709268|6" onclick="log('AddToCartYhd','Recom_CartYhd',2157070,0,'100','7ee4386c8a1d8344d9f79eb928220816236d000e');"><p class="a_cart_inner"><i class="scart_icon iconfont"></i><span class="scart_txt">加入购物车</span></p><p class="opa_bg"></p></div></div><div class="prod_info"><p class="p_pri">¥<b>99.0</b></p><p class="p_tit"><a href="https://item.yhd.com/2157070.html" onclick="addTrackPositionToCookie('1',&quot;&quot;);" target="_blank">科尔沁 休闲肉脯零食 内蒙古特产 手撕风干牛肉干孜然味400g</a></p></div></div>    <div class="sale_item"><div class="prod_img"><a href="https://item.yhd.com/1150551.html" onclick="addTrackPositionToCookie('1','');" target="_blank" clstag="pageclick|keycount|coudan_201709268|5"><img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/593e4e2aN0a0bb450.jpg" width="150" height="150"></a><div class="add_shopcart recom_add" data-pid="1150551" data-shopping-count="1" clstag="pageclick|keycount|coudan_201709268|6" onclick="log('AddToCartYhd','Recom_CartYhd',1150551,1,'100','7ee4386c8a1d8344d9f79eb928220816236d000e');"><p class="a_cart_inner"><i class="scart_icon iconfont"></i><span class="scart_txt">加入购物车</span></p><p class="opa_bg"></p></div></div><div class="prod_info"><p class="p_pri">¥<b>15.9</b></p><p class="p_tit"><a href="https://item.yhd.com/1150551.html" onclick="addTrackPositionToCookie('1',&quot;&quot;);" target="_blank">百草味 坚果零食干果 内含开果器 夏威夷果奶油味200g/袋</a></p></div></div>  </li>  <li>   <div class="sale_item"><div class="prod_img"><a href="https://item.yhd.com/1077339.html" onclick="addTrackPositionToCookie('1','');" target="_blank" clstag="pageclick|keycount|coudan_201709268|5"><img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/598ab9f0N99bf14ea.jpg" width="150" height="150"></a><div class="add_shopcart recom_add" data-pid="1077339" data-shopping-count="1" clstag="pageclick|keycount|coudan_201709268|6" onclick="log('AddToCartYhd','Recom_CartYhd',1077339,2,'100','7ee4386c8a1d8344d9f79eb928220816236d000e');"><p class="a_cart_inner"><i class="scart_icon iconfont"></i><span class="scart_txt">加入购物车</span></p><p class="opa_bg"></p></div></div><div class="prod_info"><p class="p_pri">¥<b>26.8</b></p><p class="p_tit"><a href="https://item.yhd.com/1077339.html" onclick="addTrackPositionToCookie('1',&quot;&quot;);" target="_blank">意大利进口 Balocco 百乐可 脆皮酥 焦糖味 200g</a></p></div></div>    <div class="sale_item"><div class="prod_img"><a href="https://item.yhd.com/1057746.html" onclick="addTrackPositionToCookie('1','');" target="_blank" clstag="pageclick|keycount|coudan_201709268|5"><img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/564c5465N82d8e969.jpg" width="150" height="150"></a><div class="add_shopcart recom_add" data-pid="1057746" data-shopping-count="1" clstag="pageclick|keycount|coudan_201709268|6" onclick="log('AddToCartYhd','Recom_CartYhd',1057746,3,'100','7ee4386c8a1d8344d9f79eb928220816236d000e');"><p class="a_cart_inner"><i class="scart_icon iconfont"></i><span class="scart_txt">加入购物车</span></p><p class="opa_bg"></p></div></div><div class="prod_info"><p class="p_pri">¥<b>1499.0</b></p><p class="p_tit"><a href="https://item.yhd.com/1057746.html" onclick="addTrackPositionToCookie('1',&quot;&quot;);" target="_blank">Apple iPhone 5s (A1530) 16GB 金色 移动联通4G手机</a></p></div></div>  </li>  <li>   <div class="sale_item"><div class="prod_img"><a href="https://item.yhd.com/1319118.html" onclick="addTrackPositionToCookie('1','');" target="_blank" clstag="pageclick|keycount|coudan_201709268|5"><img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/54b8ae03N63a25d6c.jpg" width="150" height="150"></a><div class="add_shopcart recom_add" data-pid="1319118" data-shopping-count="1" clstag="pageclick|keycount|coudan_201709268|6" onclick="log('AddToCartYhd','Recom_CartYhd',1319118,4,'100','7ee4386c8a1d8344d9f79eb928220816236d000e');"><p class="a_cart_inner"><i class="scart_icon iconfont"></i><span class="scart_txt">加入购物车</span></p><p class="opa_bg"></p></div></div><div class="prod_info"><p class="p_pri">¥<b>24.8</b></p><p class="p_tit"><a href="https://item.yhd.com/1319118.html" onclick="addTrackPositionToCookie('1',&quot;&quot;);" target="_blank">360随身WiFi3 300M 无线网卡 迷你路由器 黑色</a></p></div></div>    <div class="sale_item"><div class="prod_img"><a href="https://item.yhd.com/2089982.html" onclick="addTrackPositionToCookie('1','');" target="_blank" clstag="pageclick|keycount|coudan_201709268|5"><img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/562dcaa6N51e15ea5.jpg" width="150" height="150"></a><div class="add_shopcart recom_add" data-pid="2089982" data-shopping-count="1" clstag="pageclick|keycount|coudan_201709268|6" onclick="log('AddToCartYhd','Recom_CartYhd',2089982,5,'100','7ee4386c8a1d8344d9f79eb928220816236d000e');"><p class="a_cart_inner"><i class="scart_icon iconfont"></i><span class="scart_txt">加入购物车</span></p><p class="opa_bg"></p></div></div><div class="prod_info"><p class="p_pri">¥<b>79.9</b></p><p class="p_tit"><a href="https://item.yhd.com/2089982.html" onclick="addTrackPositionToCookie('1',&quot;&quot;);" target="_blank">金士顿（Kingston）32GB 80MB/s TF(Micro SD)Class10 UHS-I高速存储卡  </a></p></div></div>  </li>  <li>   <div class="sale_item"><div class="prod_img"><a href="https://item.yhd.com/1077341.html" onclick="addTrackPositionToCookie('1','');" target="_blank" clstag="pageclick|keycount|coudan_201709268|5"><img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/5959fd36N9ca11e0b.jpg" width="150" height="150"></a><div class="add_shopcart recom_add" data-pid="1077341" data-shopping-count="1" clstag="pageclick|keycount|coudan_201709268|6" onclick="log('AddToCartYhd','Recom_CartYhd',1077341,6,'100','7ee4386c8a1d8344d9f79eb928220816236d000e');"><p class="a_cart_inner"><i class="scart_icon iconfont"></i><span class="scart_txt">加入购物车</span></p><p class="opa_bg"></p></div></div><div class="prod_info"><p class="p_pri">¥<b>20.8</b></p><p class="p_tit"><a href="https://item.yhd.com/1077341.html" onclick="addTrackPositionToCookie('1',&quot;&quot;);" target="_blank">意大利进口 Balocco 百乐可 饼干 鲜奶油蜂蜜味　350g</a></p></div></div>    <div class="sale_item"><div class="prod_img"><a href="https://item.yhd.com/418657.html" onclick="addTrackPositionToCookie('1','');" target="_blank" clstag="pageclick|keycount|coudan_201709268|5"><img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/5a015753Nac56a682.jpg" width="150" height="150"></a><div class="add_shopcart recom_add" data-pid="418657" data-shopping-count="1" clstag="pageclick|keycount|coudan_201709268|6" onclick="log('AddToCartYhd','Recom_CartYhd',418657,7,'100','7ee4386c8a1d8344d9f79eb928220816236d000e');"><p class="a_cart_inner"><i class="scart_icon iconfont"></i><span class="scart_txt">加入购物车</span></p><p class="opa_bg"></p></div></div><div class="prod_info"><p class="p_pri">¥<b>29.9</b></p><p class="p_tit"><a href="https://item.yhd.com/418657.html" onclick="addTrackPositionToCookie('1',&quot;&quot;);" target="_blank">福临门 东北大米 水晶米 中粮出品 大米5kg</a></p></div></div>  </li>  <li>   <div class="sale_item"><div class="prod_img"><a href="https://item.yhd.com/967962.html" onclick="addTrackPositionToCookie('1','');" target="_blank" clstag="pageclick|keycount|coudan_201709268|5"><img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/59eefa1fNa84f0726.jpg" width="150" height="150"></a><div class="add_shopcart recom_add" data-pid="967962" data-shopping-count="1" clstag="pageclick|keycount|coudan_201709268|6" onclick="log('AddToCartYhd','Recom_CartYhd',967962,8,'100','7ee4386c8a1d8344d9f79eb928220816236d000e');"><p class="a_cart_inner"><i class="scart_icon iconfont"></i><span class="scart_txt">加入购物车</span></p><p class="opa_bg"></p></div></div><div class="prod_info"><p class="p_pri">¥<b>54.9</b></p><p class="p_tit"><a href="https://item.yhd.com/967962.html" onclick="addTrackPositionToCookie('1',&quot;&quot;);" target="_blank">统一 阿萨姆奶茶500ml*15瓶 整箱</a></p></div></div>    <div class="sale_item"><div class="prod_img"><a href="https://item.yhd.com/1171698.html" onclick="addTrackPositionToCookie('1','');" target="_blank" clstag="pageclick|keycount|coudan_201709268|5"><img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/544dfeb9Nd3e0528f.jpg" width="150" height="150"></a><div class="add_shopcart recom_add" data-pid="1171698" data-shopping-count="1" clstag="pageclick|keycount|coudan_201709268|6" onclick="log('AddToCartYhd','Recom_CartYhd',1171698,9,'100','7ee4386c8a1d8344d9f79eb928220816236d000e');"><p class="a_cart_inner"><i class="scart_icon iconfont"></i><span class="scart_txt">加入购物车</span></p><p class="opa_bg"></p></div></div><div class="prod_info"><p class="p_pri">¥<b>16.8</b></p><p class="p_tit"><a href="https://item.yhd.com/1171698.html" onclick="addTrackPositionToCookie('1',&quot;&quot;);" target="_blank">韩国 东远 金枪鱼罐头 沙拉酱味100g*2罐</a></p></div></div>  </li>  <li>   <div class="sale_item"><div class="prod_img"><a href="https://item.yhd.com/2386450.html" onclick="addTrackPositionToCookie('1','');" target="_blank" clstag="pageclick|keycount|coudan_201709268|5"><img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/56de26f9N55174aa1.jpg" width="150" height="150"></a><div class="add_shopcart recom_add" data-pid="2386450" data-shopping-count="1" clstag="pageclick|keycount|coudan_201709268|6" onclick="log('AddToCartYhd','Recom_CartYhd',2386450,10,'100','7ee4386c8a1d8344d9f79eb928220816236d000e');"><p class="a_cart_inner"><i class="scart_icon iconfont"></i><span class="scart_txt">加入购物车</span></p><p class="opa_bg"></p></div></div><div class="prod_info"><p class="p_pri">¥<b>49.9</b></p><p class="p_tit"><a href="https://item.yhd.com/2386450.html" onclick="addTrackPositionToCookie('1',&quot;&quot;);" target="_blank">福临门 东北优质 大米 8kg</a></p></div></div>    <div class="sale_item"><div class="prod_img"><a href="https://item.yhd.com/2102567.html" onclick="addTrackPositionToCookie('1','');" target="_blank" clstag="pageclick|keycount|coudan_201709268|5"><img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/59fc156bN8cb6c39b.jpg" width="150" height="150"></a><div class="add_shopcart recom_add" data-pid="2102567" data-shopping-count="1" clstag="pageclick|keycount|coudan_201709268|6" onclick="log('AddToCartYhd','Recom_CartYhd',2102567,11,'100','7ee4386c8a1d8344d9f79eb928220816236d000e');"><p class="a_cart_inner"><i class="scart_icon iconfont"></i><span class="scart_txt">加入购物车</span></p><p class="opa_bg"></p></div></div><div class="prod_info"><p class="p_pri">¥<b>32.9</b></p><p class="p_tit"><a href="https://item.yhd.com/2102567.html" onclick="addTrackPositionToCookie('1',&quot;&quot;);" target="_blank">光明 莫斯利安 常温酸奶酸牛奶(原味)350g*6盒/礼盒装(新老包装随机发货)</a></p></div></div>  </li>  <li>   <div class="sale_item"><div class="prod_img"><a href="https://item.yhd.com/1014341394.html" onclick="addTrackPositionToCookie('1','');" target="_blank" clstag="pageclick|keycount|coudan_201709268|5"><img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/573c0653N54ecb4c6.jpg" width="150" height="150"></a><div class="add_shopcart recom_add" data-pid="1014341394" data-shopping-count="1" clstag="pageclick|keycount|coudan_201709268|6" onclick="log('AddToCartYhd','Recom_CartYhd',1014341394,12,'100','7ee4386c8a1d8344d9f79eb928220816236d000e');"><p class="a_cart_inner"><i class="scart_icon iconfont"></i><span class="scart_txt">加入购物车</span></p><p class="opa_bg"></p></div></div><div class="prod_info"><p class="p_pri">¥<b>38.9</b></p><p class="p_tit"><a href="https://item.yhd.com/1014341394.html" onclick="addTrackPositionToCookie('1',&quot;&quot;);" target="_blank">三只松鼠_碧根果210gx2袋零食坚果炒货山核桃长寿果干果奶油味</a></p></div></div>    <div class="sale_item"><div class="prod_img"><a href="https://item.yhd.com/675971.html" onclick="addTrackPositionToCookie('1','');" target="_blank" clstag="pageclick|keycount|coudan_201709268|5"><img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/597b07ddNa8ef938f.jpg" width="150" height="150"></a><div class="add_shopcart recom_add" data-pid="675971" data-shopping-count="1" clstag="pageclick|keycount|coudan_201709268|6" onclick="log('AddToCartYhd','Recom_CartYhd',675971,13,'100','7ee4386c8a1d8344d9f79eb928220816236d000e');"><p class="a_cart_inner"><i class="scart_icon iconfont"></i><span class="scart_txt">加入购物车</span></p><p class="opa_bg"></p></div></div><div class="prod_info"><p class="p_pri">¥<b>279.0</b></p><p class="p_tit"><a href="https://item.yhd.com/675971.html" onclick="addTrackPositionToCookie('1',&quot;&quot;);" target="_blank">西部数据(WD)蓝盘 1TB SATA6Gb/s 7200转64M 台式机硬盘(WD10EZEX)</a></p></div></div>  </li>  <li>   <div class="sale_item"><div class="prod_img"><a href="https://item.yhd.com/2386440.html" onclick="addTrackPositionToCookie('1','');" target="_blank" clstag="pageclick|keycount|coudan_201709268|5"><img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/58f41abbN9731d2a4.jpg" width="150" height="150"></a><div class="add_shopcart recom_add" data-pid="2386440" data-shopping-count="1" clstag="pageclick|keycount|coudan_201709268|6" onclick="log('AddToCartYhd','Recom_CartYhd',2386440,14,'100','7ee4386c8a1d8344d9f79eb928220816236d000e');"><p class="a_cart_inner"><i class="scart_icon iconfont"></i><span class="scart_txt">加入购物车</span></p><p class="opa_bg"></p></div></div><div class="prod_info"><p class="p_pri">¥<b>39.9</b></p><p class="p_tit"><a href="https://item.yhd.com/2386440.html" onclick="addTrackPositionToCookie('1',&quot;&quot;);" target="_blank">福临门 五常长粒香 五常大米 中粮出品 大米 5kg</a></p></div></div>    <div class="sale_item"><div class="prod_img"><a href="https://item.yhd.com/1502918027.html" onclick="addTrackPositionToCookie('1','');" target="_blank" clstag="pageclick|keycount|coudan_201709268|5"><img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/58c9f66eN7e2e2cd6.jpg" width="150" height="150"></a><div class="add_shopcart recom_add" data-pid="1502918027" data-shopping-count="1" clstag="pageclick|keycount|coudan_201709268|6" onclick="log('AddToCartYhd','Recom_CartYhd',1502918027,15,'100','7ee4386c8a1d8344d9f79eb928220816236d000e');"><p class="a_cart_inner"><i class="scart_icon iconfont"></i><span class="scart_txt">加入购物车</span></p><p class="opa_bg"></p></div></div><div class="prod_info"><p class="p_pri">¥<b>9.9</b></p><p class="p_tit"><a href="https://item.yhd.com/1502918027.html" onclick="addTrackPositionToCookie('1',&quot;&quot;);" target="_blank">丽家家居 礼品门垫浴室垫子进门脚垫防滑地垫 花色随机 尺寸随机 礼品门垫 花色随机发 花色和尺寸都随机</a></p></div></div>  </li>  <li>   <div class="sale_item"><div class="prod_img"><a href="https://item.yhd.com/2693720.html" onclick="addTrackPositionToCookie('1','');" target="_blank" clstag="pageclick|keycount|coudan_201709268|5"><img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/5810d871N0148639e.jpg" width="150" height="150"></a><div class="add_shopcart recom_add" data-pid="2693720" data-shopping-count="1" clstag="pageclick|keycount|coudan_201709268|6" onclick="log('AddToCartYhd','Recom_CartYhd',2693720,16,'100','7ee4386c8a1d8344d9f79eb928220816236d000e');"><p class="a_cart_inner"><i class="scart_icon iconfont"></i><span class="scart_txt">加入购物车</span></p><p class="opa_bg"></p></div></div><div class="prod_info"><p class="p_pri">¥<b>35.1</b></p><p class="p_tit"><a href="https://item.yhd.com/2693720.html" onclick="addTrackPositionToCookie('1',&quot;&quot;);" target="_blank">蒙牛 纯牛奶 PURE MILK 250ml*16盒 礼盒装</a></p></div></div>    <div class="sale_item"><div class="prod_img"><a href="https://item.yhd.com/1178877.html" onclick="addTrackPositionToCookie('1','');" target="_blank" clstag="pageclick|keycount|coudan_201709268|5"><img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/55dfbd8bNb01a9663.jpg" width="150" height="150"></a><div class="add_shopcart recom_add" data-pid="1178877" data-shopping-count="1" clstag="pageclick|keycount|coudan_201709268|6" onclick="log('AddToCartYhd','Recom_CartYhd',1178877,17,'100','7ee4386c8a1d8344d9f79eb928220816236d000e');"><p class="a_cart_inner"><i class="scart_icon iconfont"></i><span class="scart_txt">加入购物车</span></p><p class="opa_bg"></p></div></div><div class="prod_info"><p class="p_pri">¥<b>29.9</b></p><p class="p_tit"><a href="https://item.yhd.com/1178877.html" onclick="addTrackPositionToCookie('1',&quot;&quot;);" target="_blank">德芙Dove巧克力分享碗装 什锦牛奶榛仁葡萄干巧克力糖果巧克力休闲零食249g</a></p></div></div>  </li>  <li>   <div class="sale_item"><div class="prod_img"><a href="https://item.yhd.com/2839220.html" onclick="addTrackPositionToCookie('1','');" target="_blank" clstag="pageclick|keycount|coudan_201709268|5"><img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/573078e5N75e293d3.jpg" width="150" height="150"></a><div class="add_shopcart recom_add" data-pid="2839220" data-shopping-count="1" clstag="pageclick|keycount|coudan_201709268|6" onclick="log('AddToCartYhd','Recom_CartYhd',2839220,18,'100','7ee4386c8a1d8344d9f79eb928220816236d000e');"><p class="a_cart_inner"><i class="scart_icon iconfont"></i><span class="scart_txt">加入购物车</span></p><p class="opa_bg"></p></div></div><div class="prod_info"><p class="p_pri">¥<b>119.0</b></p><p class="p_tit"><a href="https://item.yhd.com/2839220.html" onclick="addTrackPositionToCookie('1',&quot;&quot;);" target="_blank">网易云音乐车载蓝牙播放器 点烟器式双USB车充 车载充电器 蓝牙FM发射器 智能车充 炫酷黑</a></p></div></div>    <div class="sale_item"><div class="prod_img"><a href="https://item.yhd.com/1311928.html" onclick="addTrackPositionToCookie('1','');" target="_blank" clstag="pageclick|keycount|coudan_201709268|5"><img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/5943304dNeb81efcf.jpg" width="150" height="150"></a><div class="add_shopcart recom_add" data-pid="1311928" data-shopping-count="1" clstag="pageclick|keycount|coudan_201709268|6" onclick="log('AddToCartYhd','Recom_CartYhd',1311928,19,'100','7ee4386c8a1d8344d9f79eb928220816236d000e');"><p class="a_cart_inner"><i class="scart_icon iconfont"></i><span class="scart_txt">加入购物车</span></p><p class="opa_bg"></p></div></div><div class="prod_info"><p class="p_pri">¥<b>1999.0</b></p><p class="p_tit"><a href="https://item.yhd.com/1311928.html" onclick="addTrackPositionToCookie('1',&quot;&quot;);" target="_blank">奥克斯（AUX）正1.5匹 冷暖 定速 空调挂机(KFR-35GW/HFJ+3)</a></p></div></div>  </li>  <li>   <div class="sale_item"><div class="prod_img"><a href="https://item.yhd.com/1018421638.html" onclick="addTrackPositionToCookie('1','');" target="_blank" clstag="pageclick|keycount|coudan_201709268|5"><img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/576a0430N1d4c34ea.jpg" width="150" height="150"></a><div class="add_shopcart recom_add" data-pid="1018421638" data-shopping-count="1" clstag="pageclick|keycount|coudan_201709268|6" onclick="log('AddToCartYhd','Recom_CartYhd',1018421638,20,'100','7ee4386c8a1d8344d9f79eb928220816236d000e');"><p class="a_cart_inner"><i class="scart_icon iconfont"></i><span class="scart_txt">加入购物车</span></p><p class="opa_bg"></p></div></div><div class="prod_info"><p class="p_pri">¥<b>47.9</b></p><p class="p_tit"><a href="https://item.yhd.com/1018421638.html" onclick="addTrackPositionToCookie('1',&quot;&quot;);" target="_blank">三只松鼠_夏威夷果265gx2袋零食坚果炒货干果奶油味送开口器</a></p></div></div>    <div class="sale_item"><div class="prod_img"><a href="https://item.yhd.com/963181.html" onclick="addTrackPositionToCookie('1','');" target="_blank" clstag="pageclick|keycount|coudan_201709268|5"><img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/58660379N1b3bfbc4.jpg" width="150" height="150"></a><div class="add_shopcart recom_add" data-pid="963181" data-shopping-count="1" clstag="pageclick|keycount|coudan_201709268|6" onclick="log('AddToCartYhd','Recom_CartYhd',963181,21,'100','7ee4386c8a1d8344d9f79eb928220816236d000e');"><p class="a_cart_inner"><i class="scart_icon iconfont"></i><span class="scart_txt">加入购物车</span></p><p class="opa_bg"></p></div></div><div class="prod_info"><p class="p_pri">¥<b>22.9</b></p><p class="p_tit"><a href="https://item.yhd.com/963181.html" onclick="addTrackPositionToCookie('1',&quot;&quot;);" target="_blank">乐事（Lay’s）无限薯片 休闲零食 104g*3组合装（原味+烤肉+番茄）新老包装，随机发货</a></p></div></div>  </li>  <li>   <div class="sale_item"><div class="prod_img"><a href="https://item.yhd.com/2615810.html" onclick="addTrackPositionToCookie('1','');" target="_blank" clstag="pageclick|keycount|coudan_201709268|5"><img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/596329f1N7e68cdf8.jpg" width="150" height="150"></a><div class="add_shopcart recom_add" data-pid="2615810" data-shopping-count="1" clstag="pageclick|keycount|coudan_201709268|6" onclick="log('AddToCartYhd','Recom_CartYhd',2615810,22,'100','7ee4386c8a1d8344d9f79eb928220816236d000e');"><p class="a_cart_inner"><i class="scart_icon iconfont"></i><span class="scart_txt">加入购物车</span></p><p class="opa_bg"></p></div></div><div class="prod_info"><p class="p_pri">¥<b>399.0</b></p><p class="p_tit"><a href="https://item.yhd.com/2615810.html" onclick="addTrackPositionToCookie('1',&quot;&quot;);" target="_blank">斐讯K2 1200M智能双频无线路由器 WIFI穿墙 PSG1218</a></p></div></div>    <div class="sale_item"><div class="prod_img"><a href="https://item.yhd.com/695467.html" onclick="addTrackPositionToCookie('1','');" target="_blank" clstag="pageclick|keycount|coudan_201709268|5"><img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/595b092aN7e4cd251.jpg" width="150" height="150"></a><div class="add_shopcart recom_add" data-pid="695467" data-shopping-count="1" clstag="pageclick|keycount|coudan_201709268|6" onclick="log('AddToCartYhd','Recom_CartYhd',695467,23,'100','7ee4386c8a1d8344d9f79eb928220816236d000e');"><p class="a_cart_inner"><i class="scart_icon iconfont"></i><span class="scart_txt">加入购物车</span></p><p class="opa_bg"></p></div></div><div class="prod_info"><p class="p_pri">¥<b>219.0</b></p><p class="p_tit"><a href="https://item.yhd.com/695467.html" onclick="addTrackPositionToCookie('1',&quot;&quot;);" target="_blank"> 帮宝适（Pampers）超薄干爽 婴儿纸尿裤 大号L164片【9-14kg】尿不湿</a></p></div></div>  </li>  <li>   <div class="sale_item"><div class="prod_img"><a href="https://item.yhd.com/627718.html" onclick="addTrackPositionToCookie('1','');" target="_blank" clstag="pageclick|keycount|coudan_201709268|5"><img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/57f9bdc4N4da897c7.jpg" width="150" height="150"></a><div class="add_shopcart recom_add" data-pid="627718" data-shopping-count="1" clstag="pageclick|keycount|coudan_201709268|6" onclick="log('AddToCartYhd','Recom_CartYhd',627718,24,'100','7ee4386c8a1d8344d9f79eb928220816236d000e');"><p class="a_cart_inner"><i class="scart_icon iconfont"></i><span class="scart_txt">加入购物车</span></p><p class="opa_bg"></p></div></div><div class="prod_info"><p class="p_pri">¥<b>104.0</b></p><p class="p_tit"><a href="https://item.yhd.com/627718.html" onclick="addTrackPositionToCookie('1',&quot;&quot;);" target="_blank">德国 进口牛奶 欧德堡（Oldenburger）超高温处理全脂纯牛奶1L*12</a></p></div></div>    <div class="sale_item"><div class="prod_img"><a href="https://item.yhd.com/1101892.html" onclick="addTrackPositionToCookie('1','');" target="_blank" clstag="pageclick|keycount|coudan_201709268|5"><img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/58f8452dNcf573ae8.jpg" width="150" height="150"></a><div class="add_shopcart recom_add" data-pid="1101892" data-shopping-count="1" clstag="pageclick|keycount|coudan_201709268|6" onclick="log('AddToCartYhd','Recom_CartYhd',1101892,25,'100','7ee4386c8a1d8344d9f79eb928220816236d000e');"><p class="a_cart_inner"><i class="scart_icon iconfont"></i><span class="scart_txt">加入购物车</span></p><p class="opa_bg"></p></div></div><div class="prod_info"><p class="p_pri">¥<b>9.2</b></p><p class="p_tit"><a href="https://item.yhd.com/1101892.html" onclick="addTrackPositionToCookie('1',&quot;&quot;);" target="_blank">双汇 火腿肠 王中王系列 30g*9/袋</a></p></div></div>  </li>  <li>   <div class="sale_item"><div class="prod_img"><a href="https://item.yhd.com/1975749.html" onclick="addTrackPositionToCookie('1','');" target="_blank" clstag="pageclick|keycount|coudan_201709268|5"><img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/59bb953cNa24ba009.jpg" width="150" height="150"></a><div class="add_shopcart recom_add" data-pid="1975749" data-shopping-count="1" clstag="pageclick|keycount|coudan_201709268|6" onclick="log('AddToCartYhd','Recom_CartYhd',1975749,26,'100','7ee4386c8a1d8344d9f79eb928220816236d000e');"><p class="a_cart_inner"><i class="scart_icon iconfont"></i><span class="scart_txt">加入购物车</span></p><p class="opa_bg"></p></div></div><div class="prod_info"><p class="p_pri">¥<b>92.9</b></p><p class="p_tit"><a href="https://item.yhd.com/1975749.html" onclick="addTrackPositionToCookie('1',&quot;&quot;);" target="_blank">【24盒装】蒙牛 纯甄 常温酸牛奶 200g*24 礼盒装</a></p></div></div>    <div class="sale_item"><div class="prod_img"><a href="https://item.yhd.com/1099398.html" onclick="addTrackPositionToCookie('1','');" target="_blank" clstag="pageclick|keycount|coudan_201709268|5"><img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/592f8cc2Neeb01f50.jpg" width="150" height="150"></a><div class="add_shopcart recom_add" data-pid="1099398" data-shopping-count="1" clstag="pageclick|keycount|coudan_201709268|6" onclick="log('AddToCartYhd','Recom_CartYhd',1099398,27,'100','7ee4386c8a1d8344d9f79eb928220816236d000e');"><p class="a_cart_inner"><i class="scart_icon iconfont"></i><span class="scart_txt">加入购物车</span></p><p class="opa_bg"></p></div></div><div class="prod_info"><p class="p_pri">¥<b>1.5</b></p><p class="p_tit"><a href="https://item.yhd.com/1099398.html" onclick="addTrackPositionToCookie('1',&quot;&quot;);" target="_blank">金龙鱼 面条 高筋系列 鸡蛋麦芯挂面150G</a></p></div></div>  </li>  <li>   <div class="sale_item"><div class="prod_img"><a href="https://item.yhd.com/1013722242.html" onclick="addTrackPositionToCookie('1','');" target="_blank" clstag="pageclick|keycount|coudan_201709268|5"><img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/5927cd46N8fcdb71a.jpg" width="150" height="150"></a><div class="add_shopcart recom_add" data-pid="1013722242" data-shopping-count="1" clstag="pageclick|keycount|coudan_201709268|6" onclick="log('AddToCartYhd','Recom_CartYhd',1013722242,28,'100','7ee4386c8a1d8344d9f79eb928220816236d000e');"><p class="a_cart_inner"><i class="scart_icon iconfont"></i><span class="scart_txt">加入购物车</span></p><p class="opa_bg"></p></div></div><div class="prod_info"><p class="p_pri">¥<b>49.9</b></p><p class="p_tit"><a href="https://item.yhd.com/1013722242.html" onclick="addTrackPositionToCookie('1',&quot;&quot;);" target="_blank">三只松鼠_开口松子218gx2袋零食坚果特产炒货东北红松子原味</a></p></div></div>    <div class="sale_item"><div class="prod_img"><a href="https://item.yhd.com/1399979.html" onclick="addTrackPositionToCookie('1','');" target="_blank" clstag="pageclick|keycount|coudan_201709268|5"><img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/5732af49N8eb740f8.jpg" width="150" height="150"></a><div class="add_shopcart recom_add" data-pid="1399979" data-shopping-count="1" clstag="pageclick|keycount|coudan_201709268|6" onclick="log('AddToCartYhd','Recom_CartYhd',1399979,29,'100','7ee4386c8a1d8344d9f79eb928220816236d000e');"><p class="a_cart_inner"><i class="scart_icon iconfont"></i><span class="scart_txt">加入购物车</span></p><p class="opa_bg"></p></div></div><div class="prod_info"><p class="p_pri">¥<b>36.0</b></p><p class="p_tit"><a href="https://item.yhd.com/1399979.html" onclick="addTrackPositionToCookie('1',&quot;&quot;);" target="_blank">伊利 谷粒多颗粒燕麦牛奶200mL*12盒（早餐奶）英雄联盟s7纪念装</a></p></div></div>  </li>  <li>   <div class="sale_item"><div class="prod_img"><a href="https://item.yhd.com/1249046.html" onclick="addTrackPositionToCookie('1','');" target="_blank" clstag="pageclick|keycount|coudan_201709268|5"><img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/563ae892N0bae072a.jpg" width="150" height="150"></a><div class="add_shopcart recom_add" data-pid="1249046" data-shopping-count="1" clstag="pageclick|keycount|coudan_201709268|6" onclick="log('AddToCartYhd','Recom_CartYhd',1249046,30,'100','7ee4386c8a1d8344d9f79eb928220816236d000e');"><p class="a_cart_inner"><i class="scart_icon iconfont"></i><span class="scart_txt">加入购物车</span></p><p class="opa_bg"></p></div></div><div class="prod_info"><p class="p_pri">¥<b>29.9</b></p><p class="p_tit"><a href="https://item.yhd.com/1249046.html" onclick="addTrackPositionToCookie('1',&quot;&quot;);" target="_blank">香满园 东北大米 蟹稻共生 盘锦生态大米 5kg</a></p></div></div>    <div class="sale_item"><div class="prod_img"><a href="https://item.yhd.com/1150542.html" onclick="addTrackPositionToCookie('1','');" target="_blank" clstag="pageclick|keycount|coudan_201709268|5"><img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/578deaedNf62f3e74.jpg" width="150" height="150"></a><div class="add_shopcart recom_add" data-pid="1150542" data-shopping-count="1" clstag="pageclick|keycount|coudan_201709268|6" onclick="log('AddToCartYhd','Recom_CartYhd',1150542,31,'100','7ee4386c8a1d8344d9f79eb928220816236d000e');"><p class="a_cart_inner"><i class="scart_icon iconfont"></i><span class="scart_txt">加入购物车</span></p><p class="opa_bg"></p></div></div><div class="prod_info"><p class="p_pri">¥<b>16.9</b></p><p class="p_tit"><a href="https://item.yhd.com/1150542.html" onclick="addTrackPositionToCookie('1',&quot;&quot;);" target="_blank">百草味 肉干肉脯 休闲零食 靖江猪肉脯 精制猪肉脯200g/袋</a></p></div></div>  </li>  <li>   <div class="sale_item"><div class="prod_img"><a href="https://item.yhd.com/618066.html" onclick="addTrackPositionToCookie('1','');" target="_blank" clstag="pageclick|keycount|coudan_201709268|5"><img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/57be5775N508902a9.jpg" width="150" height="150"></a><div class="add_shopcart recom_add" data-pid="618066" data-shopping-count="1" clstag="pageclick|keycount|coudan_201709268|6" onclick="log('AddToCartYhd','Recom_CartYhd',618066,32,'100','7ee4386c8a1d8344d9f79eb928220816236d000e');"><p class="a_cart_inner"><i class="scart_icon iconfont"></i><span class="scart_txt">加入购物车</span></p><p class="opa_bg"></p></div></div><div class="prod_info"><p class="p_pri">¥<b>45.0</b></p><p class="p_tit"><a href="https://item.yhd.com/618066.html" onclick="addTrackPositionToCookie('1',&quot;&quot;);" target="_blank">TP-LINK TL-WN725N USB无线网卡wifi接收器发射台式机笔记本</a></p></div></div>    <div class="sale_item"><div class="prod_img"><a href="https://item.yhd.com/865340.html" onclick="addTrackPositionToCookie('1','');" target="_blank" clstag="pageclick|keycount|coudan_201709268|5"><img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/59b8e5faN6c02f5c7.jpg" width="150" height="150"></a><div class="add_shopcart recom_add" data-pid="865340" data-shopping-count="1" clstag="pageclick|keycount|coudan_201709268|6" onclick="log('AddToCartYhd','Recom_CartYhd',865340,33,'100','7ee4386c8a1d8344d9f79eb928220816236d000e');"><p class="a_cart_inner"><i class="scart_icon iconfont"></i><span class="scart_txt">加入购物车</span></p><p class="opa_bg"></p></div></div><div class="prod_info"><p class="p_pri">¥<b>25.2</b></p><p class="p_tit"><a href="https://item.yhd.com/865340.html" onclick="addTrackPositionToCookie('1',&quot;&quot;);" target="_blank">伊利 谷粒多黑谷牛奶饮品250ml*12盒/礼盒装（黑豆+黑米+黑芝麻 早餐奶）</a></p></div></div>  </li>  <li>   <div class="sale_item"><div class="prod_img"><a href="https://item.yhd.com/1017139172.html" onclick="addTrackPositionToCookie('1','');" target="_blank" clstag="pageclick|keycount|coudan_201709268|5"><img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/5771f587N01d53208.jpg" width="150" height="150"></a><div class="add_shopcart recom_add" data-pid="1017139172" data-shopping-count="1" clstag="pageclick|keycount|coudan_201709268|6" onclick="log('AddToCartYhd','Recom_CartYhd',1017139172,34,'100','7ee4386c8a1d8344d9f79eb928220816236d000e');"><p class="a_cart_inner"><i class="scart_icon iconfont"></i><span class="scart_txt">加入购物车</span></p><p class="opa_bg"></p></div></div><div class="prod_info"><p class="p_pri">¥<b>39.9</b></p><p class="p_tit"><a href="https://item.yhd.com/1017139172.html" onclick="addTrackPositionToCookie('1',&quot;&quot;);" target="_blank">三只松鼠_手剥巴旦木235gx2袋零食坚果炒货特产干果巴达木</a></p></div></div>    <div class="sale_item"><div class="prod_img"><a href="https://item.yhd.com/1152040.html" onclick="addTrackPositionToCookie('1','');" target="_blank" clstag="pageclick|keycount|coudan_201709268|5"><img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/58feec38N86aace7f.jpg" width="150" height="150"></a><div class="add_shopcart recom_add" data-pid="1152040" data-shopping-count="1" clstag="pageclick|keycount|coudan_201709268|6" onclick="log('AddToCartYhd','Recom_CartYhd',1152040,35,'100','7ee4386c8a1d8344d9f79eb928220816236d000e');"><p class="a_cart_inner"><i class="scart_icon iconfont"></i><span class="scart_txt">加入购物车</span></p><p class="opa_bg"></p></div></div><div class="prod_info"><p class="p_pri">¥<b>48.0</b></p><p class="p_tit"><a href="https://item.yhd.com/1152040.html" onclick="addTrackPositionToCookie('1',&quot;&quot;);" target="_blank">旺旺 旺仔牛奶 儿童牛奶早餐奶纯牛奶 营养健康美味 (铁罐装礼盒) 原味 245ml*12</a></p></div></div>  </li>  <li>   <div class="sale_item"><div class="prod_img"><a href="https://item.yhd.com/952862.html" onclick="addTrackPositionToCookie('1','');" target="_blank" clstag="pageclick|keycount|coudan_201709268|5"><img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/5909afaaNcc2ced8e.jpg" width="150" height="150"></a><div class="add_shopcart recom_add" data-pid="952862" data-shopping-count="1" clstag="pageclick|keycount|coudan_201709268|6" onclick="log('AddToCartYhd','Recom_CartYhd',952862,36,'100','7ee4386c8a1d8344d9f79eb928220816236d000e');"><p class="a_cart_inner"><i class="scart_icon iconfont"></i><span class="scart_txt">加入购物车</span></p><p class="opa_bg"></p></div></div><div class="prod_info"><p class="p_pri">¥<b>53.0</b></p><p class="p_tit"><a href="https://item.yhd.com/952862.html" onclick="addTrackPositionToCookie('1',&quot;&quot;);" target="_blank">百岁山矿泉水570ml*24瓶 整箱</a></p></div></div>    <div class="sale_item"><div class="prod_img"><a href="https://item.yhd.com/1427742.html" onclick="addTrackPositionToCookie('1','');" target="_blank" clstag="pageclick|keycount|coudan_201709268|5"><img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/59360b2bNb453ceba.jpg" width="150" height="150"></a><div class="add_shopcart recom_add" data-pid="1427742" data-shopping-count="1" clstag="pageclick|keycount|coudan_201709268|6" onclick="log('AddToCartYhd','Recom_CartYhd',1427742,37,'100','7ee4386c8a1d8344d9f79eb928220816236d000e');"><p class="a_cart_inner"><i class="scart_icon iconfont"></i><span class="scart_txt">加入购物车</span></p><p class="opa_bg"></p></div></div><div class="prod_info"><p class="p_pri">¥<b>108.0</b></p><p class="p_tit"><a href="https://item.yhd.com/1427742.html" onclick="addTrackPositionToCookie('1',&quot;&quot;);" target="_blank">大王 GOO.N 维E纸尿裤 NB102片 新生儿尿不湿（0-5kg）</a></p></div></div>  </li>  <li>   <div class="sale_item"><div class="prod_img"><a href="https://item.yhd.com/1546956.html" onclick="addTrackPositionToCookie('1','');" target="_blank" clstag="pageclick|keycount|coudan_201709268|5"><img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/59e81ecdN431b063d.jpg" width="150" height="150"></a><div class="add_shopcart recom_add" data-pid="1546956" data-shopping-count="1" clstag="pageclick|keycount|coudan_201709268|6" onclick="log('AddToCartYhd','Recom_CartYhd',1546956,38,'100','7ee4386c8a1d8344d9f79eb928220816236d000e');"><p class="a_cart_inner"><i class="scart_icon iconfont"></i><span class="scart_txt">加入购物车</span></p><p class="opa_bg"></p></div></div><div class="prod_info"><p class="p_pri">¥<b>99.0</b></p><p class="p_tit"><a href="https://item.yhd.com/1546956.html" onclick="addTrackPositionToCookie('1',&quot;&quot;);" target="_blank">罗马仕（ROMOSS）sense6Plus 移动电源/充电宝 20000毫安 苹果/安卓/手机/平板通用 数显（液晶显示）</a></p></div></div>    <div class="sale_item"><div class="prod_img"><a href="https://item.yhd.com/1150556.html" onclick="addTrackPositionToCookie('1','');" target="_blank" clstag="pageclick|keycount|coudan_201709268|5"><img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/593e4cf6N3f4d50ec.jpg" width="150" height="150"></a><div class="add_shopcart recom_add" data-pid="1150556" data-shopping-count="1" clstag="pageclick|keycount|coudan_201709268|6" onclick="log('AddToCartYhd','Recom_CartYhd',1150556,39,'100','7ee4386c8a1d8344d9f79eb928220816236d000e');"><p class="a_cart_inner"><i class="scart_icon iconfont"></i><span class="scart_txt">加入购物车</span></p><p class="opa_bg"></p></div></div><div class="prod_info"><p class="p_pri">¥<b>25.9</b></p><p class="p_tit"><a href="https://item.yhd.com/1150556.html" onclick="addTrackPositionToCookie('1',&quot;&quot;);" target="_blank">百草味 坚果炒货 休闲零食 开心果200g/袋</a></p></div></div>  </li></ul></div><div class="view_dot"><span class="cur"></span><span></span><span></span><span></span></div></div></div>	        <!-- 为您推荐 商品列表 End -->
+	        <!-- 隐藏元素 Start -->
+<!-- 隐藏元素 -->
+<div>
+    <form id="checkoutForm" method="post">
+        <input id="checkoutForm_cart2Checkbox" name="cart2Checkbox" type="hidden">
+        <input id="checkoutForm_cartSuppress" name="cartSuppress" type="hidden">
+    </form>
+</div>
+
+<input id="currentCheckoutType" value="" type="hidden">
+<input id="splitCheckout" value="0" type="hidden">	        <!-- 隐藏元素 End -->
+	    </div>
+	</div>
+<script id="claim_coupon_dot" type="text/x-dot-template">
+<div class="coupon_dialog_wrap">                           
+    <dl>
+    	{{~ it.coupons:coupon}}
+        <dd class="clearfix">
+            <div class="tickets"><em>¥</em>{{=coupon.deductAmount}}</div>
+            <div class="txt">
+                <p class="p1">
+					{{? coupon.thresholdAmount > 0}}
+						 满{{=coupon.thresholdAmount}}减{{=coupon.deductAmount}}
+					{{??}}
+						无门槛立减{{=coupon.deductAmount}}元
+					{{?}}
+				</p>
+                <p class="p2">
+						{{? coupon.claim  || coupon.isAssignDate }}
+							{{=coupon.formatedStartDate}}~{{=coupon.formatedEndDate}}
+						{{??}}
+							领券后{{=coupon.expireDay}}天内有效
+						{{?}}
+				</p>
+            </div>
+			{{? coupon.claim}}
+				 <a href="javascript:;" class="has_get"><i class="iconfont"></i>已领取</a>
+			{{??}}
+	            <a href="javascript:;" class="get claim_coupon" data-coupon-active-number="{{=coupon.couponActiveNumber}}" data-merchant-id="{{=it.merchantId}}">领取</a>
+			{{?}}
+        </dd>
+        {{~}}
+    </dl>
+</div>
+</script>
+<!-- 选择赠品弹窗 -->
+	<div class="makeup_dialog  popup_dialog select_free_dialog pop_zIndexMore" style="display: none; margin-left: -396px; top: 144px;"><p class="tit" clearfix"="">换购商品<em></em><a href="javascript:;" class="pop_close"></a></p><div class="sale_prod_cont cheap_prod makeup_list"> <a class="control_btn left_arrow unable" href="javascript:;"><i class="iconfont"></i></a> <a class="control_btn right_arrow" href="javascript:;"><i class="iconfont"></i></a> <div class="sale_scroll_box"> <ul class="sale_scroll_ul clearfix" style="width: 2520px;"> <li class="sale_item"> <div class="prod_img"> <a href="https://item.yhd.com/4382050.html" target="_blank"> <img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/589aa957Naf02e3be.jpg" width="150" height="150"> </a> </div> <div class="sale_out"> <span>无货</span> </div> <div class="prod_info"> <p class="p_tit"><a href="https://item.yhd.com/4382050.html" target="_blank">达尔优（dareu）LM115G无线光学办公鼠标 黑色  USB鼠标 笔记本鼠标 </a></p> </div>  </li>  <li class="sale_item"> <div class="prod_img"> <a href="https://item.yhd.com/3574614.html" target="_blank"> <img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/57cd2690Nd8f241fe.jpg" width="150" height="150"> </a> </div> <div class="prod_info"> <p class="p_tit"><a href="https://item.yhd.com/3574614.html" target="_blank">达尔优（dareu）EM905 专业级游戏RGB炫光有线鼠标 白色 绝地求生吃鸡鼠标 </a></p> </div>  <a href="javascript:;" class="add_cart select_free_add" data-pskuid="3574614" data-promoid="205194993" data-num="1" clstag="pageclick|keycount|cart_201709267|22" onclick="log('AddToCartYhd','CartYhd',3574614,1,'换购品');">选择</a> </li>  <li class="sale_item"> <div class="prod_img"> <a href="https://item.yhd.com/2016560.html" target="_blank"> <img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/564156a1N447c2f05.jpg" width="150" height="150"> </a> </div> <div class="prod_info"> <p class="p_tit"><a href="https://item.yhd.com/2016560.html" target="_blank">影级（iNSIST） Mars 45 Mastermind Designer Edition鼠标垫 </a></p> </div>  <a href="javascript:;" class="add_cart select_free_add" data-pskuid="2016560" data-promoid="205194993" data-num="1" clstag="pageclick|keycount|cart_201709267|22" onclick="log('AddToCartYhd','CartYhd',2016560,2,'换购品');">选择</a> </li>  <li class="sale_item"> <div class="prod_img"> <a href="https://item.yhd.com/3290977.html" target="_blank"> <img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/57df935bN27aea5b5.jpg" width="150" height="150"> </a> </div> <div class="prod_info"> <p class="p_tit"><a href="https://item.yhd.com/3290977.html" target="_blank">罗技（Logitech）M220 无线静音鼠标 蓝色 </a></p> </div>  <a href="javascript:;" class="add_cart select_free_add" data-pskuid="3290977" data-promoid="205194993" data-num="1" clstag="pageclick|keycount|cart_201709267|22" onclick="log('AddToCartYhd','CartYhd',3290977,3,'换购品');">选择</a> </li>  <li class="sale_item"> <div class="prod_img"> <a href="https://item.yhd.com/4261212.html" target="_blank"> <img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/5874980eN2ca7bb42.jpg" width="150" height="150"> </a> </div> <div class="prod_info"> <p class="p_tit"><a href="https://item.yhd.com/4261212.html" target="_blank">影级（iNSIST） Swing 蓝光竞技版有线电竞游戏鼠标 黑色 绝地求生鼠标 吃鸡鼠标 </a></p> </div>  <a href="javascript:;" class="add_cart select_free_add" data-pskuid="4261212" data-promoid="205194993" data-num="1" clstag="pageclick|keycount|cart_201709267|22" onclick="log('AddToCartYhd','CartYhd',4261212,4,'换购品');">选择</a> </li>  <li class="sale_item"> <div class="prod_img"> <a href="https://item.yhd.com/3290993.html" target="_blank"> <img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/57df93b7Nc7998edc.jpg" width="150" height="150"> </a> </div> <div class="prod_info"> <p class="p_tit"><a href="https://item.yhd.com/3290993.html" target="_blank">罗技（Logitech）M330 无线静音鼠标 黑色 </a></p> </div>  <a href="javascript:;" class="add_cart select_free_add" data-pskuid="3290993" data-promoid="205194993" data-num="1" clstag="pageclick|keycount|cart_201709267|22" onclick="log('AddToCartYhd','CartYhd',3290993,5,'换购品');">选择</a> </li>  <li class="sale_item"> <div class="prod_img"> <a href="https://item.yhd.com/4685456.html" target="_blank"> <img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/58d8addfN3e2f4170.jpg" width="150" height="150"> </a> </div> <div class="prod_info"> <p class="p_tit"><a href="https://item.yhd.com/4685456.html" target="_blank">雷柏（Rapoo） V302 幻彩RGB  电竞鼠标 游戏鼠标 有线鼠标 笔记本鼠标 绝地求生吃鸡利器 黑色 </a></p> </div>  <a href="javascript:;" class="add_cart select_free_add" data-pskuid="4685456" data-promoid="205194993" data-num="1" clstag="pageclick|keycount|cart_201709267|22" onclick="log('AddToCartYhd','CartYhd',4685456,6,'换购品');">选择</a> </li>  <li class="sale_item"> <div class="prod_img"> <a href="https://item.yhd.com/5107580.html" target="_blank"> <img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/59802d5aNb90f3872.jpg" width="150" height="150"> </a> </div> <div class="prod_info"> <p class="p_tit"><a href="https://item.yhd.com/5107580.html" target="_blank">影级（iNSIST）电竞眼镜 防蓝光新款夹片 8801 </a></p> </div>  <a href="javascript:;" class="add_cart select_free_add" data-pskuid="5107580" data-promoid="205194993" data-num="1" clstag="pageclick|keycount|cart_201709267|22" onclick="log('AddToCartYhd','CartYhd',5107580,7,'换购品');">选择</a> </li>  <li class="sale_item"> <div class="prod_img"> <a href="https://item.yhd.com/2015469.html" target="_blank"> <img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/564155d0N53abdb0c.jpg" width="150" height="150"> </a> </div> <div class="prod_info"> <p class="p_tit"><a href="https://item.yhd.com/2015469.html" target="_blank">影级（iNSIST） Mars 90 Mastermind Designer Edition鼠标垫 </a></p> </div>  <a href="javascript:;" class="add_cart select_free_add" data-pskuid="2015469" data-promoid="205194993" data-num="1" clstag="pageclick|keycount|cart_201709267|22" onclick="log('AddToCartYhd','CartYhd',2015469,8,'换购品');">选择</a> </li>  <li class="sale_item"> <div class="prod_img"> <a href="https://item.yhd.com/5056711.html" target="_blank"> <img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/59c9bffeN78b30d5f.jpg" width="150" height="150"> </a> </div> <div class="prod_info"> <p class="p_tit"><a href="https://item.yhd.com/5056711.html" target="_blank">影级（iNSIST）DM7800  电竞游戏鼠标有线 RGB炫彩灯光 黑色 10000dpi 绝地求生鼠标 吃鸡鼠标 </a></p> </div>  <a href="javascript:;" class="add_cart select_free_add" data-pskuid="5056711" data-promoid="205194993" data-num="1" clstag="pageclick|keycount|cart_201709267|22" onclick="log('AddToCartYhd','CartYhd',5056711,9,'换购品');">选择</a> </li>  <li class="sale_item"> <div class="prod_img"> <a href="https://item.yhd.com/3591566.html" target="_blank"> <img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/57c7dcedN44997e78.jpg" width="150" height="150"> </a> </div> <div class="prod_info"> <p class="p_tit"><a href="https://item.yhd.com/3591566.html" target="_blank">赛德斯（Sades）狼灵 头戴式立体声道语音耳机（白蓝震动版）吃鸡游戏耳机 头戴式电竞有线usb台式电脑耳麦cf </a></p> </div>  <a href="javascript:;" class="add_cart select_free_add" data-pskuid="3591566" data-promoid="205194993" data-num="1" clstag="pageclick|keycount|cart_201709267|22" onclick="log('AddToCartYhd','CartYhd',3591566,10,'换购品');">选择</a> </li>  <li class="sale_item"> <div class="prod_img"> <a href="https://item.yhd.com/2317709.html" target="_blank"> <img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/56aebaa6N6869bdb7.jpg" width="150" height="150"> </a> </div> <div class="sale_out"> <span>无货</span> </div> <div class="prod_info"> <p class="p_tit"><a href="https://item.yhd.com/2317709.html" target="_blank">影级（iNSIST） Mars 90x 鼠标垫 </a></p> </div>  </li>  <li class="sale_item"> <div class="prod_img"> <a href="https://item.yhd.com/2341077.html" target="_blank"> <img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/572c5306Nf69dadbf.jpg" width="150" height="150"> </a> </div> <div class="sale_out"> <span>无货</span> </div> <div class="prod_info"> <p class="p_tit"><a href="https://item.yhd.com/2341077.html" target="_blank">影级（iNSIST） Mars 90b 鼠标垫 </a></p> </div>  </li>  <li class="sale_item"> <div class="prod_img"> <a href="https://item.yhd.com/5259946.html" target="_blank"> <img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/59813d0aNf33aff6f.jpg" width="150" height="150"> </a> </div> <div class="sale_out"> <span>无货</span> </div> <div class="prod_info"> <p class="p_tit"><a href="https://item.yhd.com/5259946.html" target="_blank">影级（iNSIST）择天记 有线电竞鼠标 黑色 绝地求生鼠标 吃鸡鼠标 </a></p> </div>  </li> </ul> </div><div class="view_dot"><span class="cur"></span><span></span><span></span><span></span></div></div><div class="tip none">请先取消已选赠品，然后重新选择</div></div>
+
+<script id="select_free_dot" type="text/x-dot-template">
+	<p class=tit clearfix">{{?it.type==5}}换购商品{{??}}选择赠品{{?}}<em></em><a href="javascript:;" class="pop_close"></a></p>
+	<div class="sale_prod_cont cheap_prod makeup_list">
+	    <a class="control_btn left_arrow" href="javascript:;"><i class="iconfont">&#xe621;</i></a>
+	    <a class="control_btn right_arrow"  href="javascript:;"><i class="iconfont">&#xe622;</i></a>
+	    <div class="sale_scroll_box">
+	        <ul class="sale_scroll_ul clearfix">
+				{{~it.gifts:gift:idx}}
+			    <li class="sale_item">
+			        <div class="prod_img">
+			            <a href="{{=gift.prdUrl}}" target="_blank">
+			                <img src="{{=gift.imgUrl}}" width="150" height="150"/>
+			            </a>
+			        </div>
+					{{? !gift.hasStock}}
+                    <div class="sale_out">
+                        <span>无货</span>
+                    </div>
+					{{?}}
+			        <div class="prod_info">
+			            <p class="p_tit"><a href="{{=gift.prdUrl}}" target="_blank">{{=gift.name}} </a></p>
+			        </div>
+                    {{? gift.hasStock}}
+                    <a href="javascript:;" class="add_cart select_free_add"
+					   data-pskuId="{{=gift.id}}"
+					   data-promoId="{{= it.id}}"
+					   data-num="{{= gift.num || 1 }}"
+					   {{?it.type==5}}
+                       clstag="pageclick|keycount|cart_201709267|22"
+					   {{??}}
+					   clstag="pageclick|keycount|cart_201709267|21"
+					   {{?}}
+                       onclick="log('AddToCartYhd','CartYhd',{{=gift.id}},{{=idx}},'{{=(it.type==5?'换购品':'赠品')}}');"
+					>
+						选择
+					</a>
+					{{?}}
+			    </li>
+			    {{~}}
+			</ul>
+	    </div>
+	</div>
+	<div class="tip none">请先取消已选赠品，然后重新选择</div>
+</script>
+<!-- 快速凑单弹窗 -->
+<div class="makeup_dialog quick_makeup_dialog popup_dialog pop_zIndexMore" style="display: none;"></div>
+<script id="quick_makeup_dot" type="text/x-dot-template">
+    <p class="tit clearfix">凑单商品<em>（{{=it.displayName}}）</em><a href="javascript:;" class="pop_close close_btn"></a></p>
+    <div class="sale_prod_cont cheap_prod makeup_list">
+        <a class="control_btn left_arrow {{?it.result.length<=4}}arrow_hide{{?}}" href="javascript:;"><i class="iconfont">&#xe621;</i></a>
+        <a class="control_btn right_arrow {{?it.result.length<=4}}arrow_hide{{?}}"  href="javascript:;"><i class="iconfont">&#xe622;</i></a>
+        <div class="sale_scroll_box">
+            <ul class="sale_scroll_ul clearfix">
+				{{~ it.result:item}}
+                <li class="sale_item" data-recordTracker="1">
+                    <div class="prod_img" >
+                        <a href="" target="_blank"  data-tpa="REMIND_COUPON_PC" data-tc="{{=item.tcCode}}" data-tce="{{=item.tceCode}}" >
+                            <img src="{{=require('utils').zoomImg(item.imageUrl,150)}}" width="150" height="150"/>
+                        </a>
+                    </div>
+                    <div class="prod_info">
+                        <p class="p_pri">&yen;<b>{{=item.facadePrice}}</b></p>
+                        <p class="p_tit"><a href="" title="{{=item.cnName}}" data-tpa="REMIND_COUPON_PC" data-tc="{{=item.tcCode}}" data-tce="{{=item.tceCode}}" >{{=item.cnName}}</a></p>
+                    </div>
+                    <a href="javascript:;" class="add_cart" data-pm-id="{{=item.pmInfoId}}" data-shopping-count="{{=(item.shoppingcount||1)}}" data-tpa="REMIND_COUPON_PC" data-tc="{{=item.tcCode}}" data-tce="{{=item.tceCode}}">加入购物车</a>
+                </li>
+				{{~}}
+            </ul>
+        </div>
+    </div>
+
+</script>
+<div class="c_global_toolbar">
+    <div class="c_toolbar_wrap">
+        <div class="tbar_wrap_tabs">
+            <div class="t_warp_slide_tabs">
+                                <div data-value="recycler" class="t_control_btn">
+                    <a href="javascript:;" class="trash" id="trash"><i class="t_same iconfont"></i><em class="t_same">最近删除</em><b class="c_lit_tip">0</b><div class="add_tip">商品已移入回收站<span></span></div></a>
+                </div>
+            </div>
+            <div class="t_warp_link_tabs">
+                <div class="t_control_btn">
+                    <a href="#"><i class="t_same iconfont"></i><em class="t_same">返回顶部</em></a>
+                </div>
+            </div>
+        </div>
+        <div class="tbar_wrap_panels t_wrap_panels_shadow">
+<div data-value="list" class="t_panel_content t_panel_cont_list">
+    <h4>常购清单</h4>
+    <div class="t_panel_wrap"></div>
+</div>
+<script id="dot-boughtItems" type="text/x-dot-template">
+    <div class="t_prod_listbox">
+        <ul>
+            {{? it.result != null && it.result.length > 0 }}
+                {{~ it.result : value : index}}
+                        <li class="clearfix {{? !(value.canShowCart && value.canBuy && value.isInexistent)}}unable{{?}}">
+                            <div class="t_prodimg" data-tc="{{=value.tcCode}}" data-tce="{{=value.tceCode}}">
+                                <a href="/item/{{= value.pmInfoId }}" target="_blank"><img width="80" height="80"src="{{= value.productPicUrl }}" ></a>
+                            	{{? !(value.canShowCart && value.canBuy && value.isInexistent)}}
+                            		<em><i class="opa_bg"></i>无效</em>
+                            	{{?}}
+                            </div>
+                            <div class="t_prodinfo">
+                                <div class="tp_title clearfix">
+                                    <a class="ti_tag" href="#">购买{{= value.boughtCount || 1 }}次</a>
+                                    <a class="ti_name" href="/item/{{= value.pmInfoId }}" target="_blank">{{= value.productCname }}</a>
+                                </div>
+                                {{? value.promotionDescList != null && value.promotionDescList.length>0}}
+                                	<a href="{{=value.promotionDescList[0].proUrl}}" class="tp_promt" target="_blank"><i></i>{{=value.promotionDescList[0].desc}}</a>
+                                {{?}}
+                                <p class="tp_price">&yen;<b>{{= value.price || 0.00 }}</b></p>
+                                {{? !(value.canShowCart && value.canBuy && value.isInexistent) }}
+                                	<a href="javascript:;" class="tp_simalar" data-merchant-id="{{=value.merchantId}}" data-product-id="{{=value.productId}}" data-tpa="VIEW_PRODUCT_RECOMMEND"></a>
+                                {{?? !value.canAddCart}}
+
+                            	{{??}}
+                                    <a class="tp_add_cart iconfont bought_add" href="javascript:;" data-pm-info-id="{{= value.pmInfoId }}" data-shopping-num="{{= value.shoppingcount || 1 }}" data-tpa="CART_BOUGHT_ITEM_ADD_CART">&#xe61c;</a>
+                            	{{?}}
+                            </div>
+                        </li>
+                {{~}}
+            {{?}}
+        </ul>
+        {{? it.result != null && it.result.length > 0 }}
+        	<div class="tp_see_more"><a href="//closet.yhd.com/bought/myBought.do" data-tpa="CART_BOUGHT_ITEM_GO2MY" target="_blank">查看更多常购商品</a></div>
+        {{?}}
+    </div>
+    {{? it.result == null || it.result.length == 0 }}
+    	<div class="tp_empty">
+            <img src="/shopping4/images/empty_purchase.png" alt="" width="155" height="161">
+            <p>清单空空，剁手匆匆<br>马上下一单吧</p>
+        </div>
+    {{?}}
+</script><div data-value="favor" class="t_panel_content t_panel_cont_favor">
+    <h4>我的收藏</h4>
+    <div class="t_panel_wrap"></div>
+</div>
+<script id="t_panel_cont_favor_dot" type="text/x-dot-template">
+    <div class="t_prod_listbox" >
+        <ul>
+            {{? it.list != null && it.list.length > 0}}
+                {{~ it.list : item}}
+                    <li class="clearfix">
+                        <div class="t_prodimg">
+                            <a href="//item.yhd.com/{{= item.productId }}.html" target="_blank"><img src="{{?item.productLogo}}//img10.360buyimg.com/cms/s75x75_{{= item.productLogo}}{{??}}//image.yihaodianimg.com/front-homepage/global/images/defaultproduct.jpg{{?}}" width="80" height="80"></a>
+                        </div>
+                        <div class="t_prodinfo">
+                            <div class="tp_title clearfix">
+                                <a class="ti_name" href="//item.yhd.com/{{= item.productId }}.html" target="_blank">{{= item.productName }}</a>
+                            </div>
+                            <p class="tp_price">&yen;<b>{{= item.followedPrice?item.followedPrice.toFixed(2):"0.00"}}</b></p>
+                            <a class="tp_add_cart iconfont collected_add" href="javascript:;" data-product-id="{{= item.productId }}">&#xe61c;</a>
+                        </div>
+                    </li>
+                {{~}}
+            {{?}}
+        </ul>
+    </div>
+    {{? it.list == null || it.list.length == 0}}
+    	<div class="tp_empty">
+            <img src="/shopping4/images/empty_collect.png" alt="" width="155" height="161">
+            <p>收藏是一种购物态度<br>立即试试吧~</p>
+        </div>
+    {{?}}
+</script>
+<div data-value="recycler" class="t_panel_content t_panel_cont_recycler">
+    <h4>最近删除</h4>
+    <p class="delete_all" style="display: none;"><a href="javascript:;">清空</a></p>
+    <div class="t_panel_wrap"> <p class="null_delte_prod_tit"> 没有最近删除的商品</p></div>
+    <div class="tbar_mask_layout none"></div>
+	     <div class="del_list_dialog none">
+	         <p class="d_list_header">清空商品</p>
+	         <p class="d_list_cont">确定要清空最近删除商品吗？</p>
+	         <div class="d_control_btns">
+	             <a class="cancel_btn close_btn" href="javascript:;">取消</a>
+	             <a class="sure_btn" href="javascript:;">确认清空</a>
+	         </div>
+	         <a class="tbar_same_close close_list_dialog close_btn" href="javascript:;"></a>
+	</div>
+</div>
+<script id="recycler_dot" type="text/x-dot-template">
+                {{? it && it.length}}
+                <div class="t_prod_listbox">
+                    <ul>
+                        {{~ it : bin}}
+                            {{var itemInfo=JSON.parse(bin.itemInfo);
+                                if(itemInfo == null){
+                                    continue;
+                                }
+                            }}
+                            <li class="clearfix">
+                                <div class="t_prodimg">
+                                    <a href="{{=itemInfo.prdUrl}}" target="_blank" ><img src="{{=itemInfo.sku.imgUrl}}" width="80" height="80"></a>
+                                </div>
+                                <div class="t_prodinfo">
+                                    <div class="tp_title clearfix">
+                                        <a class="ti_name"  href="{{=itemInfo.prdUrl}}"  target="_blank" >{{=itemInfo.sku.name}}</a>
+                                    </div>
+                                    {{? itemInfo.sku.price}}<p class="tp_price">&yen;<b>{{=itemInfo.sku.price}}</b></p>{{?}}
+                                    <a class="tp_add_cart iconfont recycle_add" href="javascript:;" data-identifier="{{=itemInfo.id}}">&#xe61c;</a>
+                                </div>
+                            </li>
+                        {{~}}
+                    </ul>
+                </div>
+                {{??}}
+				<p class="null_delte_prod_tit"> 没有最近删除的商品</p>
+				{{?}}
+</script>                    </div>
+        <a class="tbar_same_close tbar_slide_close" href="javascript:;"></a>
+
+    </div>
+</div><!-- 删除组合商品小弹窗 -->
+<div class="makesure_dialog tip_dialog dialog pop_zIndexMore" style="display: none;">
+    <div class="t_arrow t_arrow_left"><span></span><i></i></div>
+    <div class="dialog_wrap">
+        <p class="tit">移除该商品，您将失去已获赠品：</p>
+        <p class="item"><b>赠品1：</b>G7 中原3合1速溶咖啡 800g（16*50）</p>
+        <p class="item"><b>赠品2：</b>G7 中原3合1速溶咖啡 800g（16*50）越南进口</p>
+    </div>
+    <div class="btn_box">
+        <a href="javascript:;" class="confirm">确定</a>
+        <a href="javascript:;" class="cancel close">取消</a>
+    </div>
+</div>
+<div class="pop_dialog common">
+    <p class="tit"></p>
+    <p class="txt"></p>
+    <a href="javascript:;" class="pop_close close_btn"></a>
+    <div class="btn_box">
+        <a href="javascript:;" class="cancel pop_close">取消</a>
+        <a href="javascript:;" class="confirm pop_close">确定</a>
+    </div>
+</div>
+<div id="flyItem"><img src="" width="50" height="50"></div>
+<!-- loading弹窗 -->
+<div class="pop_dialog loading_pop" style="margin-left: -125px; top: 122.5px; display: none;">
+    <img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/loading.gif">
+    <span class="txt">正在处理中，请稍后…</span>
+</div>
+
+<div id="cartBlockUI" style="display:none"></div><script id="dot-checkout-warning" type="text/x-dot-template">
+    <p class="tit">温馨提示</p>
+    {{ var pminfoId = ''; }}
+    {{ var warningMsg, warningNum; }}
+    {{? it.warnings != null}}
+        {{ warningNum = it.warnings.length; }}
+        {{~ it.warnings : value : index}}
+            <div class="warn_list">
+                {{? value.msg != null }}
+                    <p><strong>{{= value.msg}}</strong></p>
+                    {{? warningNum == 1 }}
+                        {{ warningMsg = value.msg; }}
+                    {{?}}
+                {{?}}
+                {{? value.subMsg != null }}
+                    <p>({{= value.subMsg}})</p>
+                    {{? warningNum == 1 }}
+                        {{ warningMsg = value.subMsg; }}
+                    {{?}}
+                {{?}}
+                {{? value.items != null }}
+                    {{~ value.items : val : idx}}
+                        <ul class="buy_list">
+                            <li>{{= val.name }}&nbsp;x&nbsp;{{= val.num }}</li>
+                            {{ pminfoId = pminfoId + ","+ val.pminfoId; }}
+                        </ul>
+                    {{~}}
+                {{?}}
+                <br>
+            </div>
+        {{~}}
+    {{?}}
+    {{? !it.isPass && $.trim(warningMsg) != "下列商品无库存或已下架"}}
+        <p>请点击确定后在购物车修改</p>
+    {{?}}
+    <a href="javascript:;" class="cancel pop_close close_btn"></a>
+    <div class="btn_box">
+        {{? !it.isPass}}
+            {{? warningNum == 1 && $.trim(warningMsg) == "下列商品无库存或已下架"}}
+                {{? it.needCheckoutProductNum > it.outOfStockProductNum}}
+                    <a id="deleteCheckout" href="javascript:;" data-pminfos={{=pminfoId}}>删除并结算</a>
+                {{?}}
+                <a id="abortCheckout" href="javascript:;" class="cancel pop_close">取消</a>
+            {{??}}
+                <a id="confirmSure" href="javascript:;" class="cancel pop_close" style="background:#ff5e5e;color:#ffffff">确定</a>
+            {{?}}
+        {{??}}
+            <a id="cancelCheckout" href="javascript:;" class="cancel pop_close">取消</a>
+            <a id="confirmCheckout" href="javascript:;" class="confirm pop_close">确认并结算</a>
+        {{?}}
+    </div>
+</script>
+<div class="pop_dialog warn_pop"></div>
+
+<!--购物车无货商品拦截弹框-->
+    <div class="pop_dialog null_payfor_pop">
+        <a href="javascript:;" class="pop_close close_btn"></a>
+        <div class="spit_title">以下商品无货<br>是否暂时忽略并结算其余商品？</div>
+        <div class="npay_relcont">
+            <ul class="npay_ulbox">
+
+            </ul>
+        </div>
+        <div class="btn_box">
+            <a href="javascript:;" class="cancel pop_close">再看看</a>
+            <a href="javascript:;" class="confirm pop_close no_stock">忽略并结算</a>
+        </div>
+    </div>
+
+<!--海购分流结算-->
+<div class="pop_dialog split_payfor_pop">
+    <a href="javascript:;" class="pop_close close_btn"></a>
+    <div class="spit_title">海购商品与普通商品需要分别结算请选择进行结算的商品</div>
+    <ul class="spit_ulbox">
+       <li class="oversea_icon v_choose"><i></i><span></span></li>
+       <li class="normal_icon"><i></i><span></span></li>
+    </ul>
+    <div class="btn_box">
+        <a href="javascript:;" class="cancel pop_close">返回购物车</a>
+        <a href="javascript:;" class="confirm pop_close oversea">去结算</a>
+    </div>
+</div><!--content end-->
+<div class="ft_wrap">
+<div id="globalBottomBrowseRelated" data-recordtracker="1"></div>
+<div class="wrap ft_footer_service clearfix" id="footerIcon" data-tpa="YHD_GLOBAl_FOOTERICON">
+            <a target="_blank">
+                <img alt="" src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/CgQI0lWskgmADBnsAAAPZvcSh3E68900.jpg">
+                <b>正品保障</b>
+                <span>正品行货 放心选购</span>
+            </a>
+            <a target="_blank">
+                <img alt="" src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/ChEbulWsk4iADa_aAAAM544hHN818600.jpg">
+                <b>满86包邮</b>
+                <span>满86元 免运费</span>
+            </a>
+            <a target="_blank">
+                <img alt="" src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/CgQIz1WslI-Adao3AAAN5b_ut2I80100.jpg">
+                <b>售后无忧</b>
+                <span>7天无理由退货</span>
+            </a>
+            <a target="_blank">
+                <img alt="" src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/ChEi11WsyiyALBbiAAAN9lEEK5M33200.jpg">
+                <b>准时送达</b>
+                <span>收货时间由你做主</span>
+            </a>
+</div>
+
+<div class="wrap ft_service_link clearfix">
+    <div id="bottomHelpLinkId" class="ft_help_list clearfix" data-tpa="YHD_GLOBAl_FOOTER_HELP">
+            <dl>
+            <dt>新手入门</dt>
+                <dd><a href="https://cms.yhd.com/cms/view.do?topicId=12" target="_blank">购物流程</a></dd>
+                <dd><a href="https://cms.yhd.com/cms/view.do?topicId=17" target="_blank">会员制度</a></dd>
+                <dd><a href="https://cms.yhd.com/cms/view.do?topicId=38" target="_blank">订单查询</a></dd>
+                <dd><a href="https://cms.yhd.com/cms/view.do?topicId=36" target="_blank">发票制度</a></dd>
+        </dl>
+
+        <dl>
+            <dt>支付方式</dt>
+                <dd><a href="https://cms.yhd.com/cms/view.do?topicId=25" target="_blank">货到付款</a></dd>
+                <dd><a href="https://cms.yhd.com/cms/view.do?topicId=26" target="_blank">网上支付</a></dd>
+                <dd><a href="https://cms.yhd.com/cms/view.do?topicId=27" target="_blank">银行转账</a></dd>
+                <dd><a href="https://cms.yhd.com/cms/view.do?topicId=28" target="_blank">礼品卡支付</a></dd>
+                <dd><a href="https://cms.yhd.com/cms/view.do?topicId=29" target="_blank">其它支付</a></dd>
+        </dl>
+
+        <dl>
+            <dt>配送服务</dt>
+                <dd><a href="https://cms.yhd.com/cms/view.do?topicId=21" target="_blank">配送进度查询</a></dd>
+                <dd><a href="https://cms.yhd.com/cms/view.do?topicId=20" target="_blank">商品验货与签收</a></dd>
+        </dl>
+
+        <dl>
+            <dt>售后保障</dt>
+                <dd><a href="https://cms.yhd.com/cms/view.do?topicId=31" target="_blank">退换货政策</a></dd>
+                <dd><a href="https://cms.yhd.com/cms/view.do?topicId=43" target="_blank">联系客服</a></dd>
+        </dl>
+    </div>
+    <!--footer 二维码 begin -->
+    <div class="ft_code_wrap clearfix" data-tpa="YHD_GLOBAl_HEADER_MOBILE" id="footerQRcode">
+                <div class="ft_mobile_code clearfix">
+                    <p>APP更优惠</p>
+                    <img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/qryhd.png" alt="APP更优惠二维码">
+                </div>
+                <div class="ft_mobile_code clearfix">
+                    <p>加微信查订单</p>
+                    <img src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/5a2798bbN479da3df.jpg" alt="加微信查订单二维码">
+                </div>
+    </div>
+</div><div id="footer">
+    <p class="ft_footer_link">
+    </p>
+
+    <p class="ft_footer_link">
+        <a href="http://www.miibeian.gov.cn/" target="_blank">沪ICP备16050468号</a>
+        |
+        <a href="https://cms.yhd.com/cms/view.do?topicId=16" target="_blank">经营证照</a>
+        |
+        <a href="https://d9.yihaodianimg.com/N10/M05/00/A9/ChEi2lkQGRaAfaeeAAIhVwT2TYo18400.jpg" target="_blank">互联网药品信息服务资格证</a>
+        |
+        <a target="_blank">违法和不良信息举报电话：0527-88100253</a>
+        |
+        <a href="https://d9.yihaodianimg.com/N11/M04/76/1C/ChEwoVnfFfeAfzKUAAg9urXNqaA12000.jpg" target="_blank">沪B2-20170039</a>
+        
+    </p>
+
+<p>Copyright© 1号店网上超市 2007-2017，All Rights Reserved</p>
+
+        <small id="footerbanner2LazyLoad" class="ft_pic_link">
+        <a href="http://net.china.com.cn/index.htm" target="_blank">
+            <img alt="" src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/CgQCr1PQy1CAF7vaAABDexsiEYM24800.jpg">
+        </a>
+        
+        <a href="http://shwg.dianping.com/index.html" target="_blank">
+            <img alt="" src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/ChEi1VcfPl2AC1T8AAANFrEfJlw97300.jpg">
+        </a>
+        
+        <a href="http://www.shjbzx.cn/" target="_blank">
+            <img alt="" src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/ChEi2lh171KAJrGlAAALl_uZt0E75600.jpg">
+        </a>
+        
+        <a href="https://search.szfw.org/cert/l/CX20150608010268010812" target="_blank">
+            <img alt="" src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/ChEi1FYXHcOAVk_WAAAL2r2-yfo10200.jpg">
+        </a>
+        
+        <a href="https://ss.knet.cn/verifyseal.dll?sn=e13050631010040492h5mq000000&amp;ct=df&amp;a=1&amp;pa=500267" target="_blank">
+            <img alt="" src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/CgQCrlPYTqCASlHXAAAd82JE0eA31000.png">
+        </a>
+        
+</small>
+</div></div>
+<!--js start-->
+ <!--无页面级头部js时, 全局头部js下移-->
+  		<script type="text/javascript" src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/global_simple_top.js" charset="utf-8"></script>
+    <script type="text/javascript" src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/cart_config.js" charset="utf-8"></script>
+<script type="text/javascript" src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/synccookiepc.js" charset="utf-8"></script>
+<!-- foot include start -->
+<script type="text/javascript">
+    var jaq = jaq || [];
+    jaq.push(['account', 'JA2017_111805']); //站点编号
+    jaq.push(['domain', 'yhd.com']); //站点域名
+    (function () {
+        var ja = document.createElement('script');
+        ja.type = 'text/javascript';
+        ja.async = true;
+        ja.src = '//wl.jd.com/joya.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ja, s);
+    })();
+</script>
+<!-- foot include end -->
+
+
+<iframe id="globalLocalStorageAdaptorForGet" style="display:none" src="%E6%88%91%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6-1%E5%8F%B7%E5%BA%97,%E5%8F%AA%E4%B8%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%9F%E6%B4%BB_files/getLocalStorage.htm" loaded="1"></iframe></body></html>

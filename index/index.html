@@ -1,0 +1,4627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<script src="../jquery/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="../iconfont/iconfont.css">
+</head>
+<body>
+	<!-- 顶部广告栏 -->
+	<div id="top-ba">
+		<div id="top-banner">
+			<a href="#" class="top-banner1"><img src="imgs/top-banner1.jpg"></a>
+			<a href="#" class="top-banner2"><img src="imgs/top-banner2.jpg"></a>
+			<a href="#" class="top-btn"> x </a>
+		</div>
+	</div>
+	<!-- 头部 -->
+	<div id="header">
+		<!-- 顶部 -->
+		<div class="header-top">
+			<div class="wrap">
+				<div class="dis">
+					<i></i>
+					送货地址：上海
+				</div>
+				<ul>
+					<li><a href="../denglu/denglu.html" target="_black">Hi,请 登录</a></li>
+					<li><a href="../zhuce/zhuce.html" target="_black">注册</a></li>
+					<li><a href="#"><i class="iconfont icon-zhangdan"></i>我的订单</a></li>
+					<li class="kf">
+						<a href="#">
+							客户服务
+							<i class="xiajiao"></i>
+						</a>
+						<div class="line2"></div>
+						<ol>
+							<li>
+								<a href="#">包裹跟踪</a>
+							</li>
+							<li>
+								<a href="#">在线退换货</a>
+							</li>
+						</ol>
+					</li>
+					<li><a href="#">企业服务</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="wrap">
+			<!-- LOGO -->
+			<div class="logo">
+				<a href="#"></a>
+			</div>
+			<!-- 搜索框 -->
+			<form>
+				<input type="text" class="search" value="品质来袭 120减50 199减100">
+				<button></button>
+			</form>
+			<!-- 附列 -->
+			<ul>
+				<li><a href="#">4件套</a></li>
+				<li><a href="#">格兰仕</a></li>
+				<li><a href="#">澳橙</a></li>
+				<li><a href="#">蜜柚</a></li>
+				<li><a href="#">挂袋</a></li>
+				<li><a href="#">塑料箱</a></li>
+				<li><a href="#">沐浴</a></li>
+				<li><a href="#">黑色酱油</a></li>
+				<li><a href="#">凯浦林</a></li>
+				<li><a href="#">海尔烟机</a></li>
+			</ul>
+			<!-- 导航栏 -->
+			<ul class="nav">
+				<li><a href="#">1号抢购</a></li>
+				<li><a href="#">1号团</a></li>
+				<li><a href="#">领券中心</a></li>
+				<li><a href="#">商城优选</a></li>
+				<li><a href="#">全球进口</a></li>
+				<li><a href="#">1号生鲜</a></li>
+				<li><a href="#">美妆馆</a></li>
+				<li><a href="#">家居馆</a></li>
+				<li><a href="#">电器城</a></li>
+			</ul>
+			<!-- 购物车 -->
+			<div class="gwc">
+				<a href="../gouwuche/gouwuche.html" target="_black">
+					<i></i>
+					购物车
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- 固定搜索框 -->
+	<div id="search-fix">
+		<div class="wrap">
+			<a href="#" class="logo-2">
+				<img src="imgs/logo-2.jpg" alt="">
+			</a>
+			<form>
+				<input type="text" class="search">
+				<button></button>
+			</form>
+		</div>
+	</div>
+	<!-- 展示框 -->
+	<div id="show">
+		<div class="wrap">
+			<!-- 边 -->
+			<div class="bian">
+				<img src="imgs/left.jpg" class="l">
+				<img src="imgs/right.jpg" class="r">
+			</div>
+			<!-- 二级导航 -->
+			<ul class="yiji">
+				<li>
+					<i class="iconfont icon-jinkouyou"></i>
+					<a href="#">全球进口</a>
+				</li>
+				<li>
+					<i class="iconfont icon-shipin"></i>
+					<a href="#">食品</a>
+					/
+					<a href="#">酒</a>
+					/
+					<a href="#">生鲜</a>
+				</li>
+				<li>
+					<i class="iconfont icon-muying"></i>
+					<a href="#">母婴</a>
+					/
+					<a href="#">玩具</a>
+					/
+					<a href="#">童装</a>
+				</li>
+				<li>
+					<i class="iconfont icon-chuwei"></i>
+					<a href="#">宠物</a>
+					/
+					<a href="#">纸巾</a>
+					/
+					<a href="#">厨卫清洁</a>
+				</li>
+				<li>
+					<i class="iconfont icon-jiaju"></i>
+					<a href="#">家居</a>
+					/
+					<a href="#">家纺</a>
+					/
+					<a href="#">家装</a>
+				</li>
+				<li>
+					<i class="iconfont icon-konghong"></i>
+					<a href="#">美妆个人清洁</a>
+				</li>
+				<li>
+					<i class="iconfont icon-1"></i>
+					<a href="#">女装</a>
+					/
+					<a href="#">男装</a>
+					/
+					<a href="#">内衣</a>
+					/
+					<a href="#">珠宝</a>
+				</li>
+				<li>
+					<i class="iconfont icon-baozhuanhuan"></i>
+					<a href="#">鞋靴</a>
+					/
+					<a href="#">箱包</a>
+					/
+					<a href="#">运动户外</a>
+				</li>
+				<li>
+					<i class="iconfont icon-shouji"></i>
+					<a href="../list/list.html" target="_black">手机</a>
+					/
+					<a href="#">数码</a>
+					/
+					<a href="#">电脑办公</a>
+				</li>
+				<li>
+					<i class="iconfont icon-jiayongdianqi"></i>
+					<a href="#">家用电器</a>
+					/
+					<a href="#">汽车用品</a>
+				</li>
+				<li>
+					<i class="iconfont icon-drugs"></i>
+					<a href="#">医药</a>
+					/
+					<a href="#">保健滋补</a>
+					/
+					<a href="#">成人</a>
+				</li>
+				<li>
+					<i class="iconfont icon-shu"></i>
+					<a href="#">图书</a>
+				</li>
+			</ul>
+			<ul class="erji">
+				<li>
+					<ol>
+						<li>
+							<dt>
+								<a href="#">乳品生鲜</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">牛奶</a>
+								<a href="#">成人奶粉</a>
+								<a href="#">酸奶</a>
+								<a href="#">豆奶</a>
+								<a href="#">奶酪</a>
+								<a href="#">黄油/奶油</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+								<a href="#">海鲜</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">饼干糕点</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">饼干</a>
+								<a href="#">曲奇</a>
+								<a href="#">威化</a>
+								<a href="#">夹心饼干</a>
+								<a href="#">苏打饼干</a>
+								<a href="#">糕点</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">酒水饮料</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">葡萄酒</a>
+								<a href="#">啤酒</a>
+								<a href="#">洋酒</a>
+								<a href="#">豆奶</a>
+								<a href="#">奶酪</a>
+								<a href="#">黄油/奶油</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+								<a href="#">海鲜</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+								<a href="#">海鲜</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">休闲零食</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">坚果</a>
+								<a href="#">果干</a>
+								<a href="#">海苔</a>
+								<a href="#">膨化</a>
+								<a href="#">巧克力</a>
+								<a href="#">糖果</a>
+								<a href="#">果冻/布丁</a>
+								<a href="#">海味零食</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">粮油调味</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">橄榄油</a>
+								<a href="#">大米</a>
+								<a href="#">方便面</a>
+								<a href="#">罐头</a>
+								<a href="#">食用油</a>
+								<a href="#">糕点</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">茶冲咖啡</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">速溶咖啡</a>
+								<a href="#">咖啡伴侣</a>
+								<a href="#">咖啡豆/粉</a>
+								<a href="#">罐头</a>
+								<a href="#">食用油</a>
+								<a href="#">糕点</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">饼干糕点</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">饼干</a>
+								<a href="#">曲奇</a>
+								<a href="#">威化</a>
+								<a href="#">夹心饼干</a>
+								<a href="#">苏打饼干</a>
+								<a href="#">糕点</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">茶冲咖啡</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">速溶咖啡</a>
+								<a href="#">咖啡伴侣</a>
+								<a href="#">咖啡豆/粉</a>
+								<a href="#">罐头</a>
+								<a href="#">食用油</a>
+								<a href="#">糕点</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">饼干糕点</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">饼干</a>
+								<a href="#">曲奇</a>
+								<a href="#">威化</a>
+								<a href="#">夹心饼干</a>
+								<a href="#">苏打饼干</a>
+								<a href="#">糕点</a>
+							</dd>
+						</li>
+					</ol>
+					<div class="show-img">
+						<div>
+							<img src="imgs/11.jpg">
+							<img src="imgs/12.jpg">
+							<img src="imgs/13.jpg">
+							<img src="imgs/14.jpg">
+							<img src="imgs/15.jpg">
+							<img src="imgs/16.jpg">
+						</div>
+						<img src="imgs/21.jpg">
+						<img src="imgs/22.jpg">
+					</div>
+				</li>
+				<li>
+					<ol>
+						<li>
+							<dt>
+								<a href="#">乳品生鲜</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">牛奶</a>
+								<a href="#">成人奶粉</a>
+								<a href="#">酸奶</a>
+								<a href="#">豆奶</a>
+								<a href="#">奶酪</a>
+								<a href="#">黄油/奶油</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+								<a href="#">海鲜</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">饼干糕点</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">饼干</a>
+								<a href="#">曲奇</a>
+								<a href="#">威化</a>
+								<a href="#">夹心饼干</a>
+								<a href="#">苏打饼干</a>
+								<a href="#">糕点</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">酒水饮料</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">葡萄酒</a>
+								<a href="#">啤酒</a>
+								<a href="#">洋酒</a>
+								<a href="#">豆奶</a>
+								<a href="#">奶酪</a>
+								<a href="#">黄油/奶油</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+								<a href="#">海鲜</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+								<a href="#">海鲜</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">饼干糕点</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">饼干</a>
+								<a href="#">曲奇</a>
+								<a href="#">威化</a>
+								<a href="#">夹心饼干</a>
+								<a href="#">苏打饼干</a>
+								<a href="#">糕点</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">休闲零食</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">坚果</a>
+								<a href="#">果干</a>
+								<a href="#">海苔</a>
+								<a href="#">膨化</a>
+								<a href="#">巧克力</a>
+								<a href="#">糖果</a>
+								<a href="#">果冻/布丁</a>
+								<a href="#">海味零食</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">粮油调味</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">橄榄油</a>
+								<a href="#">大米</a>
+								<a href="#">方便面</a>
+								<a href="#">罐头</a>
+								<a href="#">食用油</a>
+								<a href="#">糕点</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">饼干糕点</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">饼干</a>
+								<a href="#">曲奇</a>
+								<a href="#">威化</a>
+								<a href="#">夹心饼干</a>
+								<a href="#">苏打饼干</a>
+								<a href="#">糕点</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">茶冲咖啡</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">速溶咖啡</a>
+								<a href="#">咖啡伴侣</a>
+								<a href="#">咖啡豆/粉</a>
+								<a href="#">罐头</a>
+								<a href="#">食用油</a>
+								<a href="#">糕点</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">饼干糕点</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">饼干</a>
+								<a href="#">曲奇</a>
+								<a href="#">威化</a>
+								<a href="#">夹心饼干</a>
+								<a href="#">苏打饼干</a>
+								<a href="#">糕点</a>
+							</dd>
+						</li>
+					</ol>
+					<div class="show-img">
+						<div>
+							<img src="imgs/11.jpg">
+							<img src="imgs/12.jpg">
+							<img src="imgs/13.jpg">
+							<img src="imgs/14.jpg">
+							<img src="imgs/15.jpg">
+							<img src="imgs/16.jpg">
+						</div>
+						<img src="imgs/21.jpg">
+						<img src="imgs/22.jpg">
+					</div>
+				</li>
+				<li>
+					<ol>
+						<li>
+							<dt>
+								<a href="#">乳品生鲜</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">牛奶</a>
+								<a href="#">成人奶粉</a>
+								<a href="#">酸奶</a>
+								<a href="#">豆奶</a>
+								<a href="#">奶酪</a>
+								<a href="#">黄油/奶油</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+								<a href="#">海鲜</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">饼干糕点</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">饼干</a>
+								<a href="#">曲奇</a>
+								<a href="#">威化</a>
+								<a href="#">夹心饼干</a>
+								<a href="#">苏打饼干</a>
+								<a href="#">糕点</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">乳品生鲜</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">牛奶</a>
+								<a href="#">成人奶粉</a>
+								<a href="#">酸奶</a>
+								<a href="#">豆奶</a>
+								<a href="#">奶酪</a>
+								<a href="#">黄油/奶油</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+								<a href="#">海鲜</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">酒水饮料</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">葡萄酒</a>
+								<a href="#">啤酒</a>
+								<a href="#">洋酒</a>
+								<a href="#">豆奶</a>
+								<a href="#">奶酪</a>
+								<a href="#">黄油/奶油</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+								<a href="#">海鲜</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+								<a href="#">海鲜</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">乳品生鲜</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">牛奶</a>
+								<a href="#">成人奶粉</a>
+								<a href="#">酸奶</a>
+								<a href="#">豆奶</a>
+								<a href="#">奶酪</a>
+								<a href="#">黄油/奶油</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+								<a href="#">海鲜</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">休闲零食</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">坚果</a>
+								<a href="#">果干</a>
+								<a href="#">海苔</a>
+								<a href="#">膨化</a>
+								<a href="#">巧克力</a>
+								<a href="#">糖果</a>
+								<a href="#">果冻/布丁</a>
+								<a href="#">海味零食</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">粮油调味</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">橄榄油</a>
+								<a href="#">大米</a>
+								<a href="#">方便面</a>
+								<a href="#">罐头</a>
+								<a href="#">食用油</a>
+								<a href="#">糕点</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">乳品生鲜</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">牛奶</a>
+								<a href="#">成人奶粉</a>
+								<a href="#">酸奶</a>
+								<a href="#">豆奶</a>
+								<a href="#">奶酪</a>
+								<a href="#">黄油/奶油</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+								<a href="#">海鲜</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">茶冲咖啡</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">速溶咖啡</a>
+								<a href="#">咖啡伴侣</a>
+								<a href="#">咖啡豆/粉</a>
+								<a href="#">罐头</a>
+								<a href="#">食用油</a>
+								<a href="#">糕点</a>
+							</dd>
+						</li>
+					</ol>
+					<div class="show-img">
+						<div>
+							<img src="imgs/11.jpg">
+							<img src="imgs/12.jpg">
+							<img src="imgs/13.jpg">
+							<img src="imgs/14.jpg">
+							<img src="imgs/15.jpg">
+							<img src="imgs/16.jpg">
+						</div>
+						<img src="imgs/21.jpg">
+						<img src="imgs/22.jpg">
+					</div>
+				</li>
+				<li>
+					<ol>
+						<li>
+							<dt>
+								<a href="#">乳品生鲜</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">牛奶</a>
+								<a href="#">成人奶粉</a>
+								<a href="#">酸奶</a>
+								<a href="#">豆奶</a>
+								<a href="#">奶酪</a>
+								<a href="#">黄油/奶油</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+								<a href="#">海鲜</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">饼干糕点</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">饼干</a>
+								<a href="#">曲奇</a>
+								<a href="#">威化</a>
+								<a href="#">夹心饼干</a>
+								<a href="#">苏打饼干</a>
+								<a href="#">糕点</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">酒水饮料</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">葡萄酒</a>
+								<a href="#">啤酒</a>
+								<a href="#">洋酒</a>
+								<a href="#">豆奶</a>
+								<a href="#">奶酪</a>
+								<a href="#">黄油/奶油</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+								<a href="#">海鲜</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+								<a href="#">海鲜</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">休闲零食</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">坚果</a>
+								<a href="#">果干</a>
+								<a href="#">海苔</a>
+								<a href="#">膨化</a>
+								<a href="#">巧克力</a>
+								<a href="#">糖果</a>
+								<a href="#">果冻/布丁</a>
+								<a href="#">海味零食</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">酒水饮料</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">葡萄酒</a>
+								<a href="#">啤酒</a>
+								<a href="#">洋酒</a>
+								<a href="#">豆奶</a>
+								<a href="#">奶酪</a>
+								<a href="#">黄油/奶油</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+								<a href="#">海鲜</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+								<a href="#">海鲜</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">粮油调味</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">橄榄油</a>
+								<a href="#">大米</a>
+								<a href="#">方便面</a>
+								<a href="#">罐头</a>
+								<a href="#">食用油</a>
+								<a href="#">糕点</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">酒水饮料</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">葡萄酒</a>
+								<a href="#">啤酒</a>
+								<a href="#">洋酒</a>
+								<a href="#">豆奶</a>
+								<a href="#">奶酪</a>
+								<a href="#">黄油/奶油</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+								<a href="#">海鲜</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+								<a href="#">海鲜</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">茶冲咖啡</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">速溶咖啡</a>
+								<a href="#">咖啡伴侣</a>
+								<a href="#">咖啡豆/粉</a>
+								<a href="#">罐头</a>
+								<a href="#">食用油</a>
+								<a href="#">糕点</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">酒水饮料</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">葡萄酒</a>
+								<a href="#">啤酒</a>
+								<a href="#">洋酒</a>
+								<a href="#">豆奶</a>
+								<a href="#">奶酪</a>
+								<a href="#">黄油/奶油</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+								<a href="#">海鲜</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+								<a href="#">海鲜</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+							</dd>
+						</li>
+					</ol>
+					<div class="show-img">
+						<div>
+							<img src="imgs/11.jpg">
+							<img src="imgs/12.jpg">
+							<img src="imgs/13.jpg">
+							<img src="imgs/14.jpg">
+							<img src="imgs/15.jpg">
+							<img src="imgs/16.jpg">
+						</div>
+						<img src="imgs/21.jpg">
+						<img src="imgs/22.jpg">
+					</div>
+				</li>
+				<li>
+					<ol>
+						<li>
+							<dt>
+								<a href="#">乳品生鲜</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">牛奶</a>
+								<a href="#">成人奶粉</a>
+								<a href="#">酸奶</a>
+								<a href="#">豆奶</a>
+								<a href="#">奶酪</a>
+								<a href="#">黄油/奶油</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+								<a href="#">海鲜</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">饼干糕点</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">饼干</a>
+								<a href="#">曲奇</a>
+								<a href="#">威化</a>
+								<a href="#">夹心饼干</a>
+								<a href="#">苏打饼干</a>
+								<a href="#">糕点</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">酒水饮料</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">葡萄酒</a>
+								<a href="#">啤酒</a>
+								<a href="#">洋酒</a>
+								<a href="#">豆奶</a>
+								<a href="#">奶酪</a>
+								<a href="#">黄油/奶油</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+								<a href="#">海鲜</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+								<a href="#">海鲜</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">休闲零食</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">坚果</a>
+								<a href="#">果干</a>
+								<a href="#">海苔</a>
+								<a href="#">膨化</a>
+								<a href="#">巧克力</a>
+								<a href="#">糖果</a>
+								<a href="#">果冻/布丁</a>
+								<a href="#">海味零食</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">粮油调味</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">橄榄油</a>
+								<a href="#">大米</a>
+								<a href="#">方便面</a>
+								<a href="#">罐头</a>
+								<a href="#">食用油</a>
+								<a href="#">糕点</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">茶冲咖啡</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">速溶咖啡</a>
+								<a href="#">咖啡伴侣</a>
+								<a href="#">咖啡豆/粉</a>
+								<a href="#">罐头</a>
+								<a href="#">食用油</a>
+								<a href="#">糕点</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">休闲零食</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">坚果</a>
+								<a href="#">果干</a>
+								<a href="#">海苔</a>
+								<a href="#">膨化</a>
+								<a href="#">巧克力</a>
+								<a href="#">糖果</a>
+								<a href="#">果冻/布丁</a>
+								<a href="#">海味零食</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">粮油调味</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">橄榄油</a>
+								<a href="#">大米</a>
+								<a href="#">方便面</a>
+								<a href="#">罐头</a>
+								<a href="#">食用油</a>
+								<a href="#">糕点</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">休闲零食</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">坚果</a>
+								<a href="#">果干</a>
+								<a href="#">海苔</a>
+								<a href="#">膨化</a>
+								<a href="#">巧克力</a>
+								<a href="#">糖果</a>
+								<a href="#">果冻/布丁</a>
+								<a href="#">海味零食</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">粮油调味</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">橄榄油</a>
+								<a href="#">大米</a>
+								<a href="#">方便面</a>
+								<a href="#">罐头</a>
+								<a href="#">食用油</a>
+								<a href="#">糕点</a>
+							</dd>
+						</li>
+					</ol>
+					<div class="show-img">
+						<div>
+							<img src="imgs/11.jpg">
+							<img src="imgs/12.jpg">
+							<img src="imgs/13.jpg">
+							<img src="imgs/14.jpg">
+							<img src="imgs/15.jpg">
+							<img src="imgs/16.jpg">
+						</div>
+						<img src="imgs/21.jpg">
+						<img src="imgs/22.jpg">
+					</div>
+				</li>
+				<li>
+					<ol>
+						<li>
+							<dt>
+								<a href="#">乳品生鲜</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">牛奶</a>
+								<a href="#">成人奶粉</a>
+								<a href="#">酸奶</a>
+								<a href="#">豆奶</a>
+								<a href="#">奶酪</a>
+								<a href="#">黄油/奶油</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+								<a href="#">海鲜</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">饼干糕点</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">饼干</a>
+								<a href="#">曲奇</a>
+								<a href="#">威化</a>
+								<a href="#">夹心饼干</a>
+								<a href="#">苏打饼干</a>
+								<a href="#">糕点</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">休闲零食</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">坚果</a>
+								<a href="#">果干</a>
+								<a href="#">海苔</a>
+								<a href="#">膨化</a>
+								<a href="#">巧克力</a>
+								<a href="#">糖果</a>
+								<a href="#">果冻/布丁</a>
+								<a href="#">海味零食</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">粮油调味</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">橄榄油</a>
+								<a href="#">大米</a>
+								<a href="#">方便面</a>
+								<a href="#">罐头</a>
+								<a href="#">食用油</a>
+								<a href="#">糕点</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">茶冲咖啡</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">速溶咖啡</a>
+								<a href="#">咖啡伴侣</a>
+								<a href="#">咖啡豆/粉</a>
+								<a href="#">罐头</a>
+								<a href="#">食用油</a>
+								<a href="#">糕点</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">酒水饮料</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">葡萄酒</a>
+								<a href="#">啤酒</a>
+								<a href="#">洋酒</a>
+								<a href="#">豆奶</a>
+								<a href="#">奶酪</a>
+								<a href="#">黄油/奶油</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+								<a href="#">海鲜</a>
+							</dd>
+						</li>
+					</ol>
+					<div class="show-img">
+						<div>
+							<img src="imgs/11.jpg">
+							<img src="imgs/12.jpg">
+							<img src="imgs/13.jpg">
+							<img src="imgs/14.jpg">
+							<img src="imgs/15.jpg">
+							<img src="imgs/16.jpg">
+						</div>
+						<img src="imgs/21.jpg">
+						<img src="imgs/22.jpg">
+					</div>
+				</li>
+				<li>
+					<ol>
+						<li>
+							<dt>
+								<a href="#">乳品生鲜</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">牛奶</a>
+								<a href="#">成人奶粉</a>
+								<a href="#">酸奶</a>
+								<a href="#">豆奶</a>
+								<a href="#">奶酪</a>
+								<a href="#">黄油/奶油</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+								<a href="#">海鲜</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">饼干糕点</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">饼干</a>
+								<a href="#">曲奇</a>
+								<a href="#">威化</a>
+								<a href="#">夹心饼干</a>
+								<a href="#">苏打饼干</a>
+								<a href="#">糕点</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">酒水饮料</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">葡萄酒</a>
+								<a href="#">啤酒</a>
+								<a href="#">洋酒</a>
+								<a href="#">豆奶</a>
+								<a href="#">奶酪</a>
+								<a href="#">黄油/奶油</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+								<a href="#">海鲜</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+								<a href="#">海鲜</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">休闲零食</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">坚果</a>
+								<a href="#">果干</a>
+								<a href="#">海苔</a>
+								<a href="#">膨化</a>
+								<a href="#">巧克力</a>
+								<a href="#">糖果</a>
+								<a href="#">果冻/布丁</a>
+								<a href="#">海味零食</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">粮油调味</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">橄榄油</a>
+								<a href="#">大米</a>
+								<a href="#">方便面</a>
+								<a href="#">罐头</a>
+								<a href="#">食用油</a>
+								<a href="#">糕点</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">茶冲咖啡</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">速溶咖啡</a>
+								<a href="#">咖啡伴侣</a>
+								<a href="#">咖啡豆/粉</a>
+								<a href="#">罐头</a>
+								<a href="#">食用油</a>
+								<a href="#">糕点</a>
+							</dd>
+						</li>
+					</ol>
+					<div class="show-img">
+						<div>
+							<img src="imgs/11.jpg">
+							<img src="imgs/12.jpg">
+							<img src="imgs/13.jpg">
+							<img src="imgs/14.jpg">
+							<img src="imgs/15.jpg">
+							<img src="imgs/16.jpg">
+						</div>
+						<img src="imgs/21.jpg">
+						<img src="imgs/22.jpg">
+					</div>
+				</li>
+				<li>
+					<ol>
+						<li>
+							<dt>
+								<a href="#">乳品生鲜</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">牛奶</a>
+								<a href="#">成人奶粉</a>
+								<a href="#">酸奶</a>
+								<a href="#">豆奶</a>
+								<a href="#">奶酪</a>
+								<a href="#">黄油/奶油</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+								<a href="#">海鲜</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">饼干糕点</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">饼干</a>
+								<a href="#">曲奇</a>
+								<a href="#">威化</a>
+								<a href="#">夹心饼干</a>
+								<a href="#">苏打饼干</a>
+								<a href="#">糕点</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">酒水饮料</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">葡萄酒</a>
+								<a href="#">啤酒</a>
+								<a href="#">洋酒</a>
+								<a href="#">豆奶</a>
+								<a href="#">奶酪</a>
+								<a href="#">黄油/奶油</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+								<a href="#">海鲜</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+								<a href="#">海鲜</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">乳品生鲜</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">牛奶</a>
+								<a href="#">成人奶粉</a>
+								<a href="#">酸奶</a>
+								<a href="#">豆奶</a>
+								<a href="#">奶酪</a>
+								<a href="#">黄油/奶油</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+								<a href="#">海鲜</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">饼干糕点</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">饼干</a>
+								<a href="#">曲奇</a>
+								<a href="#">威化</a>
+								<a href="#">夹心饼干</a>
+								<a href="#">苏打饼干</a>
+								<a href="#">糕点</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">休闲零食</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">坚果</a>
+								<a href="#">果干</a>
+								<a href="#">海苔</a>
+								<a href="#">膨化</a>
+								<a href="#">巧克力</a>
+								<a href="#">糖果</a>
+								<a href="#">果冻/布丁</a>
+								<a href="#">海味零食</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">休闲零食</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">坚果</a>
+								<a href="#">果干</a>
+								<a href="#">海苔</a>
+								<a href="#">膨化</a>
+								<a href="#">巧克力</a>
+								<a href="#">糖果</a>
+								<a href="#">果冻/布丁</a>
+								<a href="#">海味零食</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">粮油调味</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">橄榄油</a>
+								<a href="#">大米</a>
+								<a href="#">方便面</a>
+								<a href="#">罐头</a>
+								<a href="#">食用油</a>
+								<a href="#">糕点</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">茶冲咖啡</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">速溶咖啡</a>
+								<a href="#">咖啡伴侣</a>
+								<a href="#">咖啡豆/粉</a>
+								<a href="#">罐头</a>
+								<a href="#">食用油</a>
+								<a href="#">糕点</a>
+							</dd>
+						</li>
+					</ol>
+					<div class="show-img">
+						<div>
+							<img src="imgs/11.jpg">
+							<img src="imgs/12.jpg">
+							<img src="imgs/13.jpg">
+							<img src="imgs/14.jpg">
+							<img src="imgs/15.jpg">
+							<img src="imgs/16.jpg">
+						</div>
+						<img src="imgs/21.jpg">
+						<img src="imgs/22.jpg">
+					</div>
+				</li>
+				<li>
+					<ol>
+						<li>
+							<dt>
+								<a href="#">乳品生鲜</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">牛奶</a>
+								<a href="#">成人奶粉</a>
+								<a href="#">酸奶</a>
+								<a href="#">豆奶</a>
+								<a href="#">奶酪</a>
+								<a href="#">黄油/奶油</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+								<a href="#">海鲜</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">饼干糕点</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">饼干</a>
+								<a href="#">曲奇</a>
+								<a href="#">威化</a>
+								<a href="#">夹心饼干</a>
+								<a href="#">苏打饼干</a>
+								<a href="#">糕点</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">酒水饮料</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">葡萄酒</a>
+								<a href="#">啤酒</a>
+								<a href="#">洋酒</a>
+								<a href="#">豆奶</a>
+								<a href="#">奶酪</a>
+								<a href="#">黄油/奶油</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+								<a href="#">海鲜</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+								<a href="#">海鲜</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">休闲零食</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">坚果</a>
+								<a href="#">果干</a>
+								<a href="#">海苔</a>
+								<a href="#">膨化</a>
+								<a href="#">巧克力</a>
+								<a href="#">糖果</a>
+								<a href="#">果冻/布丁</a>
+								<a href="#">海味零食</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">粮油调味</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">橄榄油</a>
+								<a href="#">大米</a>
+								<a href="#">方便面</a>
+								<a href="#">罐头</a>
+								<a href="#">食用油</a>
+								<a href="#">糕点</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">茶冲咖啡</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">速溶咖啡</a>
+								<a href="#">咖啡伴侣</a>
+								<a href="#">咖啡豆/粉</a>
+								<a href="#">罐头</a>
+								<a href="#">食用油</a>
+								<a href="#">糕点</a>
+							</dd>
+						</li>
+					</ol>
+					<div class="show-img">
+						<div>
+							<img src="imgs/11.jpg">
+							<img src="imgs/12.jpg">
+							<img src="imgs/13.jpg">
+							<img src="imgs/14.jpg">
+							<img src="imgs/15.jpg">
+							<img src="imgs/16.jpg">
+						</div>
+						<img src="imgs/21.jpg">
+						<img src="imgs/22.jpg">
+					</div>
+				</li>
+				<li>
+					<ol>
+						<li>
+							<dt>
+								<a href="#">乳品生鲜</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">牛奶</a>
+								<a href="#">成人奶粉</a>
+								<a href="#">酸奶</a>
+								<a href="#">豆奶</a>
+								<a href="#">奶酪</a>
+								<a href="#">黄油/奶油</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+								<a href="#">海鲜</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">休闲零食</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">坚果</a>
+								<a href="#">果干</a>
+								<a href="#">海苔</a>
+								<a href="#">膨化</a>
+								<a href="#">巧克力</a>
+								<a href="#">糖果</a>
+								<a href="#">果冻/布丁</a>
+								<a href="#">海味零食</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">粮油调味</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">橄榄油</a>
+								<a href="#">大米</a>
+								<a href="#">方便面</a>
+								<a href="#">罐头</a>
+								<a href="#">食用油</a>
+								<a href="#">糕点</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">乳品生鲜</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">牛奶</a>
+								<a href="#">成人奶粉</a>
+								<a href="#">酸奶</a>
+								<a href="#">豆奶</a>
+								<a href="#">奶酪</a>
+								<a href="#">黄油/奶油</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+								<a href="#">海鲜</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">饼干糕点</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">饼干</a>
+								<a href="#">曲奇</a>
+								<a href="#">威化</a>
+								<a href="#">夹心饼干</a>
+								<a href="#">苏打饼干</a>
+								<a href="#">糕点</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">休闲零食</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">坚果</a>
+								<a href="#">果干</a>
+								<a href="#">海苔</a>
+								<a href="#">膨化</a>
+								<a href="#">巧克力</a>
+								<a href="#">糖果</a>
+								<a href="#">果冻/布丁</a>
+								<a href="#">海味零食</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">茶冲咖啡</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">速溶咖啡</a>
+								<a href="#">咖啡伴侣</a>
+								<a href="#">咖啡豆/粉</a>
+								<a href="#">罐头</a>
+								<a href="#">食用油</a>
+								<a href="#">糕点</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">饼干糕点</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">饼干</a>
+								<a href="#">曲奇</a>
+								<a href="#">威化</a>
+								<a href="#">夹心饼干</a>
+								<a href="#">苏打饼干</a>
+								<a href="#">糕点</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">酒水饮料</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">葡萄酒</a>
+								<a href="#">啤酒</a>
+								<a href="#">洋酒</a>
+								<a href="#">豆奶</a>
+								<a href="#">奶酪</a>
+								<a href="#">黄油/奶油</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+								<a href="#">海鲜</a>
+							</dd>
+						</li>
+					</ol>
+					<div class="show-img">
+						<div>
+							<img src="imgs/11.jpg">
+							<img src="imgs/12.jpg">
+							<img src="imgs/13.jpg">
+							<img src="imgs/14.jpg">
+							<img src="imgs/15.jpg">
+							<img src="imgs/16.jpg">
+						</div>
+						<img src="imgs/21.jpg">
+						<img src="imgs/22.jpg">
+					</div>
+				</li>
+				<li>
+					<ol>
+						<li>
+							<dt>
+								<a href="#">乳品生鲜</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">牛奶</a>
+								<a href="#">成人奶粉</a>
+								<a href="#">酸奶</a>
+								<a href="#">豆奶</a>
+								<a href="#">奶酪</a>
+								<a href="#">黄油/奶油</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+								<a href="#">海鲜</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">饼干糕点</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">饼干</a>
+								<a href="#">曲奇</a>
+								<a href="#">威化</a>
+								<a href="#">夹心饼干</a>
+								<a href="#">苏打饼干</a>
+								<a href="#">糕点</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">酒水饮料</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">葡萄酒</a>
+								<a href="#">啤酒</a>
+								<a href="#">洋酒</a>
+								<a href="#">豆奶</a>
+								<a href="#">奶酪</a>
+								<a href="#">黄油/奶油</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+								<a href="#">海鲜</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+								<a href="#">海鲜</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">休闲零食</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">坚果</a>
+								<a href="#">果干</a>
+								<a href="#">海苔</a>
+								<a href="#">膨化</a>
+								<a href="#">巧克力</a>
+								<a href="#">糖果</a>
+								<a href="#">果冻/布丁</a>
+								<a href="#">海味零食</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">粮油调味</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">橄榄油</a>
+								<a href="#">大米</a>
+								<a href="#">方便面</a>
+								<a href="#">罐头</a>
+								<a href="#">食用油</a>
+								<a href="#">糕点</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">乳品生鲜</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">牛奶</a>
+								<a href="#">成人奶粉</a>
+								<a href="#">酸奶</a>
+								<a href="#">豆奶</a>
+								<a href="#">奶酪</a>
+								<a href="#">黄油/奶油</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+								<a href="#">海鲜</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">饼干糕点</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">饼干</a>
+								<a href="#">曲奇</a>
+								<a href="#">威化</a>
+								<a href="#">夹心饼干</a>
+								<a href="#">苏打饼干</a>
+								<a href="#">糕点</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">休闲零食</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">坚果</a>
+								<a href="#">果干</a>
+								<a href="#">海苔</a>
+								<a href="#">膨化</a>
+								<a href="#">巧克力</a>
+								<a href="#">糖果</a>
+								<a href="#">果冻/布丁</a>
+								<a href="#">海味零食</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">茶冲咖啡</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">速溶咖啡</a>
+								<a href="#">咖啡伴侣</a>
+								<a href="#">咖啡豆/粉</a>
+								<a href="#">罐头</a>
+								<a href="#">食用油</a>
+								<a href="#">糕点</a>
+							</dd>
+						</li>
+
+					</ol>
+					<div class="show-img">
+						<div>
+							<img src="imgs/11.jpg">
+							<img src="imgs/12.jpg">
+							<img src="imgs/13.jpg">
+							<img src="imgs/14.jpg">
+							<img src="imgs/15.jpg">
+							<img src="imgs/16.jpg">
+						</div>
+						<img src="imgs/21.jpg">
+						<img src="imgs/22.jpg">
+					</div>
+				</li>
+				<li>
+					<ol>
+						<li>
+							<dt>
+								<a href="#">乳品生鲜</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">牛奶</a>
+								<a href="#">成人奶粉</a>
+								<a href="#">酸奶</a>
+								<a href="#">豆奶</a>
+								<a href="#">奶酪</a>
+								<a href="#">黄油/奶油</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+								<a href="#">海鲜</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">饼干糕点</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">饼干</a>
+								<a href="#">曲奇</a>
+								<a href="#">威化</a>
+								<a href="#">夹心饼干</a>
+								<a href="#">苏打饼干</a>
+								<a href="#">糕点</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">酒水饮料</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">葡萄酒</a>
+								<a href="#">啤酒</a>
+								<a href="#">洋酒</a>
+								<a href="#">豆奶</a>
+								<a href="#">奶酪</a>
+								<a href="#">黄油/奶油</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+								<a href="#">海鲜</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+								<a href="#">海鲜</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">休闲零食</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">坚果</a>
+								<a href="#">果干</a>
+								<a href="#">海苔</a>
+								<a href="#">膨化</a>
+								<a href="#">巧克力</a>
+								<a href="#">糖果</a>
+								<a href="#">果冻/布丁</a>
+								<a href="#">海味零食</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">粮油调味</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">橄榄油</a>
+								<a href="#">大米</a>
+								<a href="#">方便面</a>
+								<a href="#">罐头</a>
+								<a href="#">食用油</a>
+								<a href="#">糕点</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">茶冲咖啡</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">速溶咖啡</a>
+								<a href="#">咖啡伴侣</a>
+								<a href="#">咖啡豆/粉</a>
+								<a href="#">罐头</a>
+								<a href="#">食用油</a>
+								<a href="#">糕点</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">粮油调味</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">橄榄油</a>
+								<a href="#">大米</a>
+								<a href="#">方便面</a>
+								<a href="#">罐头</a>
+								<a href="#">食用油</a>
+								<a href="#">糕点</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">酒水饮料</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">葡萄酒</a>
+								<a href="#">啤酒</a>
+								<a href="#">洋酒</a>
+								<a href="#">豆奶</a>
+								<a href="#">奶酪</a>
+								<a href="#">黄油/奶油</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+								<a href="#">海鲜</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+								<a href="#">海鲜</a>
+								<a href="#">水果</a>
+								<a href="#">肉类</a>
+							</dd>
+						</li>
+						<li>
+							<dt>
+								<a href="#">休闲零食</a>
+								<i class="iconfont icon-more"></i>
+							</dt>
+							<dd>
+								<a href="#">坚果</a>
+								<a href="#">果干</a>
+								<a href="#">海苔</a>
+								<a href="#">膨化</a>
+								<a href="#">巧克力</a>
+								<a href="#">糖果</a>
+								<a href="#">果冻/布丁</a>
+								<a href="#">海味零食</a>
+							</dd>
+						</li>
+						
+					</ol>
+					<div class="show-img">
+						<div>
+							<img src="imgs/11.jpg">
+							<img src="imgs/12.jpg">
+							<img src="imgs/13.jpg">
+							<img src="imgs/14.jpg">
+							<img src="imgs/15.jpg">
+							<img src="imgs/16.jpg">
+						</div>
+						<img src="imgs/21.jpg">
+						<img src="imgs/22.jpg">
+					</div>
+				</li>
+			</ul>
+			<!-- 个人中心 -->
+			<div class="user">
+				<div class="tou"></div>
+				<p>Hi~你好！</p>
+				<div class="denglu">
+					<a href="../denglu/denglu.html" target="_black">登录</a>
+					<a href="../zhuce/zhuce.html" target="_black">注册</a>
+				</div>
+				<div class="youxuan">
+					<a href="#">
+						<b>【优选】</b>
+						<span>一盅好汤，暖心又暖胃</span>
+					</a>
+					<br>
+					<a href="#">
+						<b>【优选】</b>
+						<span>食不待我，粮油好货清单</span>
+					</a>
+					<br>
+					<a href="#">
+						<b>【优选】</b>
+						<span>爱的早餐心很暖</span>
+					</a>
+				</div>
+			</div>
+			<!-- 轮播图 -->
+			<div class="lun">
+				<ul>
+					<li style="display:block;"><a href="#"><img src="imgs/lun1.jpg" alt=""></a></li>
+					<li><a href="#"><img src="imgs/lun2.jpg" alt=""></a></li>
+					<li><a href="#"><img src="imgs/lun3.jpg" alt=""></a></li>
+					<li><a href="#"><img src="imgs/lun4.jpg" alt=""></a></li>
+					<li><a href="#"><img src="imgs/lun5.jpg" alt=""></a></li>
+					<li><a href="#"><img src="imgs/lun6.jpg" alt=""></a></li>
+					<li><a href="#"><img src="imgs/lun7.jpg" alt=""></a></li>
+					<li><a href="#"><img src="imgs/lun8.jpg" alt=""></a></li>
+					<li><a href="#"><img src="imgs/lun9.jpg" alt=""></a></li>
+				</ul>
+				<ol>
+					<li class="bg"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ol>
+				<div class="left"> &lt; </div>
+				<div class="right"> &gt; </div>
+			</div>
+			<!-- 倒计时 -->
+			<div class="daojishi">
+				<div class="qiang">
+					<p class="p1">本场剩余</p>
+					<div class="time">
+						<span class="hours">00</span>
+						:
+						<span class="minutes">00</span>
+						:
+						<span class="seconds">00</span>
+					</div>
+					<p class="more">查看更多<i class="iconfont icon-more"></i></p>
+				</div>
+				<!-- 小轮播 -->
+				<div class="xlun">
+					<ul>
+						<li>
+							<a href="#">
+								<div class="line"></div>
+								<div class="jieshao">
+									<p class="pro_name">罗技<br>（Logitech）G403 游戏鼠标 RGB炫彩有线宏编程 绝地求生 吃鸡利器</p>
+									<p class="pro_price">
+										￥ <span>299</span>
+									</p>
+									<p class="reference_price">
+										参考价：￥<span>499</span>
+									</p>
+								</div>
+								<img src="imgs/xl1.jpg">
+								<div class="marking_label">已售71%</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="line"></div>
+								<div class="jieshao">
+									<p class="pro_name">罗技<br>（Logitech）G403 游戏鼠标 RGB炫彩有线宏编程 绝地求生 吃鸡利器</p>
+									<p class="pro_price">
+										￥ <span>299</span>
+									</p>
+									<p class="reference_price">
+										参考价：￥<span>499</span>
+									</p>
+								</div>
+								<img src="imgs/xl2.jpg">
+								<div class="marking_label">已售71%</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="line"></div>
+								<div class="jieshao">
+									<p class="pro_name">罗技<br>（Logitech）G403 游戏鼠标 RGB炫彩有线宏编程 绝地求生 吃鸡利器</p>
+									<p class="pro_price">
+										￥ <span>299</span>
+									</p>
+									<p class="reference_price">
+										参考价：￥<span>499</span>
+									</p>
+								</div>
+								<img src="imgs/xl3.jpg">
+								<div class="marking_label">已售71%</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="line"></div>
+								<div class="jieshao">
+									<p class="pro_name">罗技<br>（Logitech）G403 游戏鼠标 RGB炫彩有线宏编程 绝地求生 吃鸡利器</p>
+									<p class="pro_price">
+										￥ <span>299</span>
+									</p>
+									<p class="reference_price">
+										参考价：￥<span>499</span>
+									</p>
+								</div>
+								<img src="imgs/xl4.jpg">
+								<div class="marking_label">已售71%</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="line"></div>
+								<div class="jieshao">
+									<p class="pro_name">罗技<br>（Logitech）G403 游戏鼠标 RGB炫彩有线宏编程 绝地求生 吃鸡利器</p>
+									<p class="pro_price">
+										￥ <span>299</span>
+									</p>
+									<p class="reference_price">
+										参考价：￥<span>499</span>
+									</p>
+								</div>
+								<img src="imgs/xl1.jpg">
+								<div class="marking_label">已售71%</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="line"></div>
+								<div class="jieshao">
+									<p class="pro_name">罗技<br>（Logitech）G403 游戏鼠标 RGB炫彩有线宏编程 绝地求生 吃鸡利器</p>
+									<p class="pro_price">
+										￥ <span>299</span>
+									</p>
+									<p class="reference_price">
+										参考价：￥<span>499</span>
+									</p>
+								</div>
+								<img src="imgs/xl4.jpg">
+								<div class="marking_label">已售71%</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="line"></div>
+								<div class="jieshao">
+									<p class="pro_name">罗技<br>（Logitech）G403 游戏鼠标 RGB炫彩有线宏编程 绝地求生 吃鸡利器</p>
+									<p class="pro_price">
+										￥ <span>299</span>
+									</p>
+									<p class="reference_price">
+										参考价：￥<span>499</span>
+									</p>
+								</div>
+								<img src="imgs/xl3.jpg">
+								<div class="marking_label">已售71%</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="line"></div>
+								<div class="jieshao">
+									<p class="pro_name">罗技<br>（Logitech）G403 游戏鼠标 RGB炫彩有线宏编程 绝地求生 吃鸡利器</p>
+									<p class="pro_price">
+										￥ <span>299</span>
+									</p>
+									<p class="reference_price">
+										参考价：￥<span>499</span>
+									</p>
+								</div>
+								<img src="imgs/xl2.jpg">
+								<div class="marking_label">已售71%</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="line"></div>
+								<div class="jieshao">
+									<p class="pro_name">罗技<br>（Logitech）G403 游戏鼠标 RGB炫彩有线宏编程 绝地求生 吃鸡利器</p>
+									<p class="pro_price">
+										￥ <span>299</span>
+									</p>
+									<p class="reference_price">
+										参考价：￥<span>499</span>
+									</p>
+								</div>
+								<img src="imgs/xl1.jpg">
+								<div class="marking_label">已售71%</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="line"></div>
+								<div class="jieshao">
+									<p class="pro_name">罗技<br>（Logitech）G403 游戏鼠标 RGB炫彩有线宏编程 绝地求生 吃鸡利器</p>
+									<p class="pro_price">
+										￥ <span>299</span>
+									</p>
+									<p class="reference_price">
+										参考价：￥<span>499</span>
+									</p>
+								</div>
+								<img src="imgs/xl3.jpg">
+								<div class="marking_label">已售71%</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="line"></div>
+								<div class="jieshao">
+									<p class="pro_name">罗技<br>（Logitech）G403 游戏鼠标 RGB炫彩有线宏编程 绝地求生 吃鸡利器</p>
+									<p class="pro_price">
+										￥ <span>299</span>
+									</p>
+									<p class="reference_price">
+										参考价：￥<span>499</span>
+									</p>
+								</div>
+								<img src="imgs/xl4.jpg">
+								<div class="marking_label">已售71%</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="line"></div>
+								<div class="jieshao">
+									<p class="pro_name">罗技<br>（Logitech）G403 游戏鼠标 RGB炫彩有线宏编程 绝地求生 吃鸡利器</p>
+									<p class="pro_price">
+										￥ <span>299</span>
+									</p>
+									<p class="reference_price">
+										参考价：￥<span>499</span>
+									</p>
+								</div>
+								<img src="imgs/xl2.jpg">
+								<div class="marking_label">已售71%</div>
+							</a>
+						</li>
+					</ul>
+					<div class="xleft"> &lt; </div>
+					<div class="xright"> &gt; </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 主体内容 -->
+	<div id="content">
+		<!-- 促销 -->
+		<div id="cuxiao">
+			<img src="imgs/long1.jpg">
+			<div class="lie">
+				<a href="#">
+					<img src="imgs/31.jpg">
+				</a>
+				<a href="#">
+					<img src="imgs/32.jpg">
+				</a>
+				<a href="#">
+					<img src="imgs/33.jpg">
+				</a>
+				<a href="#">
+					<img src="imgs/34.jpg">
+				</a>
+				<a href="#">
+					<img src="imgs/31.jpg">
+				</a>
+				<a href="#">
+					<img src="imgs/32.jpg">
+				</a>
+				<a href="#">
+					<img src="imgs/33.jpg">
+				</a>
+				<a href="#">
+					<img src="imgs/34.jpg">
+				</a>
+				<a href="#">
+					<img src="imgs/31.jpg">
+				</a>
+				<a href="#">
+					<img src="imgs/32.jpg">
+				</a>
+			</div>
+		</div>
+		<!-- 闪购 -->
+		<div id="shangou">
+			<a href="#" class="shan">
+				<img src="imgs/41.jpg" alt="">
+				<div class="brand-caption">
+					<h4>1号闪购</h4>
+					<p></p>
+					<div>每日10:00上新！</div>
+				</div>
+			</a>
+			<!-- 团购 -->
+			<div class="group-buy">
+				<div class="group-buy-top">
+					<a href="#">
+						<i class="iconfont icon-baozhuanhuan"></i>
+						团购
+					</a>
+				</div>
+				<div class="chuwei">
+					<a href="#"><img src="imgs/42.jpg" alt=""></a>
+				</div>
+				<div class="geren">
+					<div class="gehu">
+						<p>个护量贩</p>
+						<p>满199减100</p>
+						<img src="imgs/43.jpg">
+					</div>
+					<div class="yinjiu">
+						<p>食品酒饮</p>
+						<p>满188减100</p>
+						<img src="imgs/44.jpg">
+					</div>
+				</div>
+			</div>
+			<!-- 排行榜 -->
+			<div class="paihang">
+				<div class="paihang-top">
+					<span>
+						<a href="#">
+							查看更多<i class="iconfont icon-more"></i>
+						</a>
+					</span>
+					<a href="#">
+						<i class="iconfont icon-drugs"></i>
+						排行榜
+					</a>
+				</div>
+				<div class="search-k">
+					<ul>
+						<li class="active-li"><a href="#">清洁用品</a></li>
+						<li><a href="#">粮油调味</a></li>
+						<li><a href="#">进口食品</a></li>
+						<li><a href="#">休闲食品</a></li>
+						<li><a href="#">男装</a></li>
+					</ul>
+					<ol>
+						<li style="display:block;">
+							<a href="#">
+								<img src="imgs/sc1-1.jpg" alt="">
+								<p>幸福阳光 无添加卷纸 3层*140克*12卷卫生纸（加量装 原生态无添加 不堵厕）</p>
+								<span>3.1折</span>
+								<i>1</i>
+							</a>
+							<a href="#">
+								<img src="imgs/sc1-2.jpg" alt="">
+								<p>夏阳（XIAYANG） 皮鞋油75ml大容量鞋刷擦鞋去污补色上光保养皮鞋护理 两色可选 黑色鞋油</p>
+								<span>3.2折</span>
+								<i>2</i>
+							</a>
+							<a href="#">
+								<img src="imgs/sc1-3.jpg" alt="">
+								<p>五月花 抽纸 妇婴3层软包抽取式面巾纸170抽（大规格）3包*4提  </p>
+								<span>3.4折</span>
+							</a>
+							<a href="#">
+								<img src="imgs/sc1-4.jpg" alt="">
+								<p>【 多色可选】遇水开花黑胶遮阳雨伞 加厚防晒太阳伞 情侣三折伞太阳伞短柄 雨伞（随机发颜色两支）</p>
+								<span>3.3折</span>
+							</a>
+							<a href="#">
+								<img src="imgs/sc1-5.jpg" alt="">
+								<p>欧克乐（Ou Ke le）防虫驱虫衣柜衣物除味樟脑丸自然香形球剂卫生球 80颗装</p>
+								<span>2.7折</span>
+							</a>
+							<a href="#">
+								<img src="imgs/sc1-6.jpg" alt="">
+								<p>菲洛施Frosch德国进口洗衣液真丝羊毛羊绒丝绸超精细织物专用小麦蛋白洗衣液750ml福利 1瓶装 750ml</p>
+								<span>2.9折</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="imgs/sc1-1.jpg" alt="">
+								<p>幸福阳光 无添加卷纸 3层*140克*12卷卫生纸（加量装 原生态无添加 不堵厕）</p>
+								<span>3.1折</span>
+								<i>1</i>
+							</a>
+							<a href="#">
+								<img src="imgs/sc1-2.jpg" alt="">
+								<p>夏阳（XIAYANG） 皮鞋油75ml大容量鞋刷擦鞋去污补色上光保养皮鞋护理 两色可选 黑色鞋油</p>
+								<span>3.2折</span>
+								<i>2</i>
+							</a>
+							<a href="#">
+								<img src="imgs/sc1-3.jpg" alt="">
+								<p>五月花 抽纸 妇婴3层软包抽取式面巾纸170抽（大规格）3包*4提  </p>
+								<span>3.4折</span>
+							</a>
+							
+							<a href="#">
+								<img src="imgs/sc1-6.jpg" alt="">
+								<p>菲洛施Frosch德国进口洗衣液真丝羊毛羊绒丝绸超精细织物专用小麦蛋白洗衣液750ml福利 1瓶装 750ml</p>
+								<span>2.9折</span>
+							</a>
+							<a href="#">
+								<img src="imgs/sc1-5.jpg" alt="">
+								<p>欧克乐（Ou Ke le）防虫驱虫衣柜衣物除味樟脑丸自然香形球剂卫生球 80颗装</p>
+								<span>2.7折</span>
+							</a>
+							<a href="#">
+								<img src="imgs/sc1-4.jpg" alt="">
+								<p>【 多色可选】遇水开花黑胶遮阳雨伞 加厚防晒太阳伞 情侣三折伞太阳伞短柄 雨伞（随机发颜色两支）</p>
+								<span>3.3折</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="imgs/sc1-1.jpg" alt="">
+								<p>幸福阳光 无添加卷纸 3层*140克*12卷卫生纸（加量装 原生态无添加 不堵厕）</p>
+								<span>3.1折</span>
+								<i>1</i>
+							</a>
+							<a href="#">
+								<img src="imgs/sc1-2.jpg" alt="">
+								<p>夏阳（XIAYANG） 皮鞋油75ml大容量鞋刷擦鞋去污补色上光保养皮鞋护理 两色可选 黑色鞋油</p>
+								<span>3.2折</span>
+								<i>2</i>
+							</a>
+							
+							<a href="#">
+								<img src="imgs/sc1-4.jpg" alt="">
+								<p>【 多色可选】遇水开花黑胶遮阳雨伞 加厚防晒太阳伞 情侣三折伞太阳伞短柄 雨伞（随机发颜色两支）</p>
+								<span>3.3折</span>
+							</a>
+							<a href="#">
+								<img src="imgs/sc1-5.jpg" alt="">
+								<p>欧克乐（Ou Ke le）防虫驱虫衣柜衣物除味樟脑丸自然香形球剂卫生球 80颗装</p>
+								<span>2.7折</span>
+							</a>
+							<a href="#">
+								<img src="imgs/sc1-6.jpg" alt="">
+								<p>菲洛施Frosch德国进口洗衣液真丝羊毛羊绒丝绸超精细织物专用小麦蛋白洗衣液750ml福利 1瓶装 750ml</p>
+								<span>2.9折</span>
+							</a>
+							<a href="#">
+								<img src="imgs/sc1-3.jpg" alt="">
+								<p>五月花 抽纸 妇婴3层软包抽取式面巾纸170抽（大规格）3包*4提  </p>
+								<span>3.4折</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="imgs/sc1-1.jpg" alt="">
+								<p>幸福阳光 无添加卷纸 3层*140克*12卷卫生纸（加量装 原生态无添加 不堵厕）</p>
+								<span>3.1折</span>
+								<i>1</i>
+							</a>
+							<a href="#">
+								<img src="imgs/sc1-2.jpg" alt="">
+								<p>夏阳（XIAYANG） 皮鞋油75ml大容量鞋刷擦鞋去污补色上光保养皮鞋护理 两色可选 黑色鞋油</p>
+								<span>3.2折</span>
+								<i>2</i>
+							</a>
+							<a href="#">
+								<img src="imgs/sc1-3.jpg" alt="">
+								<p>五月花 抽纸 妇婴3层软包抽取式面巾纸170抽（大规格）3包*4提  </p>
+								<span>3.4折</span>
+							</a>
+							
+							<a href="#">
+								<img src="imgs/sc1-5.jpg" alt="">
+								<p>欧克乐（Ou Ke le）防虫驱虫衣柜衣物除味樟脑丸自然香形球剂卫生球 80颗装</p>
+								<span>2.7折</span>
+							</a>
+							<a href="#">
+								<img src="imgs/sc1-4.jpg" alt="">
+								<p>【 多色可选】遇水开花黑胶遮阳雨伞 加厚防晒太阳伞 情侣三折伞太阳伞短柄 雨伞（随机发颜色两支）</p>
+								<span>3.3折</span>
+							</a>
+							<a href="#">
+								<img src="imgs/sc1-6.jpg" alt="">
+								<p>菲洛施Frosch德国进口洗衣液真丝羊毛羊绒丝绸超精细织物专用小麦蛋白洗衣液750ml福利 1瓶装 750ml</p>
+								<span>2.9折</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="imgs/sc1-2.jpg" alt="">
+								<p>夏阳（XIAYANG） 皮鞋油75ml大容量鞋刷擦鞋去污补色上光保养皮鞋护理 两色可选 黑色鞋油</p>
+								<span>3.2折</span>
+								<i>1</i>
+							</a>
+							<a href="#">
+								<img src="imgs/sc1-1.jpg" alt="">
+								<p>幸福阳光 无添加卷纸 3层*140克*12卷卫生纸（加量装 原生态无添加 不堵厕）</p>
+								<span>3.1折</span>
+								<i>2</i>
+							</a>
+							
+							<a href="#">
+								<img src="imgs/sc1-3.jpg" alt="">
+								<p>五月花 抽纸 妇婴3层软包抽取式面巾纸170抽（大规格）3包*4提  </p>
+								<span>3.4折</span>
+							</a>
+							<a href="#">
+								<img src="imgs/sc1-4.jpg" alt="">
+								<p>【 多色可选】遇水开花黑胶遮阳雨伞 加厚防晒太阳伞 情侣三折伞太阳伞短柄 雨伞（随机发颜色两支）</p>
+								<span>3.3折</span>
+							</a>
+							<a href="#">
+								<img src="imgs/sc1-5.jpg" alt="">
+								<p>欧克乐（Ou Ke le）防虫驱虫衣柜衣物除味樟脑丸自然香形球剂卫生球 80颗装</p>
+								<span>2.7折</span>
+							</a>
+							<a href="#">
+								<img src="imgs/sc1-6.jpg" alt="">
+								<p>菲洛施Frosch德国进口洗衣液真丝羊毛羊绒丝绸超精细织物专用小麦蛋白洗衣液750ml福利 1瓶装 750ml</p>
+								<span>2.9折</span>
+							</a>
+						</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+		<!-- 上新 -->
+		<div id="mod-on-new">
+			<a href="#" class="shan">
+				<img src="imgs/51.jpg" alt="">
+			</a>
+			<!-- 耍大牌 -->
+			<div class="dapai">
+				<div class="dapai-top">
+					<a href="#">
+						<i class="iconfont icon-baozhuanhuan"></i>
+						耍大牌
+					</a>
+				</div>
+				<div class="dapai-left">
+					<a href="#"><img src="imgs/52.jpg" alt=""></a>
+				</div>
+				<div class="dapai-right">
+					<div class="vinda">
+						<p>维达Vinda</p>
+						<p>品牌联合 特惠多</p>
+						<img src="imgs/53.jpg">
+					</div>
+					<div class="olay">
+						<p>OLAY</p>
+						<p>耀美如钻 无惧年龄</p>
+						<img src="imgs/54.jpg">
+					</div>
+					<div class="gouliang">
+						<p>宝路狗粮</p>
+						<p>满199减100</p>
+						<img src="imgs/55.jpg">
+					</div>
+				</div>
+			</div>
+			<!-- 生活派 -->
+			<div class="serve-pai">
+				<div class="serve-pai-top">
+					<a href="#">
+						<i class="iconfont icon-jiayongdianqi"></i>
+						生活派
+					</a>
+				</div>
+				<div class="serve-pai-cen">
+					<div class="pzcf">
+						<p>品质厨房</p>
+						<p>进口美味199减100</p>
+						<img src="imgs/56.jpg">
+					</div>
+					<div>
+						<div class="nxny">
+							<p>暖心暖饮</p>
+							<p>温暖流进心里</p>
+							<img src="imgs/57.jpg">
+						</div>
+						<div class="sbdw">
+							<p>食不待我</p>
+							<p>冬日囤粮作战</p>
+							<img src="imgs/58.jpg">
+						</div>
+					</div>
+				</div>
+				<div class="serve-pai-foot">
+					<div class="m1">
+						<p>萌宝福利社</p>
+						<p>GO <i class="iconfont icon-more"></i></p>
+						<img src="imgs/59.jpg">
+					</div>
+					<div class="m2">
+						<p>贫穷限制我的想象力</p>
+						<p>GO <i class="iconfont icon-more"></i></p>
+						<img src="imgs/50.jpg">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 全球进口 -->
+		<div id="jinkou">
+			<h4>全球进口 <i class="iconfont icon-more"></i></h4>
+			<div class="jinkou-content">
+				<div class="left-banner">
+					<div>
+						<img src="imgs/1-1.jpg" alt="">
+						<ul>
+							<li><a href="#">进口饼干</a></li>
+							<li><a href="#">进口坚果</a></li>
+							<li><a href="#">进口糖巧</a></li>
+							<li><a href="#">进口咖啡</a></li>
+							<li><a href="#">进口水饮</a></li>
+							<li><a href="#">进口方便面</a></li>
+						</ul>
+					</div>
+					<ul>
+						<li>
+							<a href="#"><img src="imgs/1-2.jpg" alt=""></a>
+						</li>
+						<li class="bl">
+							<a href="#">
+								<p>进口休闲零食</p>
+								<p>满199元减100</p>
+								<img src="imgs/1-3.jpg" alt="">
+							</a>
+						</li>
+						<li class="bt">
+							<a href="#">
+								<p>进口粮油</p>
+								<p>满199元减100</p>
+								<img src="imgs/1-4.jpg" alt="">
+							</a>
+						</li>
+						<li class="bt bl">
+							<a href="#">
+								<p>巧克力饼干</p>
+								<p>满199元减100</p>
+								<img src="imgs/1-5.jpg" alt="">
+							</a>
+						</li>
+						<li class="bt bl">
+							<a href="#">
+								<p>进口水饮冲调</p>
+								<p>满199元减100</p>
+								<img src="imgs/1-6.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="right-banner">
+					<ul>
+						<li>
+							<a href="#">
+								<p>进口休闲零食</p>
+								<span>满199元减100</span>
+								<div></div>
+								<img src="imgs/1-7.png" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p>进口休闲零食</p>
+								<span>满199元减100</span>
+								<div></div>
+								<img src="imgs/1-8.png" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p>进口休闲零食</p>
+								<span>满199元减100</span>
+								<div></div>
+								<img src="imgs/1-9.png" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p>进口休闲零食</p>
+								<span>满199元减100</span>
+								<div></div>
+								<img src="imgs/1-10.png" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p>进口休闲零食</p>
+								<span>满199元减100</span>
+								<div></div>
+								<img src="imgs/1-11.png" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p>进口休闲零食</p>
+								<span>满199元减100</span>
+								<div></div>
+								<img src="imgs/1-12.png" alt="">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- 国产食品 -->
+		<div id="guochan">
+			<div class="floorGCSP">
+				<h4>
+					<a href="#">
+						国产食品 <i class="iconfont icon-more"></i>
+					</a>
+				</h4>
+				<p>国产食品</p>
+				<!-- 图片切换 -->
+				<div class="change">
+					<ul>
+						<li class="nth1">
+							<a href="#">
+								<p>三只松鼠</p>
+								<p>满199减100</p>
+								<img src="imgs/q1.jpg" alt="">
+							</a>
+						</li>
+						<li class="nth2">
+							<a href="#">
+								<p>暖心暖胃 洽好食尚</p>
+								<p>满188减100</p>
+								<img src="imgs/q2.jpg" alt="">
+							</a>
+						</li>
+						<li class="nth3">
+							<a href="#">
+								<p>粮油调味中心</p>
+								<p>满99减30</p>
+								<img src="imgs/q3.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+					<div>
+						<i class="iconfont icon-back"></i>
+						<span class="num">1</span>
+						/ 3
+						<i class="iconfont icon-more"></i>
+					</div>
+				</div>
+				<!-- 文字切换 -->
+				<div class="comment">
+					<div class="icon1">
+						<i class="iconfont icon-zhangdan"></i>
+					</div>
+					<div class="uus">
+						<ul>
+							<li><a href="#">休闲食品</a></li>
+							<li><a href="#">糖果巧克力</a></li>
+							<li><a href="#">金龙鱼</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- 内容列 -->
+			<div class="center-con">
+				<div class="keywords">
+					<ul>
+						<li><a href="#">坚果炒货</a></li>
+						<li><a href="#">饼干蛋糕</a></li>
+						<li><a href="#">粮油调味</a></li>
+						<li><a href="#">方便速食</a></li>
+						<li><a href="#">糖果/巧克力</a></li>
+						<li><a href="#">蜂蜜</a></li>
+					</ul>
+				</div>	
+				<ul>
+					<li>
+						<a href="#">
+							<p>暖意来袭</p>
+							<p>满188减100</p>
+							<img src="imgs/2-1.jpg">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p>美食大盘点</p>
+							<p>满188减100</p>
+							<img src="imgs/2-2.jpg">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p>坚果零食</p>
+							<p>满99减50</p>
+							<img src="imgs/2-3.png">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p>厨房调味</p>
+							<p>低至5件5折</p>
+							<img src="imgs/2-4.jpg">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p>营养保健</p>
+							<p>爆款直降</p>
+							<img src="imgs/2-5.jpg">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p>暖意来袭</p>
+							<p>满188减100</p>
+							<img src="imgs/2-1.jpg">
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- 热门商品 -->
+			<div class="hot-con">
+				<h4>热门商品</h4>
+				<ul>
+					<li>
+					    <a href="#">
+					    	<img src="imgs/h1.jpg" alt="">
+					    	<i>1</i>
+					    	<div class="text">
+					    		<p>福临门 食用油 浓香压榨一级 花生油4L 中粮出品</p>
+					    		<span>￥79.90</span>
+					    	</div>
+					    </a>
+					</li>
+					<li>
+					    <a href="#">
+					    	<img src="imgs/h2.jpg" alt="">
+					    	<i>2</i>
+					    	<div class="text">
+					    		<p>崇明岛 2017新米 大米10Kg （20斤）【1号店定制】非东北五常稻花香大米</p>
+					    		<span>￥99.80</span>
+					    	</div>
+					    </a>
+					</li>
+					<li>
+					    <a href="#">
+					    	<img src="imgs/h3.jpg" alt="">
+					    	<i>3</i>
+					    	<div class="text">
+					    		<p>金龙鱼 食用油 葵花籽食用调和油5L</p>
+					    		<span>￥39.80</span>
+					    	</div>
+					    </a>
+					</li>
+					<li>
+					    <a href="#">
+					    	<img src="imgs/h4.jpg" alt="">
+					    	<i></i>
+					    	<div class="text">
+					    		<p>洽洽 坚果炒货 每日坚果 内含开果器 夏威夷果奶油味200g/袋</p>
+					    		<span>￥16.90</span>
+					    	</div>
+					    </a>
+					</li>
+					<li>
+					    <a href="#">
+					    	<img src="imgs/h5.jpg" alt="">
+					    	<i></i>
+					    	<div class="text">
+					    		<p>福临门 食用油 温情献礼套装（玉米油3.09L+葵花籽油3.09L） 中粮出品</p>
+					    		<span>￥79.90</span>
+					    	</div>
+					    </a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 活色生鲜 -->
+		<div id="mod-columns">
+			<!-- 左侧 -->
+			<div class="columns-left">
+				<div class="floor-tit">
+					<h4>
+						1号生鲜
+						<i class="iconfont icon-more"></i>
+					</h4>
+					<ul>
+						<li>
+							<a href="#">冷冻速食</a>
+						</li>
+						<li>
+							<a href="#">品质牛肉</a>
+							|
+						</li>
+						<li>
+							<a href="#">低温乳品</a>
+							|
+						</li>
+						<li>
+							<a href="#">大闸蟹</a>
+							|
+						</li>
+						<li>
+							<a href="#">新鲜水果</a>
+							|
+						</li>
+					</ul>
+				</div>
+				<div class="floor-left">
+					<a href="#">
+						<p>敢为人鲜 放纵味蕾</p>
+						<span>199-80</span>
+						<img src="imgs/3-1.jpg" alt="">
+					</a>
+				</div>
+				<div class="floor-right">
+					<ul>
+						<li>
+							<a href="#">
+								<span>时蔬香鲜</span>
+								<p>爆款直降</p>
+								<img src="imgs/3-2.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>果蔬润燥</span>
+								<p>领券199减80</p>
+								<img src="imgs/3-3.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>1212年度钜惠</span>
+								<p>199减80</p>
+								<img src="imgs/3-4.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>12.12狂欢</span>
+								<p>低至12.12元起</p>
+								<img src="imgs/3-5.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 右侧 -->
+			<div class="columns-right">
+				<div class="floor-tit">
+					<h4>
+						酒水饮料
+						<i class="iconfont icon-more"></i>
+					</h4>
+					<ul>
+						<li>
+							<a href="#">茗茶</a>
+						</li>
+						<li>
+							<a href="#">咖啡/奶茶</a>
+							|
+						</li>
+						<li>
+							<a href="#">饮用水</a>
+							|
+						</li>
+						<li>
+							<a href="#">饮料饮品</a>
+							|
+						</li>
+						<li>
+							<a href="#">酒水</a>
+							|
+						</li>
+						<li>
+							<a href="#">牛奶乳品</a>
+							|
+						</li>
+					</ul>
+				</div>
+				<div class="floor-left">
+					<a href="#">
+						<p>酒水分会场</p>
+						<span>满699减200</span>
+						<img src="imgs/3-6.jpg" alt="">
+					</a>
+				</div>
+				<div class="floor-right">
+					<ul>
+						<li>
+							<a href="#">
+								<span>水饮冲调</span>
+								<p>满99减30</p>
+								<img src="imgs/3-7.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>酒水会场</span>
+								<p>满199减100</p>
+								<img src="imgs/3-8.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>牛奶中心</span>
+								<p>满99减30</p>
+								<img src="imgs/3-9.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>12.12狂欢</span>
+								<p>低至12.12元起</p>
+								<img src="imgs/3-3.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- 美妆个护 -->
+		<div id="meizhuang">
+			<div class="floorGCSP">
+				<h4>
+					<a href="#">
+						美妆个护 <i class="iconfont icon-more"></i>
+					</a>
+				</h4>
+				<p>BEAUTY MAKEUP</p>
+				<!-- 图片切换 -->
+				<div class="change">
+					<ul>
+						<li class="nth1">
+							<a href="#">
+								<p>三只松鼠</p>
+								<p>满199减100</p>
+								<img src="imgs/h1.jpg" alt="">
+							</a>
+						</li>
+						<li class="nth2">
+							<a href="#">
+								<p>暖心暖胃 洽好食尚</p>
+								<p>满188减100</p>
+								<img src="imgs/h2.jpg" alt="">
+							</a>
+						</li>
+						<li class="nth3">
+							<a href="#">
+								<p>粮油调味中心</p>
+								<p>满99减30</p>
+								<img src="imgs/h3.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+					<div>
+						<i class="iconfont icon-back"></i>
+						<span class="num">1</span>
+						/ 3
+						<i class="iconfont icon-more"></i>
+					</div>
+				</div>
+				<!-- 文字切换 -->
+				<div class="comment">
+					<div class="icon1">
+						<i class="iconfont icon-zhangdan"></i>
+					</div>
+					<div class="uus">
+						<ul>
+							<li><a href="#">休闲食品</a></li>
+							<li><a href="#">糖果巧克力</a></li>
+							<li><a href="#">金龙鱼</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- 内容列 -->
+			<div class="center-con">
+				<div class="keywords">
+					<ul>
+						<li><a href="#">坚果炒货</a></li>
+						<li><a href="#">饼干蛋糕</a></li>
+						<li><a href="#">粮油调味</a></li>
+						<li><a href="#">方便速食</a></li>
+						<li><a href="#">糖果/巧克力</a></li>
+						<li><a href="#">蜂蜜</a></li>
+					</ul>
+				</div>	
+				<ul>
+					<li>
+						<a href="#">
+							<p>暖意来袭</p>
+							<p>满188减100</p>
+							<img src="imgs/3-1.jpg">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p>美食大盘点</p>
+							<p>满188减100</p>
+							<img src="imgs/2-2.jpg">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p>坚果零食</p>
+							<p>满99减50</p>
+							<img src="imgs/2-3.png">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p>厨房调味</p>
+							<p>低至5件5折</p>
+							<img src="imgs/2-4.jpg">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p>营养保健</p>
+							<p>爆款直降</p>
+							<img src="imgs/2-5.jpg">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p>暖意来袭</p>
+							<p>满188减100</p>
+							<img src="imgs/2-1.jpg">
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- 热门商品 -->
+			<div class="hot-con">
+				<h4>热门商品</h4>
+				<ul>
+					<li>
+					    <a href="#">
+					    	<img src="imgs/3-2.jpg" alt="">
+					    	<i>1</i>
+					    	<div class="text">
+					    		<p>福临门 食用油 浓香压榨一级 花生油4L 中粮出品</p>
+					    		<span>￥79.90</span>
+					    	</div>
+					    </a>
+					</li>
+					<li>
+					    <a href="#">
+					    	<img src="imgs/3-3.jpg" alt="">
+					    	<i>2</i>
+					    	<div class="text">
+					    		<p>崇明岛 2017新米 大米10Kg （20斤）【1号店定制】非东北五常稻花香大米</p>
+					    		<span>￥99.80</span>
+					    	</div>
+					    </a>
+					</li>
+					<li>
+					    <a href="#">
+					    	<img src="imgs/3-4.jpg" alt="">
+					    	<i>3</i>
+					    	<div class="text">
+					    		<p>金龙鱼 食用油 葵花籽食用调和油5L</p>
+					    		<span>￥39.80</span>
+					    	</div>
+					    </a>
+					</li>
+					<li>
+					    <a href="#">
+					    	<img src="imgs/3-5.jpg" alt="">
+					    	<i></i>
+					    	<div class="text">
+					    		<p>洽洽 坚果炒货 每日坚果 内含开果器 夏威夷果奶油味200g/袋</p>
+					    		<span>￥16.90</span>
+					    	</div>
+					    </a>
+					</li>
+					<li>
+					    <a href="#">
+					    	<img src="imgs/3-7.jpg" alt="">
+					    	<i></i>
+					    	<div class="text">
+					    		<p>福临门 食用油 温情献礼套装（玉米油3.09L+葵花籽油3.09L） 中粮出品</p>
+					    		<span>￥79.90</span>
+					    	</div>
+					    </a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 母婴玩具 -->
+		<div id="mod-columns">
+			<!-- 左侧 -->
+			<div class="columns-left">
+				<div class="floor-tit">
+					<h4>
+						母婴玩具
+						<i class="iconfont icon-more"></i>
+					</h4>
+					<ul>
+						<li>
+							<a href="#">孕妈专区</a>
+						</li>
+						<li>
+							<a href="#">奶瓶奶嘴</a>
+							|
+						</li>
+						<li>
+							<a href="#">辅食</a>
+							|
+						</li>
+						<li>
+							<a href="#">玩具</a>
+							|
+						</li>
+						<li>
+							<a href="#">童车</a>
+							|
+						</li>
+					</ul>
+				</div>
+				<div class="floor-left">
+					<a href="#">
+						<p>营养辅食中心</p>
+						<span>满199减100</span>
+						<img src="imgs/3-1.jpg" alt="">
+					</a>
+				</div>
+				<div class="floor-right">
+					<ul>
+						<li>
+							<a href="#">
+								<span>时蔬香鲜</span>
+								<p>爆款直降</p>
+								<img src="imgs/3-2.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>果蔬润燥</span>
+								<p>领券199减80</p>
+								<img src="imgs/3-3.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>1212年度钜惠</span>
+								<p>199减80</p>
+								<img src="imgs/3-4.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>12.12狂欢</span>
+								<p>低至12.12元起</p>
+								<img src="imgs/3-5.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 右侧 -->
+			<div class="columns-right">
+				<div class="floor-tit">
+					<h4>
+						厨卫清洁
+						<i class="iconfont icon-more"></i>
+					</h4>
+					<ul>
+						<li>
+							<a href="#">清洁工具</a>
+						</li>
+						<li>
+							<a href="#">一次性用品</a>
+							|
+						</li>
+						<li>
+							<a href="#">洁厕灵</a>
+							|
+						</li>
+						<li>
+							<a href="#">油污净</a>
+							|
+						</li>
+						<li>
+							<a href="#">酒水</a>
+							|
+						</li>
+						<li>
+							<a href="#">衣物清洁</a>
+							|
+						</li>
+					</ul>
+				</div>
+				<div class="floor-left">
+					<a href="#">
+						<p>打劫厨房</p>
+						<span>9.9元包邮</span>
+						<img src="imgs/3-6.jpg" alt="">
+					</a>
+				</div>
+				<div class="floor-right">
+					<ul>
+						<li>
+							<a href="#">
+								<span>水饮冲调</span>
+								<p>满99减30</p>
+								<img src="imgs/3-7.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>酒水会场</span>
+								<p>满199减100</p>
+								<img src="imgs/3-8.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>牛奶中心</span>
+								<p>满99减30</p>
+								<img src="imgs/3-9.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>12.12狂欢</span>
+								<p>低至12.12元起</p>
+								<img src="imgs/3-3.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- 家居生活 -->
+		<div id="guochan">
+			<div class="floorGCSP">
+				<h4>
+					<a href="#">
+						家居生活 <i class="iconfont icon-more"></i>
+					</a>
+				</h4>
+				<p>家居生活</p>
+				<!-- 图片切换 -->
+				<div class="change">
+					<ul>
+						<li class="nth1">
+							<a href="#">
+								<p>三只松鼠</p>
+								<p>满199减100</p>
+								<img src="imgs/h1.jpg" alt="">
+							</a>
+						</li>
+						<li class="nth2">
+							<a href="#">
+								<p>暖心暖胃 洽好食尚</p>
+								<p>满188减100</p>
+								<img src="imgs/h2.jpg" alt="">
+							</a>
+						</li>
+						<li class="nth3">
+							<a href="#">
+								<p>粮油调味中心</p>
+								<p>满99减30</p>
+								<img src="imgs/h3.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+					<div>
+						<i class="iconfont icon-back"></i>
+						<span class="num">1</span>
+						/ 3
+						<i class="iconfont icon-more"></i>
+					</div>
+				</div>
+				<!-- 文字切换 -->
+				<div class="comment">
+					<div class="icon1">
+						<i class="iconfont icon-zhangdan"></i>
+					</div>
+					<div class="uus">
+						<ul>
+							<li><a href="#">休闲食品</a></li>
+							<li><a href="#">糖果巧克力</a></li>
+							<li><a href="#">金龙鱼</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- 内容列 -->
+			<div class="center-con">
+				<div class="keywords">
+					<ul>
+						<li><a href="#">坚果炒货</a></li>
+						<li><a href="#">饼干蛋糕</a></li>
+						<li><a href="#">粮油调味</a></li>
+						<li><a href="#">方便速食</a></li>
+						<li><a href="#">糖果/巧克力</a></li>
+						<li><a href="#">蜂蜜</a></li>
+					</ul>
+				</div>	
+				<ul>
+					<li>
+						<a href="#">
+							<p>暖意来袭</p>
+							<p>满188减100</p>
+							<img src="imgs/3-1.jpg">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p>美食大盘点</p>
+							<p>满188减100</p>
+							<img src="imgs/3-2.jpg">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p>坚果零食</p>
+							<p>满99减50</p>
+							<img src="imgs/2-3.png">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p>厨房调味</p>
+							<p>低至5件5折</p>
+							<img src="imgs/3-4.jpg">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p>营养保健</p>
+							<p>爆款直降</p>
+							<img src="imgs/3-5.jpg">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p>暖意来袭</p>
+							<p>满188减100</p>
+							<img src="imgs/3-7.jpg">
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- 热门商品 -->
+			<div class="hot-con">
+				<h4>热门商品</h4>
+				<ul>
+					<li>
+					    <a href="#">
+					    	<img src="imgs/h1.jpg" alt="">
+					    	<i>1</i>
+					    	<div class="text">
+					    		<p>福临门 食用油 浓香压榨一级 花生油4L 中粮出品</p>
+					    		<span>￥79.90</span>
+					    	</div>
+					    </a>
+					</li>
+					<li>
+					    <a href="#">
+					    	<img src="imgs/h2.jpg" alt="">
+					    	<i>2</i>
+					    	<div class="text">
+					    		<p>崇明岛 2017新米 大米10Kg （20斤）【1号店定制】非东北五常稻花香大米</p>
+					    		<span>￥99.80</span>
+					    	</div>
+					    </a>
+					</li>
+					<li>
+					    <a href="#">
+					    	<img src="imgs/h3.jpg" alt="">
+					    	<i>3</i>
+					    	<div class="text">
+					    		<p>金龙鱼 食用油 葵花籽食用调和油5L</p>
+					    		<span>￥39.80</span>
+					    	</div>
+					    </a>
+					</li>
+					<li>
+					    <a href="#">
+					    	<img src="imgs/h4.jpg" alt="">
+					    	<i></i>
+					    	<div class="text">
+					    		<p>洽洽 坚果炒货 每日坚果 内含开果器 夏威夷果奶油味200g/袋</p>
+					    		<span>￥16.90</span>
+					    	</div>
+					    </a>
+					</li>
+					<li>
+					    <a href="#">
+					    	<img src="imgs/h5.jpg" alt="">
+					    	<i></i>
+					    	<div class="text">
+					    		<p>福临门 食用油 温情献礼套装（玉米油3.09L+葵花籽油3.09L） 中粮出品</p>
+					    		<span>￥79.90</span>
+					    	</div>
+					    </a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 手机家电 -->
+		<div id="meizhuang">
+			<div class="floorGCSP">
+				<h4>
+					<a href="#">
+						手机家电 <i class="iconfont icon-more"></i>
+					</a>
+				</h4>
+				<p>手机家电</p>
+				<!-- 图片切换 -->
+				<div class="change">
+					<ul>
+						<li class="nth1">
+							<a href="#">
+								<p>三只松鼠</p>
+								<p>满199减100</p>
+								<img src="imgs/w1.jpg" alt="">
+							</a>
+						</li>
+						<li class="nth2">
+							<a href="#">
+								<p>暖心暖胃 洽好食尚</p>
+								<p>满188减100</p>
+								<img src="imgs/w2.jpg" alt="">
+							</a>
+						</li>
+						<li class="nth3">
+							<a href="#">
+								<p>粮油调味中心</p>
+								<p>满99减30</p>
+								<img src="imgs/w3.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+					<div>
+						<i class="iconfont icon-back"></i>
+						<span class="num">1</span>
+						/ 3
+						<i class="iconfont icon-more"></i>
+					</div>
+				</div>
+				<!-- 文字切换 -->
+				<div class="comment">
+					<div class="icon1">
+						<i class="iconfont icon-zhangdan"></i>
+					</div>
+					<div class="uus">
+						<ul>
+							<li><a href="#">休闲食品</a></li>
+							<li><a href="#">糖果巧克力</a></li>
+							<li><a href="#">金龙鱼</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- 内容列 -->
+			<div class="center-con">
+				<div class="keywords">
+					<ul>
+						<li><a href="#">坚果炒货</a></li>
+						<li><a href="#">饼干蛋糕</a></li>
+						<li><a href="#">粮油调味</a></li>
+						<li><a href="#">方便速食</a></li>
+						<li><a href="#">糖果/巧克力</a></li>
+						<li><a href="#">蜂蜜</a></li>
+					</ul>
+				</div>	
+				<ul>
+					<li>
+						<a href="#">
+							<p>暖意来袭</p>
+							<p>满188减100</p>
+							<img src="imgs/4-1.png">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p>美食大盘点</p>
+							<p>满188减100</p>
+							<img src="imgs/4-2.jpg">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p>坚果零食</p>
+							<p>满99减50</p>
+							<img src="imgs/4-3.jpg">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p>厨房调味</p>
+							<p>低至5件5折</p>
+							<img src="imgs/4-4.jpg">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p>营养保健</p>
+							<p>爆款直降</p>
+							<img src="imgs/4-5.png">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p>暖意来袭</p>
+							<p>满188减100</p>
+							<img src="imgs/4-1.png">
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- 热门商品 -->
+			<div class="hot-con">
+				<h4>热门商品</h4>
+				<ul>
+					<li>
+					    <a href="#">
+					    	<img src="imgs/h11.jpg" alt="">
+					    	<i>1</i>
+					    	<div class="text">
+					    		<p>福临门 食用油 浓香压榨一级 花生油4L 中粮出品</p>
+					    		<span>￥79.90</span>
+					    	</div>
+					    </a>
+					</li>
+					<li>
+					    <a href="#">
+					    	<img src="imgs/h12.jpg" alt="">
+					    	<i>2</i>
+					    	<div class="text">
+					    		<p>崇明岛 2017新米 大米10Kg （20斤）【1号店定制】非东北五常稻花香大米</p>
+					    		<span>￥99.80</span>
+					    	</div>
+					    </a>
+					</li>
+					<li>
+					    <a href="#">
+					    	<img src="imgs/h13.jpg" alt="">
+					    	<i>3</i>
+					    	<div class="text">
+					    		<p>金龙鱼 食用油 葵花籽食用调和油5L</p>
+					    		<span>￥39.80</span>
+					    	</div>
+					    </a>
+					</li>
+					<li>
+					    <a href="#">
+					    	<img src="imgs/h14.jpg" alt="">
+					    	<i></i>
+					    	<div class="text">
+					    		<p>洽洽 坚果炒货 每日坚果 内含开果器 夏威夷果奶油味200g/袋</p>
+					    		<span>￥16.90</span>
+					    	</div>
+					    </a>
+					</li>
+					<li>
+					    <a href="#">
+					    	<img src="imgs/h15.jpg" alt="">
+					    	<i></i>
+					    	<div class="text">
+					    		<p>福临门 食用油 温情献礼套装（玉米油3.09L+葵花籽油3.09L） 中粮出品</p>
+					    		<span>￥79.90</span>
+					    	</div>
+					    </a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 潮流服饰 -->
+		<div id="guochan">
+			<div class="floorGCSP">
+				<h4>
+					<a href="#">
+						潮流服饰 <i class="iconfont icon-more"></i>
+					</a>
+				</h4>
+				<p>潮流服饰</p>
+				<!-- 图片切换 -->
+				<div class="change">
+					<ul>
+						<li class="nth1">
+							<a href="#">
+								<p>三只松鼠</p>
+								<p>满199减100</p>
+								<img src="imgs/q1.jpg" alt="">
+							</a>
+						</li>
+						<li class="nth2">
+							<a href="#">
+								<p>暖心暖胃 洽好食尚</p>
+								<p>满188减100</p>
+								<img src="imgs/q2.jpg" alt="">
+							</a>
+						</li>
+						<li class="nth3">
+							<a href="#">
+								<p>粮油调味中心</p>
+								<p>满99减30</p>
+								<img src="imgs/q3.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+					<div>
+						<i class="iconfont icon-back"></i>
+						<span class="num">1</span>
+						/ 3
+						<i class="iconfont icon-more"></i>
+					</div>
+				</div>
+				<!-- 文字切换 -->
+				<div class="comment">
+					<div class="icon1">
+						<i class="iconfont icon-zhangdan"></i>
+					</div>
+					<div class="uus">
+						<ul>
+							<li><a href="#">休闲食品</a></li>
+							<li><a href="#">糖果巧克力</a></li>
+							<li><a href="#">金龙鱼</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- 内容列 -->
+			<div class="center-con">
+				<div class="keywords">
+					<ul>
+						<li><a href="#">坚果炒货</a></li>
+						<li><a href="#">饼干蛋糕</a></li>
+						<li><a href="#">粮油调味</a></li>
+						<li><a href="#">方便速食</a></li>
+						<li><a href="#">糖果/巧克力</a></li>
+						<li><a href="#">蜂蜜</a></li>
+					</ul>
+				</div>	
+				<ul>
+					<li>
+						<a href="#">
+							<p>暖意来袭</p>
+							<p>满188减100</p>
+							<img src="imgs/6-1.png">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p>美食大盘点</p>
+							<p>满188减100</p>
+							<img src="imgs/6-2.png">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p>坚果零食</p>
+							<p>满99减50</p>
+							<img src="imgs/6-3.jpg">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p>厨房调味</p>
+							<p>低至5件5折</p>
+							<img src="imgs/6-4.jpg">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p>营养保健</p>
+							<p>爆款直降</p>
+							<img src="imgs/6-5.jpg">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p>暖意来袭</p>
+							<p>满188减100</p>
+							<img src="imgs/6-6.jpg">
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- 热门商品 -->
+			<div class="hot-con">
+				<h4>热门商品</h4>
+				<ul>
+					<li>
+					    <a href="#">
+					    	<img src="imgs/h21.jpg" alt="">
+					    	<i>1</i>
+					    	<div class="text">
+					    		<p>福临门 食用油 浓香压榨一级 花生油4L 中粮出品</p>
+					    		<span>￥79.90</span>
+					    	</div>
+					    </a>
+					</li>
+					<li>
+					    <a href="#">
+					    	<img src="imgs/h22.jpg" alt="">
+					    	<i>2</i>
+					    	<div class="text">
+					    		<p>崇明岛 2017新米 大米10Kg （20斤）【1号店定制】非东北五常稻花香大米</p>
+					    		<span>￥99.80</span>
+					    	</div>
+					    </a>
+					</li>
+					<li>
+					    <a href="#">
+					    	<img src="imgs/h23.jpg" alt="">
+					    	<i>3</i>
+					    	<div class="text">
+					    		<p>金龙鱼 食用油 葵花籽食用调和油5L</p>
+					    		<span>￥39.80</span>
+					    	</div>
+					    </a>
+					</li>
+					<li>
+					    <a href="#">
+					    	<img src="imgs/h24.jpg" alt="">
+					    	<i></i>
+					    	<div class="text">
+					    		<p>洽洽 坚果炒货 每日坚果 内含开果器 夏威夷果奶油味200g/袋</p>
+					    		<span>￥16.90</span>
+					    	</div>
+					    </a>
+					</li>
+					<li>
+					    <a href="#">
+					    	<img src="imgs/h25.jpg" alt="">
+					    	<i></i>
+					    	<div class="text">
+					    		<p>福临门 食用油 温情献礼套装（玉米油3.09L+葵花籽油3.09L） 中粮出品</p>
+					    		<span>￥79.90</span>
+					    	</div>
+					    </a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 懂你想要 -->
+		<div id="dongni">
+			<h4>
+				<u></u>
+				<span>懂你想要</span>
+				<i></i>
+			</h4>
+			<ul>
+				<li>
+					<a href="#">
+						<img src="imgs/d1.jpg" alt="">
+						<p>【3件以上9.9】云蕾 加厚经济型清洁垃圾袋45*50cm 150只 13817</p>
+						<span>￥12.90</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="imgs/d2.jpg" alt="">
+						<p>【3件以上9.9】云蕾 加厚经济型清洁垃圾袋45*50cm 150只 13817</p>
+						<span>￥12.90</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="imgs/d3.jpg" alt="">
+						<p>【3件以上9.9】云蕾 加厚经济型清洁垃圾袋45*50cm 150只 13817</p>
+						<span>￥12.90</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="imgs/d4.jpg" alt="">
+						<p>【3件以上9.9】云蕾 加厚经济型清洁垃圾袋45*50cm 150只 13817</p>
+						<span>￥12.90</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="imgs/d5.jpg" alt="">
+						<p>【3件以上9.9】云蕾 加厚经济型清洁垃圾袋45*50cm 150只 13817</p>
+						<span>￥12.90</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="imgs/d6.jpg" alt="">
+						<p>【3件以上9.9】云蕾 加厚经济型清洁垃圾袋45*50cm 150只 13817</p>
+						<span>￥12.90</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="imgs/d7.jpg" alt="">
+						<p>【3件以上9.9】云蕾 加厚经济型清洁垃圾袋45*50cm 150只 13817</p>
+						<span>￥12.90</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="imgs/d8.jpg" alt="">
+						<p>【3件以上9.9】云蕾 加厚经济型清洁垃圾袋45*50cm 150只 13817</p>
+						<span>￥12.90</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="imgs/d9.jpg" alt="">
+						<p>【3件以上9.9】云蕾 加厚经济型清洁垃圾袋45*50cm 150只 13817</p>
+						<span>￥12.90</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="imgs/d1.jpg" alt="">
+						<p>【3件以上9.9】云蕾 加厚经济型清洁垃圾袋45*50cm 150只 13817</p>
+						<span>￥12.90</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="imgs/d2.jpg" alt="">
+						<p>【3件以上9.9】云蕾 加厚经济型清洁垃圾袋45*50cm 150只 13817</p>
+						<span>￥12.90</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="imgs/d3.jpg" alt="">
+						<p>【3件以上9.9】云蕾 加厚经济型清洁垃圾袋45*50cm 150只 13817</p>
+						<span>￥12.90</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="imgs/d4.jpg" alt="">
+						<p>【3件以上9.9】云蕾 加厚经济型清洁垃圾袋45*50cm 150只 13817</p>
+						<span>￥12.90</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="imgs/d5.jpg" alt="">
+						<p>【3件以上9.9】云蕾 加厚经济型清洁垃圾袋45*50cm 150只 13817</p>
+						<span>￥12.90</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="imgs/d6.jpg" alt="">
+						<p>【3件以上9.9】云蕾 加厚经济型清洁垃圾袋45*50cm 150只 13817</p>
+						<span>￥12.90</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="imgs/d7.jpg" alt="">
+						<p>【3件以上9.9】云蕾 加厚经济型清洁垃圾袋45*50cm 150只 13817</p>
+						<span>￥12.90</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="imgs/d8.jpg" alt="">
+						<p>【3件以上9.9】云蕾 加厚经济型清洁垃圾袋45*50cm 150只 13817</p>
+						<span>￥12.90</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="imgs/d9.jpg" alt="">
+						<p>【3件以上9.9】云蕾 加厚经济型清洁垃圾袋45*50cm 150只 13817</p>
+						<span>￥12.90</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="imgs/d1.jpg" alt="">
+						<p>【3件以上9.9】云蕾 加厚经济型清洁垃圾袋45*50cm 150只 13817</p>
+						<span>￥12.90</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="imgs/d2.jpg" alt="">
+						<p>【3件以上9.9】云蕾 加厚经济型清洁垃圾袋45*50cm 150只 13817</p>
+						<span>￥12.90</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="imgs/d3.jpg" alt="">
+						<p>【3件以上9.9】云蕾 加厚经济型清洁垃圾袋45*50cm 150只 13817</p>
+						<span>￥12.90</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="imgs/d4.jpg" alt="">
+						<p>【3件以上9.9】云蕾 加厚经济型清洁垃圾袋45*50cm 150只 13817</p>
+						<span>￥12.90</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="imgs/d5.jpg" alt="">
+						<p>【3件以上9.9】云蕾 加厚经济型清洁垃圾袋45*50cm 150只 13817</p>
+						<span>￥12.90</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="imgs/d6.jpg" alt="">
+						<p>【3件以上9.9】云蕾 加厚经济型清洁垃圾袋45*50cm 150只 13817</p>
+						<span>￥12.90</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="imgs/d7.jpg" alt="">
+						<p>【3件以上9.9】云蕾 加厚经济型清洁垃圾袋45*50cm 150只 13817</p>
+						<span>￥12.90</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="imgs/d8.jpg" alt="">
+						<p>【3件以上9.9】云蕾 加厚经济型清洁垃圾袋45*50cm 150只 13817</p>
+						<span>￥12.90</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="imgs/d9.jpg" alt="">
+						<p>【3件以上9.9】云蕾 加厚经济型清洁垃圾袋45*50cm 150只 13817</p>
+						<span>￥12.90</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="imgs/d1.jpg" alt="">
+						<p>【3件以上9.9】云蕾 加厚经济型清洁垃圾袋45*50cm 150只 13817</p>
+						<span>￥12.90</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="imgs/d2.jpg" alt="">
+						<p>【3件以上9.9】云蕾 加厚经济型清洁垃圾袋45*50cm 150只 13817</p>
+						<span>￥12.90</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="imgs/d3.jpg" alt="">
+						<p>【3件以上9.9】云蕾 加厚经济型清洁垃圾袋45*50cm 150只 13817</p>
+						<span>￥12.90</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="imgs/d4.jpg" alt="">
+						<p>【3件以上9.9】云蕾 加厚经济型清洁垃圾袋45*50cm 150只 13817</p>
+						<span>￥12.90</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="imgs/d5.jpg" alt="">
+						<p>【3件以上9.9】云蕾 加厚经济型清洁垃圾袋45*50cm 150只 13817</p>
+						<span>￥12.90</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="imgs/d6.jpg" alt="">
+						<p>【3件以上9.9】云蕾 加厚经济型清洁垃圾袋45*50cm 150只 13817</p>
+						<span>￥12.90</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="imgs/d7.jpg" alt="">
+						<p>【3件以上9.9】云蕾 加厚经济型清洁垃圾袋45*50cm 150只 13817</p>
+						<span>￥12.90</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="imgs/d8.jpg" alt="">
+						<p>【3件以上9.9】云蕾 加厚经济型清洁垃圾袋45*50cm 150只 13817</p>
+						<span>￥12.90</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 底部 -->
+	<div id="footer">
+		<div class="wrap">
+			<ul class="foot-service">
+				<li>
+					<a href="#">
+						<img src="imgs/ft1.jpg" alt="">
+						<div>
+							<b>正品保障</b>
+							<br>
+							<span>正品保障</span>
+						</div>
+							
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="imgs/ft2.jpg" alt="">
+						<div>
+							<b>满86包邮</b>
+							<br>
+							<span>满86元 免运费</span>
+						</div>
+							
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="imgs/ft3.jpg" alt="">
+						<div>
+							<b>售后无忧</b>
+							<br>
+							<span>7天无理由退货</span>
+						</div>
+							
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="imgs/ft4.jpg" alt="">
+						<div>
+							<b>准时送达</b>
+							<br>
+							<span>收货时间由你做主</span>
+						</div>
+					</a>
+				</li>
+			</ul>
+			<div class="foot-service-link">
+				<ul>
+					<li>
+						<p>新手入门</p>
+						<ol>
+							<li><a href="#">购物流程</a></li>
+							<li><a href="#">会员制度</a></li>
+							<li><a href="#">订单查询</a></li>
+							<li><a href="#">发票制度</a></li>
+						</ol>
+					</li>
+					<li>
+						<p>支付方式</p>
+						<ol>
+							<li><a href="#">货到付款</a></li>
+							<li><a href="#">网上支付</a></li>
+							<li><a href="#">银行转账</a></li>
+							<li><a href="#">礼品卡支付</a></li>
+							<li><a href="#">其它支付</a></li>
+						</ol>
+					</li>
+					<li>
+						<p>配送服务</p>
+						<ol>
+							<li><a href="#">配送进度查询</a></li>
+							<li><a href="#">商品验货与签收</a></li>
+						</ol>
+					</li>
+					<li>
+						<p>售后保障</p>
+						<ol>
+							<li><a href="#">退换货政策</a></li>
+							<li><a href="#">联系客服</a></li>
+						</ol>
+					</li>
+				</ul>
+				<div class="foot-code">
+					<div>
+						<p>APP更优惠</p>
+						<img src="imgs/ewm1.png" alt="">
+					</div>
+					<div>
+						<p>加微信查订单</p>
+						<img src="imgs/ewm2.jpg" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="ft-conter">
+				<p>
+					<a href="#">沪ICP备16050468号</a>
+					|
+					<a href="#">经营证照</a>
+					|
+					<a href="#">互联网药品信息服务资格证</a>
+					|
+					<a href="#">违法和不良信息举报电话：0527-88100253</a>
+					|
+					<a href="#">沪B2-20170039</a>
+				</p>
+				<p>Copyright© 1号店网上超市 2007-2017，All Rights Reserved</p>
+				<ul>
+					<li><a href="#"><img src="imgs/ssd1.jpg" alt=""></a></li>
+					<li><a href="#"><img src="imgs/ssd2.jpg" alt=""></a></li>
+					<li><a href="#"><img src="imgs/ssd3.jpg" alt=""></a></li>
+					<li><a href="#"><img src="imgs/ssd4.jpg" alt=""></a></li>
+					<li><a href="#"><img src="imgs/ssd5.jpg" alt=""></a></li>
+					<li><a href="#"><img src="imgs/ssd6.jpg" alt=""></a></li>
+					<li><a href="#"><img src="imgs/ssd7.jpg" alt=""></a></li>
+					<li><a href="#"><img src="imgs/ssd8.png" alt=""></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- 楼层 -->
+	<div id="louceng">
+		<li class="t"><span>全球进口</span></li>
+		<li><span>国产食品</span></li>
+		<li><span>活色生鲜</span></li>
+		<li><span>美妆个护</span></li>
+		<li><span>母婴玩具</span></li>
+		<li><span>家居生活</span></li>
+		<li><span>手机家电</span></li>
+		<li><span>潮流服饰</span></li>
+		<li><span>懂你想要</span></li>
+	</div>
+	<!-- 侧边栏 -->
+	<div id="sidebar">
+		<img src="imgs/sd1.jpg" alt="">
+		<ul>
+			<li>
+				<a>
+					<i class="iconfont icon-account"></i>
+					<p>个人中心</p>
+				</a>
+			</li>
+			<li>
+				<a href="../gouwuche/gouwuche.html" target="_black">
+					<i class="iconfont icon-cart"></i>
+					<span>购物车</span>
+				</a>
+			</li>
+			<li>
+				<a>
+					<i class="iconfont icon-daijinquan"></i>
+					<p>抵用券</p>
+				</a>
+			</li>
+		</ul>
+		<ol>
+			<li>
+				<a href="">
+					<i class="iconfont icon-edit"></i>
+					<p>用户反馈</p>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<i class="iconfont icon-shu"></i>
+					<div>
+						<span>手机购物更优惠</span>
+						<img src="imgs/ewm1.png" alt="">
+						<em></em>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="to-top">
+					<i class="iconfont icon-less"></i>
+					<p>返回顶部</p>
+				</a>
+			</li>
+		</ol>
+	</div>
+</body>
+<script>
+
+	// 顶部广告
+	// 定义一次性定时器标志
+	var one;
+	// 当鼠标移入顶部广告栏时
+	$('#top-ba').mouseenter(function () {
+		if (one) {
+			return;
+		}
+		one = setTimeout(function () {
+			$('.top-banner1').slideDown();
+			$('.top-banner2').slideUp();
+		},100);
+	// 当鼠标移出顶部广告栏时
+	}).mouseleave(function () {
+		$('.top-banner2').slideDown();
+		$('.top-banner1').slideUp();
+		clearTimeout(one);
+		one = undefined;
+	});
+	// 顶部按钮的单击事件
+	$('.top-btn').click(function () {
+		$('#top-ba').slideUp();
+	});
+
+
+
+	// 鼠标滚动事件
+	$(document).scroll(function () {
+		if ($(this).scrollTop() >= 500) {
+			$('#search-fix').slideDown();
+		} else {
+			$('#search-fix').slideUp();
+		}
+	});
+
+
+
+	// 二级导航
+	// 鼠标移入一级li时
+	$('.yiji>li').mouseenter(function () {
+		// 对应的二级li显示
+		$('.erji>li').eq($(this).index()).css({display:'block'});
+		$(this).addClass('active');
+	// 鼠标移出一级li时
+	}).mouseleave(function () {
+		// 对应的二级li隐藏
+		$('.erji>li').eq($(this).index()).css({display:'none'});
+		$(this).removeClass('active');
+	});
+	// 鼠标移入二级li时
+	$('.erji>li').mouseenter(function () {
+		// 自身显示
+		$(this).css({display:'block'});
+		// 对应的一级li添加active
+		$('.yiji>li').eq($(this).index()).addClass('active');
+	// 鼠标移出二级li时
+	}).mouseleave(function () {
+		// 自身隐藏
+		$(this).css({display:'none'});
+		// 对应的一级li移除active
+		$('.yiji>li').eq($(this).index()).removeClass('active');
+	});
+
+
+
+	// 轮播图
+	// 定义定时器运行标志
+	var run;
+	// 定义索引
+	var index = 0;
+	// 定义自动轮播函数
+	function autoRun () {
+		if (run) {
+			return;
+		}
+		run = setInterval(function () {
+			$('.lun>ul>li').eq(index).css({display:'none'});
+			$('.lun>ol>li').eq(index).removeClass('bg');
+			index++;
+			if (index >= $('.lun>ul>li').length) {
+				index = 0;
+			}
+			$('.lun>ul>li').eq(index).css({display:'block'});
+			$('.lun>ol>li').eq(index).addClass('bg');
+		},3000)
+	}
+	// 调用自动轮播
+	autoRun();
+	// 鼠标移入事件
+	$('.lun').mouseenter(function () {
+		// 停止定时器
+		clearInterval(run);
+		run = undefined;
+		$('.lun>div').show();
+	// 鼠标移出事件
+	}).mouseleave(function () {
+		// 调用自动轮播函数
+		autoRun();
+		$('.lun>div').hide();
+	});
+	// 小块的鼠标点击事件
+	$('.lun>ol>li').mouseenter(function () {
+		$('.lun>ol>li').removeClass('bg');
+		$(this).addClass('bg');
+		$('.lun>ul>li').css({display:'none'});
+		$('.lun>ul>li').eq($(this).index()).css({display:'block'});
+		index = $(this).index();
+	});
+	//left 点击事件
+	$('.left').click(function () {
+		$('.lun>ul>li').eq(index).css({display:'none'});
+		$('.lun>ol>li').eq(index).removeClass('bg');
+		index--;
+		if (index < 0) {
+			index = $('.img li').length - 1;
+		}
+		$('.lun>ul>li').eq(index).css({display:'block'});
+		$('.lun>ol>li').eq(index).addClass('bg');
+			
+	}) 
+	// right 点击事件
+	$('.right').click(function () {
+		$('.lun>ul>li').eq(index).css({display:'none'});
+		$('.lun>ol>li').eq(index).removeClass('bg');
+		index++;
+		if (index >= $('.lun>ul>li').length) {
+			index = 0;
+		}
+		$('.lun>ul>li').eq(index).css({display:'block'})
+		$('.lun>ol>li').eq(index).addClass('bg');
+	});
+
+
+
+	// 小轮播
+	// 定义批次
+	var des = 0;
+	// 鼠标移动事件
+	$('.xlun').mousemove(function () {
+		// 左右按钮显示
+		$('.xlun>.xleft').css({left:3});
+		$('.xlun>.xright').css({right:3});
+		// 如果是第0批次
+		if (des == 0) {
+			// 做按钮隐藏
+			$('.xlun>.xleft').css({left:-25});
+		}
+		// 如果是第2批次
+		if (des == 2) {
+			// 右按钮隐藏
+			$('.xlun>.xright').css({right:-25});
+		}
+	// 鼠标移出事件
+	}).mouseleave(function () {
+		// 左右按钮都隐藏
+		$('.xlun>.xleft').css({left:-25});
+		$('.xlun>.xright').css({right:-25});
+	});
+	// 左按钮点击事件
+	$('.xlun>.xleft').click(function () {
+		// 批次-1
+		des--;
+		moveAuto();
+	});
+	// 右按钮单击事件
+	$('.xlun>.xright').click(function () {
+		// 批次+1
+		des++;
+		// 执行切换
+		moveAuto();
+	});
+	// 切换函数
+	function moveAuto () {
+		// 判断
+		if (des > 2) {
+			des = 2;
+		} else if (des < 0) {
+			des = 0;
+		}
+		// 定义ul的left值
+		$('.xlun>ul').animate({left:(-des * $('.xlun').width())},500)
+	}
+
+
+
+	// 选项卡
+	// 当鼠标移入时
+	$('.search-k>ul>li').mouseenter(function () {
+		// 所有ul下的li移除class
+		$('.search-k>ul>li').removeClass('active-li');
+		// 自身添加class
+		$(this).addClass('active-li');
+		// 对应的所有的ol下的li隐藏
+		$('.search-k>ol>li').css({display:'none'});
+		// 当前对应得li显示
+		$('.search-k>ol>li').eq($(this).index()).css({display:'block'});
+	});
+
+
+
+	// 轮流切换
+	// 定义数值
+	var nth = 1;
+	// 创建定时器函数
+	function changeTu () {
+		// 定时器
+		setInterval(function () {
+			// 取消所有li的class
+			$('.change>ul>li').removeClass();
+			// 将第一个li放到最后
+			$('.change>ul>li').eq(0).appendTo($('.change>ul'));
+			// 一次给每一个li天加一个与数值对应的函数
+			$('.change>ul>li').eq(0).addClass('nth1');
+			$('.change>ul>li').eq(1).addClass('nth2');
+			$('.change>ul>li').eq(2).addClass('nth3');
+			// 数值加一
+			nth++;
+			// 判断
+			if (nth > 3) {
+				nth = 1;
+			}
+			// 改变num的数值
+			$('.num').html(nth);
+			// 实现文字切换 改变ul的top值
+			$('.uus ul').css({top:-(nth-1)*$('.uus ul li').eq(0).height()});
+		},3000)
+	}
+	// 调用函数
+	changeTu();
+
+
+
+	// 倒计时
+	// 保证活动距离为打开页面的此刻还有2个小时
+	var startTime = new Date(new Date().getTime() + 1000 * 60 * 60 * 2);
+
+	// 定义补充前导零的函数
+	function zeroFill (num) {
+		if (num < 10) {
+			num = '0' + num;
+		}
+		// 返回结果
+		return num;
+	}
+
+	// 定义定时器的标记
+	var runV;
+
+	/**
+	* 设置倒计时的函数 setDaojishi()
+	*/
+	function setDaojishi () {
+		// 当前此刻时间
+		var nowTime = new Date();
+
+		// 时间的差值(毫秒数的差值)
+		var timeCha = startTime.getTime() - nowTime.getTime();
+		// console.log(timeCha);
+
+		// 判断时间的差值是否已经< 0 
+		if (timeCha < 0) {
+			timeCha = 0;
+			// 停止定时器
+			clearInterval(runv);
+			// 设置页面显示的时间
+			$('.hours').html(00);
+			$('.minutes').html(00);
+			$('.seconds').html(00);
+
+			// 终止程序的执行
+			return;
+		}
+
+		// 小时
+		var hour = Math.floor(timeCha / 1000 / 60 / 60);
+		// 分钟
+		var minute = Math.floor((timeCha / 1000 / 60) % 60);
+		// 计算秒
+		var second = Math.floor(timeCha / 1000 % 60);
+
+		// 设置时间
+		$('.hours').html(zeroFill(hour));
+		$('.minutes').html(zeroFill(minute));
+		$('.seconds').html(zeroFill(second));
+	}
+
+	// 用户进入页面的第一刻，调用设置倒计时的函数
+	setDaojishi();
+
+	// 周期性调用
+	runV = setInterval(setDaojishi, 1000);
+
+
+
+
+	// 楼层
+	// 设置当鼠标垂直滚动值超过2010px时侧边栏显示
+	$(document).scroll(function () {
+		// 滚动值小于2010 隐藏
+		if ($(this).scrollTop() <= 1990) {
+			$('#louceng').css('left','-50px');
+		// 滚动值大于2010 显示
+		} else {
+			$('#louceng').css('left','10px');
+		}
+		// 遍历
+		for (var i = 0; i < $('#louceng li').length; i++) {
+			// 判断当前的滚动值所在区间
+			if ($(this).scrollTop() >= i * $('.jinkou-content').height() + 2010 && $(this).scrollTop() < (i+1) * $('.jinkou-content').height() + 2010) {
+				// 将所有的li移除class act
+				$('#louceng li').removeClass('act');
+				// 给相应的li 添加class act
+				$('#louceng li').eq(i).addClass('act');
+			}
+		}
+	});
+	// 鼠标单机时
+	$('#louceng li').click(function () {
+		// 跳转到指定楼层
+		$('html,body').animate({scrollTop:($(this).index() * $('.jinkou-content').height() + 2090)},500);
+	});
+
+
+	// 回到顶部
+	$('.to-top').click(function () {
+		$('html,body').animate({scrollTop:0},500);
+	})
+</script>
+</html>
